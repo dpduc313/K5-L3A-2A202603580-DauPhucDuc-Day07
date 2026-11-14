@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REQUIRED_ENV = ("DATABASE_URL", "OPENAI_API_KEY", "LAB_AGENT_MODEL", "PERRY_OLLAMA_URL")
 EMBEDDING_MODEL = "embeddinggemma-2"
 EMBEDDING_DIMENSIONS = 768
-LAB_REPO = "dpduc313/K5-L3A-DAY07-2A202603580-DauPhucDuc-RetrievalContext"
+LAB_REPO = "dpduc313/2A202603580-DauPhucDuc-Day07"
 ASSIGNMENT_REPO = "VinUni-AI20k/K5-L3-Day07-Retrieval-Context-Engineering"
 
 # (tên, đạt?, chi tiết); đạt = None là mục thông tin, không tính đạt hay trượt.
