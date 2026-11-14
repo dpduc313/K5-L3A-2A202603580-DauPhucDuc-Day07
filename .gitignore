@@ -13,5 +13,8 @@ PHAN-TICH.md
 starter/data/
 starter/results/
 
+# Kết quả chạy thử (--ids), không phải kết quả thí nghiệm
+results/**/*-smoke/
+
 # PDF gốc không commit (quyết định 19): tải từ repo Day 6 hoặc arXiv khi cần parse lại
 data/raw/
