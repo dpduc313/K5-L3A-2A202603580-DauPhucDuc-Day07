@@ -1,0 +1,54 @@
+[project]
+name = "k5-l3a-day07-retrieval-context"
+version = "0.1.0"
+description = "Day 7 Agentic RAG: agent truy xuất trên vector store Day 6, có citation và abstention"
+requires-python = ">=3.11"
+# Danh sách thư viện chép từ Perrier (src/perrier/pyproject.toml @ dd09dad) để bản sao
+# Perrier trong src/perrier chạy đủ mọi service; phần riêng của lab ghi ở cuối.
+dependencies = [
+    "google-api-python-client>=2.201.0",
+    "google-auth-oauthlib>=1.5.0",
+    # Pinned: perry/colbert.py patches one of its private functions (`_load_torch_path`).
+    "fast-plaid==1.4.6.2110",
+    "gradio>=6.29.1",
+    "langchain>=1.4.3",
+    "langchain-google-genai>=4.4.0",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.14",
+    "langgraph-checkpoint-postgres>=3.1.2",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.6",
+    "pgvector>=0.5.0",
+    "psycopg[binary,pool]>=3.3.6",
+    "pylate>=1.6.0",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.9.1",
+    "torch>=2.11.0",
+    "langchain-openai>=1.7.0",
+    "argon2-cffi>=25.1.0",
+    "itsdangerous>=2.2.0",
+    "tzlocal>=5.4.4",
+    "docling>=2.150.0",
+    # Riêng của lab: đếm token cho context budget (o200k_base).
+    "tiktoken>=0.9.0",
+]
+
+[tool.uv]
+# Repo lab là tập script chạy bằng `python -m src.<lệnh>`, không đóng gói thành thư viện.
+package = false
+
+# ColBERT runs on the CPU: without this, uv pulls the ~2.5 GB CUDA build of torch.
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[dependency-groups]
+# pytest chỉ để chạy test của Perrier (src/perrier/tests); test của lab dùng unittest.
+dev = [
+    "pytest>=9.1.1",
+]

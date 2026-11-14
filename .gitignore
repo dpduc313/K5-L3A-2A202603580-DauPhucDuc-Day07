@@ -12,3 +12,6 @@ PHAN-TICH.md
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# PDF gốc không commit (quyết định 19): tải từ repo Day 6 hoặc arXiv khi cần parse lại
+data/raw/
