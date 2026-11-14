@@ -1,0 +1,25 @@
+# Postgres + pgvector riêng của Lab07, không dùng chung container hay volume với Day 6.
+# Cùng image với Day 6 (Lab06 starter/docker-compose.yml) để index dựng lại giống hệt.
+# Bật: docker compose up -d     Tắt: docker compose down     Xóa cả dữ liệu: docker compose down -v
+name: day7-lab
+
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.7-pg16
+    environment:
+      POSTGRES_DB: day7_lab
+      POSTGRES_USER: day7
+      POSTGRES_PASSWORD: day7_local_only
+    ports:
+      - "127.0.0.1:55434:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/01-vector.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U day7 -d day7_lab"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  pg_data:

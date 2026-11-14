@@ -6,6 +6,9 @@ __pycache__/
 !.env.example
 .codex-log/
 
+# Ghi chú phân tích đề của tác giả, không nộp
+PHAN-TICH.md
+
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
