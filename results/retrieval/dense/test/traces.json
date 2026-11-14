@@ -1,0 +1,609 @@
+[
+  {
+    "query_id": "q04",
+    "variant": "filter",
+    "query": "Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu phải thông báo cho Bộ Công an trong thời hạn nào, và nếu thông báo muộn thì phải làm gì?",
+    "filter": null,
+    "seconds": 8.614064000001235,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0046",
+        "source_id": "nd13",
+        "page": 17,
+        "score": 0.8677009782434738,
+        "rank": 1,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0048",
+        "source_id": "nd13",
+        "page": 18,
+        "score": 0.8544473648071532,
+        "rank": 2,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0057",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.7965485696139166,
+        "rank": 3,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0076",
+        "source_id": "nd13",
+        "page": 26,
+        "score": 0.7926540869107941,
+        "rank": 4,
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0081",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.7903751134872661,
+        "rank": 5,
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q08",
+    "variant": "filter",
+    "query": "Người dùng muốn rút lại sự đồng ý xử lý dữ liệu thì phải thể hiện bằng hình thức nào?",
+    "filter": null,
+    "seconds": 0.1121259000065038,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0025",
+        "source_id": "nd13",
+        "page": 10,
+        "score": 0.8635697446125913,
+        "rank": 1,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0023",
+        "source_id": "nd13",
+        "page": 9,
+        "score": 0.8132998367100801,
+        "rank": 2,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0034",
+        "source_id": "nd13",
+        "page": 13,
+        "score": 0.8049478763404098,
+        "rank": 3,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0022",
+        "source_id": "nd13",
+        "page": 9,
+        "score": 0.7997403621518842,
+        "rank": 4,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0018",
+        "source_id": "nd13",
+        "page": 7,
+        "score": 0.777716272421794,
+        "rank": 5,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q11",
+    "variant": "filter",
+    "query": "Theo Chương I của nghị định, xử lý dữ liệu cá nhân để tạo ra thông tin nhằm chống lại Nhà nước có bị cấm không?",
+    "filter": {
+      "chapter": "Chương I"
+    },
+    "seconds": 0.10697280000022147,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0015",
+        "source_id": "nd13",
+        "page": 6,
+        "score": 0.8151191007239098,
+        "rank": 1,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0008",
+        "source_id": "nd13",
+        "page": 4,
+        "score": 0.7727927375807555,
+        "rank": 2,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0002",
+        "source_id": "nd13",
+        "page": 1,
+        "score": 0.7704919210225074,
+        "rank": 3,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0012",
+        "source_id": "nd13",
+        "page": 6,
+        "score": 0.7593413856001199,
+        "rank": 4,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0009",
+        "source_id": "nd13",
+        "page": 5,
+        "score": 0.7533318392440128,
+        "rank": 5,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q11",
+    "variant": "no_filter",
+    "query": "Theo Chương I của nghị định, xử lý dữ liệu cá nhân để tạo ra thông tin nhằm chống lại Nhà nước có bị cấm không?",
+    "filter": null,
+    "seconds": 0.1147346999932779,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0015",
+        "source_id": "nd13",
+        "page": 6,
+        "score": 0.8151191007239098,
+        "rank": 1,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0027",
+        "source_id": "nd13",
+        "page": 11,
+        "score": 0.8103577689824236,
+        "rank": 2,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0035",
+        "source_id": "nd13",
+        "page": 14,
+        "score": 0.7809141902754679,
+        "rank": 3,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0000",
+        "source_id": "nd13",
+        "page": 1,
+        "score": 0.7747123719633456,
+        "rank": 4,
+        "chapters": [
+          "Mở đầu"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0008",
+        "source_id": "nd13",
+        "page": 4,
+        "score": 0.7727927375807555,
+        "rank": 5,
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q16",
+    "variant": "filter",
+    "query": "In the Training section of the paper, what label smoothing value was used, and how did it affect the results?",
+    "filter": {
+      "chapter": "5 Training"
+    },
+    "seconds": 0.09845390000555199,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0030",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.7798359364027275,
+        "rank": 1,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0022",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.7532584295648835,
+        "rank": 2,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0029",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.7303674552611561,
+        "rank": 3,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0025",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.715247652389131,
+        "rank": 4,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0026",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.7115882331466351,
+        "rank": 5,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q16",
+    "variant": "no_filter",
+    "query": "In the Training section of the paper, what label smoothing value was used, and how did it affect the results?",
+    "filter": null,
+    "seconds": 0.09173079999891343,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0030",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.7798359364027275,
+        "rank": 1,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0022",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.7532584295648835,
+        "rank": 2,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0029",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.7303674552611561,
+        "rank": 3,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0025",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.715247652389131,
+        "rank": 4,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0026",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.7115882331466351,
+        "rank": 5,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q19",
+    "variant": "filter",
+    "query": "Mô hình Transformer được huấn luyện bằng optimizer nào và với các tham số β1, β2 bằng bao nhiêu?",
+    "filter": null,
+    "seconds": 0.09875870000541909,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0025",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.7252634121868692,
+        "rank": 1,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0004",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.7142964346010852,
+        "rank": 2,
+        "chapters": [
+          "1 Introduction"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0034",
+        "source_id": "aiayn",
+        "page": 9,
+        "score": 0.709600771618062,
+        "rank": 3,
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0035",
+        "source_id": "aiayn",
+        "page": 9,
+        "score": 0.7029621214557854,
+        "rank": 4,
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0029",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.700898182177982,
+        "rank": 5,
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "u03",
+    "variant": "filter",
+    "query": "Lệ phí thẩm định hồ sơ đánh giá tác động xử lý dữ liệu cá nhân nộp cho Bộ Công an là bao nhiêu?",
+    "filter": null,
+    "seconds": 0.10503809999499936,
+    "hit1": null,
+    "hit3": null,
+    "first_hit_rank": null,
+    "results": [
+      {
+        "id": "nd13-heading-0052",
+        "source_id": "nd13",
+        "page": 19,
+        "score": 0.7968736412004573,
+        "rank": 1,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0053",
+        "source_id": "nd13",
+        "page": 20,
+        "score": 0.7676984758107904,
+        "rank": 2,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0056",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.7541829191119233,
+        "rank": 3,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0050",
+        "source_id": "nd13",
+        "page": 18,
+        "score": 0.7476447297017437,
+        "rank": 4,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0051",
+        "source_id": "nd13",
+        "page": 19,
+        "score": 0.7360574950966309,
+        "rank": 5,
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      }
+    ]
+  },
+  {
+    "query_id": "u04",
+    "variant": "filter",
+    "query": "Khi suy luận, Transformer (big) dịch được bao nhiêu câu mỗi giây?",
+    "filter": null,
+    "seconds": 0.07648609999887412,
+    "hit1": null,
+    "hit3": null,
+    "first_hit_rank": null,
+    "results": [
+      {
+        "id": "aiayn-heading-0004",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.7365366252574267,
+        "rank": 1,
+        "chapters": [
+          "1 Introduction"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0031",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.7355030144460236,
+        "rank": 2,
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0002",
+        "source_id": "aiayn",
+        "page": 1,
+        "score": 0.7331988175389331,
+        "rank": 3,
+        "chapters": [
+          "Abstract"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0005",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.7194868420636981,
+        "rank": 4,
+        "chapters": [
+          "2 Background"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0040",
+        "source_id": "aiayn",
+        "page": 9,
+        "score": 0.7168429662679177,
+        "rank": 5,
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": null
+      }
+    ]
+  }
+]

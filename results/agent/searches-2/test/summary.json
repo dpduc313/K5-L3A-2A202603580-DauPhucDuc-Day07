@@ -1,0 +1,65 @@
+{
+  "config": "searches-2",
+  "split": "test",
+  "model": "gpt-5.4-nano",
+  "settings": {
+    "max_searches": 2,
+    "top_k": 5,
+    "budget": 2000,
+    "reasoning_effort": "none",
+    "extra_rules": [],
+    "method": "dense",
+    "role": "cải thiện 2",
+    "base": "dense"
+  },
+  "run_at": "2026-11-14T22:47:46",
+  "commit": "ed0a0ad",
+  "dirty": false,
+  "questions": 7,
+  "status": {
+    "answered": 5,
+    "abstain": 2
+  },
+  "errors": 0,
+  "context_evidence": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "tool_use": {
+    "n": 7,
+    "N": 7,
+    "rate": 1.0
+  },
+  "searches_distribution": {
+    "1": 5,
+    "2": 2
+  },
+  "abstained_unanswerable": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 5,
+    "rate": 0.0
+  },
+  "answered_with_citations": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "seconds": {
+    "median": 3.576789100006863,
+    "p90": 3.749801260000095
+  },
+  "cost_usd": {
+    "total": 0.005765,
+    "per_question": 0.000824
+  },
+  "tokens": {
+    "input": 21738,
+    "output": 1134
+  }
+}
