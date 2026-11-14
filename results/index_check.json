@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-14T16:11:49",
+  "chunking": "heading",
+  "lab07": {
+    "database": "127.0.0.1:55434/day7_lab",
+    "chunks": 129
+  },
+  "day6": {
+    "database": "127.0.0.1:55433/day6_lab",
+    "chunks": 129
+  },
+  "only_in_lab07": [],
+  "only_in_day6": [],
+  "text_sha256_mismatch": [],
+  "embedding_models": [
+    "embeddinggemma-2"
+  ],
+  "embedding_model_mismatch": [],
+  "embedding_cosine": {
+    "min": 0.9999999999999998,
+    "mean": 1.0
+  },
+  "dimensions": [
+    768
+  ],
+  "identical": true
+}
