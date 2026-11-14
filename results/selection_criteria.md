@@ -84,8 +84,10 @@ Nếu nhiều cấu hình có cùng chi phí và thời gian, chọn cấu hình
 ## 5. Nhãn tay
 
 - Nhãn ghi ở `results/labels/{context,answers,citations}.csv`. Mỗi dòng có cột `reason`.
-- Chỉ nhãn do tác giả xác nhận mới được dùng để tính metric.
-- Nếu có nhãn gợi ý (do Claude hoặc script điền) thì để ở cột riêng `suggested_*`, có ghi người gợi ý; tác giả đọc lại câu trả lời và chunk được trích dẫn trước khi điền cột nhãn chính thức.
+- Claude (trợ lý lập trình, gọi là "Mr Duke") điền nhãn gợi ý cho **mọi** dòng vào cột riêng `suggested_*`, kèm `suggested_reason`. Claude đọc câu trả lời, `expected_answer` và chunk được trích dẫn để gợi ý.
+- Tác giả duyệt lại **toàn bộ** các dòng: đọc câu trả lời và chunk được trích dẫn, rồi điền cột nhãn chính thức và `reason`. Nếu nhãn khác gợi ý thì ghi lý do.
+- Chỉ cột nhãn chính thức, do tác giả điền, được dùng để tính metric. Dòng chưa được duyệt thì script tổng hợp báo lỗi, không tính.
+- Báo cáo ghi rõ số nhãn tác giả giữ nguyên và số nhãn đã sửa so với gợi ý.
 - ID citation hợp lệ hoặc nhãn gợi ý không thay cho việc đọc đối chiếu (`BENCHMARK.md:40`).
 
 ## 6. Đo lại bằng `gpt-5.4-mini` (C8b, làm sau cùng)
