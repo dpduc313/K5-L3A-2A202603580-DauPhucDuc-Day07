@@ -4,7 +4,7 @@ Họ và tên: Đậu Phúc Đức
 
 MSSV: 2A202603580
 
-Repo: `dpduc313/2A202603580-DauPhucDuc-Day07`. Cách chạy lại ở [README](../../README.md).
+Repo: `dpduc313/K5-L3A-2A202603580-DauPhucDuc-Day07`. Cách chạy lại ở [README](../../README.md).
 
 ## Dữ liệu và benchmark
 
