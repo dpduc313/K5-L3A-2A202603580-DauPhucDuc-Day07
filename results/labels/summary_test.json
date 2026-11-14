@@ -1,0 +1,68 @@
+[
+  {
+    "run": "dense/test",
+    "grounded": {
+      "levels": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "N": 5,
+      "mean": 2.0
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 5,
+      "N": 5
+    },
+    "context": {
+      "levels": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "N": 5
+    },
+    "review": {
+      "rows": 17,
+      "kept": 17,
+      "changed": 0
+    }
+  },
+  {
+    "run": "searches-2/test",
+    "grounded": {
+      "levels": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "N": 5,
+      "mean": 2.0
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 6,
+      "N": 6
+    },
+    "context": {
+      "levels": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "N": 5
+    },
+    "review": {
+      "rows": 18,
+      "kept": 18,
+      "changed": 0
+    }
+  }
+]
