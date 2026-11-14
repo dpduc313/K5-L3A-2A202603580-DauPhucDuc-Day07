@@ -110,6 +110,13 @@ Căn cứ: các lỗi trong `results/dev_errors.md`. Bản chạy trước khi s
 
    Thứ tự chọn và quy tắc hòa ở mục 4 giữ nguyên.
 
+### 2026-11-14 (sau khi có nhãn gợi ý của 5 cấu hình trên dev, trước khi viết `selection.md`)
+
+**Cách hiểu quy tắc hòa với tiêu chí 2 (grounded).** Mục 4 viết "chỉ kém X không quá 1 câu". Với tiêu chí 1 và 3 (đếm câu), câu này rõ nghĩa. Với grounded (điểm 0–2 mỗi câu), nó chưa được định nghĩa. Tác giả chốt: **tổng điểm grounded của Y kém X không quá 2 điểm**, tức tối đa bằng mức chênh một câu có thể gây ra (2 → 0).
+
+- Lý do: quy tắc hòa có mục đích tránh chọn theo nhiễu khi dev chỉ có 15 câu có đáp án, và một câu đơn lẻ có thể làm tổng điểm lệch tới 2.
+- Ghi rõ: cách hiểu này được chốt **sau khi** đã thấy nhãn gợi ý. Mr Duke đã báo trước cho tác giả rằng cách hiểu khác ("Y bị chấm thấp hơn X ở không quá 1 câu") sẽ chọn `bm25`, còn cách hiểu này chọn `searches-2`.
+
 ## 6. Đo lại bằng `gpt-5.4-mini` (C8b, làm sau cùng)
 
 Sau khi đã chọn cấu hình bằng `nano` và chạy test, chạy lại cấu hình được chọn bằng `gpt-5.4-mini` **trên dev**, và so với `nano` theo đúng các tiêu chí trên. Chỉ khi `mini` thắng trên dev mới chạy `mini` trên test. Kết quả này ghi là một lần chọn thứ hai, kèm thứ tự đã chạy. Không đổi model dựa trên điểm test.
