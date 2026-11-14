@@ -1,0 +1,66 @@
+{
+  "config": "bm25",
+  "split": "dev",
+  "model": "gpt-5.4-nano",
+  "settings": {
+    "max_searches": 4,
+    "top_k": 5,
+    "budget": 2000,
+    "reasoning_effort": "none",
+    "extra_rules": [],
+    "method": "bm25",
+    "role": "phương pháp 2"
+  },
+  "run_at": "2026-11-14T17:10:21",
+  "commit": "115daa3",
+  "dirty": false,
+  "questions": 17,
+  "status": {
+    "answered": 15,
+    "abstain": 2
+  },
+  "errors": 0,
+  "context_evidence": {
+    "n": 15,
+    "N": 15,
+    "rate": 1.0
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17,
+    "rate": 1.0
+  },
+  "searches_distribution": {
+    "1": 11,
+    "2": 2,
+    "3": 2,
+    "4": 2
+  },
+  "abstained_unanswerable": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 15,
+    "rate": 0.0
+  },
+  "answered_with_citations": {
+    "n": 15,
+    "N": 15,
+    "rate": 1.0
+  },
+  "seconds": {
+    "median": 2.33136100000047,
+    "p90": 4.801120139999694
+  },
+  "cost_usd": {
+    "total": 0.017235,
+    "per_question": 0.001014
+  },
+  "tokens": {
+    "input": 70481,
+    "output": 2511
+  }
+}

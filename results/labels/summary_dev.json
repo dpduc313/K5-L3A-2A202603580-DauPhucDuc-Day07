@@ -1,0 +1,127 @@
+[
+  {
+    "run": "answer-rules/dev",
+    "grounded": {
+      "levels": {
+        "0": 0,
+        "1": 1,
+        "2": 14
+      },
+      "N": 15,
+      "mean": 1.9333
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 17,
+      "N": 17
+    },
+    "review": {
+      "rows": 34,
+      "kept": 34,
+      "changed": 0
+    }
+  },
+  {
+    "run": "bm25/dev",
+    "grounded": {
+      "levels": {
+        "0": 0,
+        "1": 0,
+        "2": 15
+      },
+      "N": 15,
+      "mean": 2.0
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 17,
+      "N": 17
+    },
+    "review": {
+      "rows": 34,
+      "kept": 34,
+      "changed": 0
+    }
+  },
+  {
+    "run": "dense/dev",
+    "grounded": {
+      "levels": {
+        "0": 0,
+        "1": 2,
+        "2": 13
+      },
+      "N": 15,
+      "mean": 1.8667
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 16,
+      "N": 16
+    },
+    "review": {
+      "rows": 33,
+      "kept": 33,
+      "changed": 0
+    }
+  },
+  {
+    "run": "hybrid/dev",
+    "grounded": {
+      "levels": {
+        "0": 2,
+        "1": 1,
+        "2": 12
+      },
+      "N": 15,
+      "mean": 1.6667
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 14,
+      "N": 14
+    },
+    "review": {
+      "rows": 31,
+      "kept": 31,
+      "changed": 0
+    }
+  },
+  {
+    "run": "searches-2/dev",
+    "grounded": {
+      "levels": {
+        "0": 0,
+        "1": 2,
+        "2": 13
+      },
+      "N": 15,
+      "mean": 1.8667
+    },
+    "abstention_correct": {
+      "n": 2,
+      "N": 2
+    },
+    "citations_valid": {
+      "n": 17,
+      "N": 17
+    },
+    "review": {
+      "rows": 34,
+      "kept": 34,
+      "changed": 0
+    }
+  }
+]

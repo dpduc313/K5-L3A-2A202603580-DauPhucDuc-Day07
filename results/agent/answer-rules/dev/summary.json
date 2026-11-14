@@ -1,0 +1,68 @@
+{
+  "config": "answer-rules",
+  "split": "dev",
+  "model": "gpt-5.4-nano",
+  "settings": {
+    "max_searches": 4,
+    "top_k": 5,
+    "budget": 2000,
+    "reasoning_effort": "none",
+    "extra_rules": [
+      "Giữ đủ mọi điều kiện, ngoại lệ và vế đi kèm có trong đoạn được trích (ví dụ các vế \"đồng thời\", \"và có\", \"trừ trường hợp\", \"không áp dụng\"). Không trả lời \"có\" hay \"không\" trái với nội dung giải thích ngay sau đó."
+    ],
+    "method": "dense",
+    "role": "cải thiện 1",
+    "base": "dense"
+  },
+  "run_at": "2026-11-14T17:12:17",
+  "commit": "115daa3",
+  "dirty": false,
+  "questions": 17,
+  "status": {
+    "answered": 15,
+    "abstain": 2
+  },
+  "errors": 0,
+  "context_evidence": {
+    "n": 15,
+    "N": 15,
+    "rate": 1.0
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17,
+    "rate": 1.0
+  },
+  "searches_distribution": {
+    "1": 11,
+    "2": 2,
+    "4": 4
+  },
+  "abstained_unanswerable": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 15,
+    "rate": 0.0
+  },
+  "answered_with_citations": {
+    "n": 15,
+    "N": 15,
+    "rate": 1.0
+  },
+  "seconds": {
+    "median": 2.3472886999988987,
+    "p90": 5.568127560000721
+  },
+  "cost_usd": {
+    "total": 0.017755,
+    "per_question": 0.001044
+  },
+  "tokens": {
+    "input": 72919,
+    "output": 2537
+  }
+}
