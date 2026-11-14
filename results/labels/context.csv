@@ -1,0 +1,376 @@
+﻿run,query_id,question,expected,gold,context_ids,evidence_ids,context,suggested_label,suggested_reason,label,reason
+dense/test,q04,"Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu phải thông báo cho Bộ Công an trong thời hạn nào, và nếu thông báo muộn thì phải làm gì?","Chậm nhất 72 giờ sau khi xảy ra vi phạm (theo Mẫu số 03); nếu thông báo sau 72 giờ phải kèm lý do thông báo chậm, muộn.","nd13 tr. 17: chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số 03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn.",nd13-heading-0046; nd13-heading-0048; nd13-heading-0057; nd13-heading-0076; nd13-heading-0047,nd13-heading-0046,"[nd13-heading-0046] nd13 tr. 17
+Điều 23. Thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân
+1. Trường hợp phát hiện xảy ra vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số 03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn.
+2. Bên Xử lý dữ liệu cá nhân phải thông báo cho Bên Kiểm soát dữ liệu cá nhân một cách nhanh nhất có thể sau khi nhận thấy có sự vi phạm quy định về bảo vệ dữ liệu cá nhân.
+3. Nội dung thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân:
+a) Mô tả tính chất của việc vi phạm quy định bảo vệ dữ liệu cá nhân, bao gồm: thời gian, địa điểm, hành vi, tổ chức, cá nhân, các loại dữ liệu cá nhân và số lượng dữ liệu liên quan;
+b) Chi tiết liên lạc của nhân viên được giao nhiệm vụ bảo vệ dữ liệu hoặc tổ chức, cá nhân chịu trách nhiệm bảo vệ dữ liệu cá nhân;
+c) Mô tả các hậu quả, thiệt hại có thể xảy ra của việc vi phạm quy định bảo vệ dữ liệu cá nhân;
+d) Mô tả các biện pháp được đưa ra để giải quyết, giảm thiểu tác hại của hành vi vi phạm quy định bảo vệ dữ liệu cá nhân.
+
+[nd13-heading-0048] nd13 tr. 18
+5. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân phải lập Biên bản xác nhận về việc xảy ra hành vi vi phạm quy định bảo vệ dữ liệu cá nhân, phối hợp với Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) xử lý hành vi vi phạm.
+6. Tổ chức, cá nhân thông báo cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) khi phát hiện các trường hợp sau:
+a) Phát hiện hành vi vi phạm pháp luật đối với dữ liệu cá nhân;
+b) Dữ liệu cá nhân bị xử lý sai mục đích, không đúng thỏa thuận ban đầu giữa chủ thể dữ liệu và Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân hoặc vi phạm quy định của pháp luật;
+c) Không bảo đảm quyền của chủ thể dữ liệu hoặc không được thực hiện đúng;
+d) Trường hợp khác theo quy định của pháp luật.
+
+[nd13-heading-0057] nd13 tr. 21
+4. Bên chuyển dữ liệu thông báo gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) thông tin về việc chuyển dữ liệu và chi tiết liên lạc của tổ chức, cá nhân phụ trách bằng văn bản sau khi việc chuyển dữ liệu diễn ra thành công.
+5. Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) đánh giá, yêu cầu Bên chuyển dữ liệu ra nước ngoài hoàn thiện Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài trong trường hợp hồ sơ chưa đầy đủ và đúng quy định.
+6. Bên chuyển dữ liệu ra nước ngoài cập nhật, bổ sung Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài khi có sự thay đổi về nội dung hồ sơ đã gửi cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu số 05 tại Phụ lục của Nghị định này. Thời gian hoàn thiện hồ sơ đánh cho Bên chuyển dữ liệu ra nước ngoài là 10 ngày kể từ ngày yêu cầu.
+7. Căn cứ tình hình cụ thể, Bộ Công an quyết định việc kiểm tra chuyển dữ liệu cá nhân ra nước ngoài 01 lần/năm, trừ trường hợp phát hiện hành vi vi phạm quy định của pháp luật về bảo vệ dữ liệu cá nhân tại Nghị định này hoặc để xảy ra sự cố lộ, mất dữ liệu cá nhân của công dân Việt Nam.
+8. Bộ Công an quyết định yêu cầu Bên chuyển dữ liệu ra nước ngoài ngừng chuyển dữ liệu cá nhân ra nước ngoài trong trường hợp:
+
+[nd13-heading-0076] nd13 tr. 26
+Điều 38. Trách nhiệm của Bên Kiểm soát dữ liệu cá nhân
+1. Thực hiện các biện pháp tổ chức và kỹ thuật cùng các biện pháp an toàn, bảo mật phù hợp để chứng minh các hoạt động xử lý dữ liệu đã được thực hiện theo quy định của pháp luật về bảo vệ dữ liệu cá nhân, rà soát và cập nhật các biện pháp này khi cần thiết.
+2. Ghi lại và lưu trữ nhật ký hệ thống quá trình xử lý dữ liệu cá nhân.
+3. Thông báo hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân theo quy định tại Điều 23 Nghị định này.
+4. Lựa chọn Bên Xử lý dữ liệu cá nhân phù hợp với nhiệm vụ rõ ràng và chỉ làm việc với Bên Xử lý dữ liệu cá nhân có các biện pháp bảo vệ phù hợp.
+5. Bảo đảm các quyền của chủ thể dữ liệu theo quy định tại Điều 9 Nghị định này.
+6. Bên Kiểm soát dữ liệu cá nhân chịu trách nhiệm trước chủ thể dữ liệu về các thiệt hại do quá trình xử lý dữ liệu cá nhân gây ra.
+7. Phối hợp với Bộ Công an, cơ quan nhà nước có thẩm quyền trong bảo vệ dữ liệu cá nhân, cung cấp thông tin phục vụ điều tra, xử lý hành vi vi phạm quy định của pháp luật về bảo vệ dữ liệu cá nhân.
+
+[nd13-heading-0047] nd13 tr. 17
+Điều 23. Thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân
+4. Trường hợp không thể thông báo đầy đủ các nội dung quy định tại khoản 3 Điều này, việc thông báo có thể được thực hiện theo từng đợt, từng giai đoạn.",2,Đủ: nd13-heading-0046 (nd13 tr. 17) chứa cả thời hạn 72 giờ và vế thông báo muộn phải kèm lý do; có nguồn và trang.,,
+dense/test,q08,Người dùng muốn rút lại sự đồng ý xử lý dữ liệu thì phải thể hiện bằng hình thức nào?,"Ở một định dạng có thể in, sao chép bằng văn bản, kể cả dạng điện tử hoặc định dạng kiểm chứng được.","nd13 tr. 10: Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.",nd13-heading-0025; nd13-heading-0023; nd13-heading-0022; nd13-heading-0034; nd13-heading-0026,nd13-heading-0025,"[nd13-heading-0025] nd13 tr. 10
+Điều 12. Rút lại sự đồng ý
+1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.
+2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.
+3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.
+4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát dữ liệu, Bên Xử lý dữ liệu, Bên Kiểm soát và xử lý dữ liệu, Bên thứ ba phải ngừng và yêu cầu các tổ chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thể dữ liệu đã rút lại sự đồng ý.
+
+[nd13-heading-0023] nd13 tr. 9
+Mục 2
+Điều 11. Sự đồng ý của chủ thể dữ liệu
+3. Sự đồng ý của chủ thể dữ liệu phải được thể hiện rõ ràng, cụ thể bằng văn bản, giọng nói, đánh dấu vào ô đồng ý, cú pháp đồng ý qua tin nhắn, chọn các thiết lập kỹ thuật đồng ý hoặc qua một hành động khác thể hiện được điều này.
+4. Sự đồng ý phải được tiến hành cho cùng một mục đích. Khi có nhiều mục đích, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân liệt kê các mục đích để chủ thể dữ liệu đồng ý với một hoặc nhiều mục đích nêu ra.
+5. Sự đồng ý của chủ thể dữ liệu phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.
+6. Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là sự đồng ý.
+7. Chủ thể dữ liệu có thể đồng ý một phần hoặc với điều kiện kèm theo.
+8. Đối với xử lý dữ liệu cá nhân nhạy cảm, chủ thể dữ liệu phải được thông báo rằng dữ liệu cần xử lý là dữ liệu cá nhân nhạy cảm.
+9. Sự đồng ý của chủ thể dữ liệu có hiệu lực cho tới khi chủ thể dữ liệu có quyết định khác hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu bằng văn bản.
+10. Trong trường hợp có tranh chấp, trách nhiệm chứng minh sự đồng ý của chủ thể dữ liệu thuộc về Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân.
+
+[nd13-heading-0022] nd13 tr. 9
+Mục 2
+Điều 11. Sự đồng ý của chủ thể dữ liệu
+1. Sự đồng ý của chủ thể dữ liệu được áp dụng đối với tất cả các hoạt động trong quy trình xử lý dữ liệu cá nhân, trừ trường hợp luật có quy định khác.
+2. Sự đồng ý của chủ thể dữ liệu chỉ có hiệu lực khi chủ thể dữ liệu tự nguyện và biết rõ các nội dung sau:
+a) Loại dữ liệu cá nhân được xử lý;  
+b) Mục đích xử lý dữ liệu cá nhân;  
+c) Tổ chức, cá nhân được xử lý dữ liệu cá nhân;  
+d) Các quyền, nghĩa vụ của chủ thể dữ liệu.
+
+[nd13-heading-0034] nd13 tr. 13
+Điều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân
+1. Chủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường hợp sau:
+a) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp nhận các thiệt hại có thể xảy ra khi yêu cầu xóa dữ liệu;
+b) Rút lại sự đồng ý;
+c) Phản đối việc xử lý dữ liệu và Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân không có lý do chính đáng để tiếp tục xử lý;
+d) Dữ liệu cá nhân được xử lý không đúng với mục đích đã đồng ý hoặc việc xử lý dữ liệu cá nhân là vi phạm quy định của pháp luật;
+đ) Dữ liệu cá nhân phải xóa theo quy định của pháp luật.
+2. Việc xóa dữ liệu sẽ không áp dụng khi có đề nghị của chủ thể dữ liệu trong các trường hợp:
+
+[nd13-heading-0026] nd13 tr. 10
+Điều 13. Thông báo xử lý dữ liệu cá nhân
+1. Việc thông báo được thực hiện một lần trước khi tiến hành đối với hoạt động xử lý dữ liệu cá nhân.
+2. Nội dung thông báo cho chủ thể dữ liệu về xử lý dữ liệu cá nhân:
+a) Mục đích xử lý;
+b) Loại dữ liệu cá nhân được sử dụng có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;
+c) Cách thức xử lý;
+d) Thông tin về các tổ chức, cá nhân khác có liên quan tới mục đích xử lý quy định tại điểm a khoản 2 Điều này;
+đ) Hậu quả, thiệt hại không mong muốn có khả năng xảy ra;
+e) Thời gian bắt đầu, thời gian kết thúc xử lý dữ liệu.
+3. Việc thông báo cho chủ thể dữ liệu phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.",2,Đủ: nd13-heading-0025 (nd13 tr. 10) chứa nguyên văn hình thức rút lại sự đồng ý; có nguồn và trang.,,
+dense/test,q11,"Theo Chương I của nghị định, xử lý dữ liệu cá nhân để tạo ra thông tin nhằm chống lại Nhà nước có bị cấm không?","Có, đây là hành vi bị nghiêm cấm (Điều 8).","nd13 tr. 6: Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.",nd13-heading-0015; nd13-heading-0012; nd13-heading-0008; nd13-heading-0002; nd13-heading-0001; nd13-heading-0011,nd13-heading-0015,"[nd13-heading-0015] nd13 tr. 6
+Điều 8. Hành vi bị nghiêm cấm
+1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.
+2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.
+3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.
+4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.
+5. Lợi dụng hoạt động bảo vệ dữ liệu cá nhân để vi phạm pháp luật.
+
+[nd13-heading-0012] nd13 tr. 6
+7. Thống kê, thông tin, báo cáo về tình hình bảo vệ dữ liệu cá nhân và việc thực hiện pháp luật về bảo vệ dữ liệu cá nhân cho cơ quan nhà nước có thẩm quyền.
+8. Hợp tác quốc tế về bảo vệ dữ liệu cá nhân.
+
+[nd13-heading-0008] nd13 tr. 4
+Điều 3. Nguyên tắc bảo vệ dữ liệu cá nhân
+1. Dữ liệu cá nhân được xử lý theo quy định của pháp luật.
+2. Chủ thể dữ liệu được biết về hoạt động liên quan tới xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+3. Dữ liệu cá nhân chỉ được xử lý đúng với mục đích đã được Bên Kiểm soát dữ liệu cá nhân, Bên Xử lý dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, Bên thứ ba đăng ký, tuyên bố về xử lý dữ liệu cá nhân.
+4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục đích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác.
+5. Dữ liệu cá nhân được cập nhật, bổ sung phù hợp với mục đích xử lý.
+
+[nd13-heading-0002] nd13 tr. 1
+Chương I
+Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
+1. Nghị định này quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo  
+vệ dữ liệu cá nhân của cơ quan, tổ chức, cá nhân có liên quan.
+2. Nghị định này áp dụng đối với:
+a) Cơ quan, tổ chức, cá nhân Việt Nam;
+b) Cơ quan, tổ chức, cá nhân nước ngoài tại Việt Nam;
+c) Cơ quan, tổ chức, cá nhân Việt Nam hoạt động tại nước ngoài;
+d) Cơ quan, tổ chức, cá nhân nước ngoài trực tiếp tham gia hoặc có liên  
+quan đến hoạt động xử lý dữ liệu cá nhân tại Việt Nam.
+
+[nd13-heading-0001] nd13 tr. 1
+Chương I
+NHỮNG QUY ĐỊNH CHUNG
+
+[nd13-heading-0011] nd13 tr. 5
+Điều 5. Quản lý nhà nước về bảo vệ dữ liệu cá nhân
+Chính phủ thống nhất quản lý nhà nước về bảo vệ dữ liệu cá nhân.
+Nội dung quản lý nhà nước về bảo vệ dữ liệu cá nhân gồm:
+1. Trình cơ quan nhà nước có thẩm quyền ban hành hoặc ban hành theo thẩm quyền văn bản quy phạm pháp luật và chỉ đạo, tổ chức thực hiện văn bản quy phạm pháp luật về bảo vệ dữ liệu cá nhân.
+2. Xây dựng và tổ chức thực hiện chiến lược, chính sách, đề án, dự án, chương trình, kế hoạch về bảo vệ dữ liệu cá nhân.
+3. Hướng dẫn cơ quan, tổ chức, cá nhân về biện pháp, quy trình, tiêu chuẩn bảo vệ dữ liệu cá nhân theo quy định của pháp luật.
+4. Tuyên truyền, giáo dục pháp luật về bảo vệ dữ liệu cá nhân; truyền thông, phổ biến kiến thức, kỹ năng bảo vệ dữ liệu cá nhân.
+5. Xây dựng, đào tạo, bồi dưỡng cán bộ, công chức, viên chức và người được giao làm công tác bảo vệ dữ liệu cá nhân.
+6. Thanh tra, kiểm tra việc thực hiện quy định của pháp luật về bảo vệ dữ liệu cá nhân; giải quyết khiếu nại, tố cáo và xử lý vi phạm pháp luật về bảo vệ dữ liệu cá nhân theo quy định của pháp luật.",2,Đủ: nd13-heading-0015 (nd13 tr. 6) có tiêu đề Điều 8 Hành vi bị nghiêm cấm và khoản 2; có nguồn và trang.,,
+dense/test,q16,"In the Training section of the paper, what label smoothing value was used, and how did it affect the results?",ϵls = 0.1; it hurts perplexity but improves accuracy and BLEU.,"aiayn tr. 8: During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.",aiayn-heading-0030; aiayn-heading-0022; aiayn-heading-0029; aiayn-heading-0026; aiayn-heading-0025,aiayn-heading-0030,"[aiayn-heading-0030] aiayn tr. 8
+5.4 Regularization
+| - |
+ 19. Transformer (big), BLEU Training Cost (FLOPs). = 2.3 ·  10 19 |
+
+Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of P drop = 0.1.
+Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
+
+[aiayn-heading-0022] aiayn tr. 7
+5 Training
+This section describes the training regime for our models.
+
+[aiayn-heading-0029] aiayn tr. 8
+5.4 Regularization
+| - |
+ 26.30 41.16, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 1.8 ·  10 20. GNMT + RL Ensemble [38] 26.30 41.16, BLEU Training Cost (FLOPs). = 1.1  ·  10 21. ConvS2S Ensemble [9] 26.36,  = 41.29. ConvS2S Ensemble [9] 26.36, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 7.7 ·  10 19. ConvS2S Ensemble [9] 26.36, BLEU Training Cost (FLOPs). = 1.2 ·  10 21. Transformer (base model) 27.3 38.1,  = . Transformer (base model) 27.3 38.1, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 3.3 ·  10 18. Transformer (base model) 27.3 38.1, BLEU Training Cost (FLOPs). = 3.3 ·  10 18. Transformer (big),  = 28.4 41.8. Transformer (big), BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 2.3 ·  10
+
+[aiayn-heading-0026] aiayn tr. 7
+5.4 Regularization
+We employ three types of regularization during training:
+
+[aiayn-heading-0025] aiayn tr. 7
+5.3 Optimizer
+We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 . We varied the learning rate over the course of training, according to the formula:
+<!-- formula-not-decoded -->
+This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000.",2,Đủ: aiayn-heading-0030 (tr. 8) chứa giá trị ϵls = 0.1 và cả hai tác động; có nguồn và trang.,,
+dense/test,q19,"Mô hình Transformer được huấn luyện bằng optimizer nào và với các tham số β1, β2 bằng bao nhiêu?","Adam, với β1 = 0.9, β2 = 0.98 và ε = 10^-9.","aiayn tr. 7: We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 .",aiayn-heading-0025; aiayn-heading-0004; aiayn-heading-0002; aiayn-heading-0033; aiayn-heading-0005,aiayn-heading-0025,"[aiayn-heading-0025] aiayn tr. 7
+5.3 Optimizer
+We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 . We varied the learning rate over the course of training, according to the formula:
+<!-- formula-not-decoded -->
+This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000.
+
+[aiayn-heading-0004] aiayn tr. 2
+1 Introduction
+Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks in particular, have been firmly established as state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation [35, 2, 5]. Numerous efforts have since continued to push the boundaries of recurrent language models and encoder-decoder architectures [38, 24, 15].
+Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states h t , as a function of the previous hidden state ht−1 and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples. Recent work has achieved significant improvements in computational efficiency through factorization tricks [21] and conditional computation [32], while also improving model performance in case of the latter. The fundamental constraint of sequential computation, however, remains.
+Attention mechanisms have become an integral part of compelling sequence modeling and transduction models in various tasks, allowing modeling of dependencies without regard to their distance in the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms are used in conjunction with a recurrent network.
+In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.
+
+[aiayn-heading-0002] aiayn tr. 1
+Abstract
+The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 Englishto-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.
+
+[aiayn-heading-0033] aiayn tr. 8
+6.2 Model Variations
+To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the development set, newstest2013. We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3.
+5 We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively.
+
+[aiayn-heading-0005] aiayn tr. 2
+2 Background
+The goal of reducing sequential computation also forms the foundation of the Extended Neural GPU [16], ByteNet [18] and ConvS2S [9], all of which use convolutional neural networks as basic building block, computing hidden representations in parallel for all input and output positions. In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions [12]. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.
+Self-attention, sometimes called intra-attention is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence. Self-attention has been used successfully in a variety of tasks including reading comprehension, abstractive summarization, textual entailment and learning task-independent sentence representations [4, 27, 28, 22].
+End-to-end memory networks are based on a recurrent attention mechanism instead of sequencealigned recurrence and have been shown to perform well on simple-language question answering and language modeling tasks [34].
+To the best of our knowledge, however, the Transformer is the first transduction model relying entirely on self-attention to compute representations of its input and output without using sequencealigned RNNs or convolution. In the following sections, we will describe the Transformer, motivate self-attention and discuss its advantages over models such as [17, 18] and [9].",2,"Đủ: aiayn-heading-0025 (tr. 7) chứa Adam, β1 = 0.9, β2 = 0.98; có nguồn và trang.",,
+searches-2/test,q04,"Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu phải thông báo cho Bộ Công an trong thời hạn nào, và nếu thông báo muộn thì phải làm gì?","Chậm nhất 72 giờ sau khi xảy ra vi phạm (theo Mẫu số 03); nếu thông báo sau 72 giờ phải kèm lý do thông báo chậm, muộn.","nd13 tr. 17: chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số 03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn.",nd13-heading-0046; nd13-heading-0048; nd13-heading-0057; nd13-heading-0076; nd13-heading-0047,nd13-heading-0046,"[nd13-heading-0046] nd13 tr. 17
+Điều 23. Thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân
+1. Trường hợp phát hiện xảy ra vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số 03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn.
+2. Bên Xử lý dữ liệu cá nhân phải thông báo cho Bên Kiểm soát dữ liệu cá nhân một cách nhanh nhất có thể sau khi nhận thấy có sự vi phạm quy định về bảo vệ dữ liệu cá nhân.
+3. Nội dung thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân:
+a) Mô tả tính chất của việc vi phạm quy định bảo vệ dữ liệu cá nhân, bao gồm: thời gian, địa điểm, hành vi, tổ chức, cá nhân, các loại dữ liệu cá nhân và số lượng dữ liệu liên quan;
+b) Chi tiết liên lạc của nhân viên được giao nhiệm vụ bảo vệ dữ liệu hoặc tổ chức, cá nhân chịu trách nhiệm bảo vệ dữ liệu cá nhân;
+c) Mô tả các hậu quả, thiệt hại có thể xảy ra của việc vi phạm quy định bảo vệ dữ liệu cá nhân;
+d) Mô tả các biện pháp được đưa ra để giải quyết, giảm thiểu tác hại của hành vi vi phạm quy định bảo vệ dữ liệu cá nhân.
+
+[nd13-heading-0048] nd13 tr. 18
+5. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân phải lập Biên bản xác nhận về việc xảy ra hành vi vi phạm quy định bảo vệ dữ liệu cá nhân, phối hợp với Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) xử lý hành vi vi phạm.
+6. Tổ chức, cá nhân thông báo cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) khi phát hiện các trường hợp sau:
+a) Phát hiện hành vi vi phạm pháp luật đối với dữ liệu cá nhân;
+b) Dữ liệu cá nhân bị xử lý sai mục đích, không đúng thỏa thuận ban đầu giữa chủ thể dữ liệu và Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân hoặc vi phạm quy định của pháp luật;
+c) Không bảo đảm quyền của chủ thể dữ liệu hoặc không được thực hiện đúng;
+d) Trường hợp khác theo quy định của pháp luật.
+
+[nd13-heading-0057] nd13 tr. 21
+4. Bên chuyển dữ liệu thông báo gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) thông tin về việc chuyển dữ liệu và chi tiết liên lạc của tổ chức, cá nhân phụ trách bằng văn bản sau khi việc chuyển dữ liệu diễn ra thành công.
+5. Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) đánh giá, yêu cầu Bên chuyển dữ liệu ra nước ngoài hoàn thiện Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài trong trường hợp hồ sơ chưa đầy đủ và đúng quy định.
+6. Bên chuyển dữ liệu ra nước ngoài cập nhật, bổ sung Hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài khi có sự thay đổi về nội dung hồ sơ đã gửi cho Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu số 05 tại Phụ lục của Nghị định này. Thời gian hoàn thiện hồ sơ đánh cho Bên chuyển dữ liệu ra nước ngoài là 10 ngày kể từ ngày yêu cầu.
+7. Căn cứ tình hình cụ thể, Bộ Công an quyết định việc kiểm tra chuyển dữ liệu cá nhân ra nước ngoài 01 lần/năm, trừ trường hợp phát hiện hành vi vi phạm quy định của pháp luật về bảo vệ dữ liệu cá nhân tại Nghị định này hoặc để xảy ra sự cố lộ, mất dữ liệu cá nhân của công dân Việt Nam.
+8. Bộ Công an quyết định yêu cầu Bên chuyển dữ liệu ra nước ngoài ngừng chuyển dữ liệu cá nhân ra nước ngoài trong trường hợp:
+
+[nd13-heading-0076] nd13 tr. 26
+Điều 38. Trách nhiệm của Bên Kiểm soát dữ liệu cá nhân
+1. Thực hiện các biện pháp tổ chức và kỹ thuật cùng các biện pháp an toàn, bảo mật phù hợp để chứng minh các hoạt động xử lý dữ liệu đã được thực hiện theo quy định của pháp luật về bảo vệ dữ liệu cá nhân, rà soát và cập nhật các biện pháp này khi cần thiết.
+2. Ghi lại và lưu trữ nhật ký hệ thống quá trình xử lý dữ liệu cá nhân.
+3. Thông báo hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân theo quy định tại Điều 23 Nghị định này.
+4. Lựa chọn Bên Xử lý dữ liệu cá nhân phù hợp với nhiệm vụ rõ ràng và chỉ làm việc với Bên Xử lý dữ liệu cá nhân có các biện pháp bảo vệ phù hợp.
+5. Bảo đảm các quyền của chủ thể dữ liệu theo quy định tại Điều 9 Nghị định này.
+6. Bên Kiểm soát dữ liệu cá nhân chịu trách nhiệm trước chủ thể dữ liệu về các thiệt hại do quá trình xử lý dữ liệu cá nhân gây ra.
+7. Phối hợp với Bộ Công an, cơ quan nhà nước có thẩm quyền trong bảo vệ dữ liệu cá nhân, cung cấp thông tin phục vụ điều tra, xử lý hành vi vi phạm quy định của pháp luật về bảo vệ dữ liệu cá nhân.
+
+[nd13-heading-0047] nd13 tr. 17
+Điều 23. Thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân
+4. Trường hợp không thể thông báo đầy đủ các nội dung quy định tại khoản 3 Điều này, việc thông báo có thể được thực hiện theo từng đợt, từng giai đoạn.",2,Đủ: nd13-heading-0046 (nd13 tr. 17) chứa cả thời hạn 72 giờ và vế thông báo muộn phải kèm lý do; có nguồn và trang.,,
+searches-2/test,q08,Người dùng muốn rút lại sự đồng ý xử lý dữ liệu thì phải thể hiện bằng hình thức nào?,"Ở một định dạng có thể in, sao chép bằng văn bản, kể cả dạng điện tử hoặc định dạng kiểm chứng được.","nd13 tr. 10: Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.",nd13-heading-0025; nd13-heading-0023; nd13-heading-0034; nd13-heading-0018; nd13-heading-0022,nd13-heading-0025,"[nd13-heading-0025] nd13 tr. 10
+Điều 12. Rút lại sự đồng ý
+1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.
+2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.
+3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông báo cho chủ thể dữ liệu về hậu quả, thiệt hại có thể xảy ra khi rút lại sự đồng ý.
+4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát dữ liệu, Bên Xử lý dữ liệu, Bên Kiểm soát và xử lý dữ liệu, Bên thứ ba phải ngừng và yêu cầu các tổ chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thể dữ liệu đã rút lại sự đồng ý.
+
+[nd13-heading-0023] nd13 tr. 9
+Mục 2
+Điều 11. Sự đồng ý của chủ thể dữ liệu
+3. Sự đồng ý của chủ thể dữ liệu phải được thể hiện rõ ràng, cụ thể bằng văn bản, giọng nói, đánh dấu vào ô đồng ý, cú pháp đồng ý qua tin nhắn, chọn các thiết lập kỹ thuật đồng ý hoặc qua một hành động khác thể hiện được điều này.
+4. Sự đồng ý phải được tiến hành cho cùng một mục đích. Khi có nhiều mục đích, Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân liệt kê các mục đích để chủ thể dữ liệu đồng ý với một hoặc nhiều mục đích nêu ra.
+5. Sự đồng ý của chủ thể dữ liệu phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được.
+6. Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là sự đồng ý.
+7. Chủ thể dữ liệu có thể đồng ý một phần hoặc với điều kiện kèm theo.
+8. Đối với xử lý dữ liệu cá nhân nhạy cảm, chủ thể dữ liệu phải được thông báo rằng dữ liệu cần xử lý là dữ liệu cá nhân nhạy cảm.
+9. Sự đồng ý của chủ thể dữ liệu có hiệu lực cho tới khi chủ thể dữ liệu có quyết định khác hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu bằng văn bản.
+10. Trong trường hợp có tranh chấp, trách nhiệm chứng minh sự đồng ý của chủ thể dữ liệu thuộc về Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân.
+
+[nd13-heading-0034] nd13 tr. 13
+Điều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân
+1. Chủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường hợp sau:
+a) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp nhận các thiệt hại có thể xảy ra khi yêu cầu xóa dữ liệu;
+b) Rút lại sự đồng ý;
+c) Phản đối việc xử lý dữ liệu và Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân không có lý do chính đáng để tiếp tục xử lý;
+d) Dữ liệu cá nhân được xử lý không đúng với mục đích đã đồng ý hoặc việc xử lý dữ liệu cá nhân là vi phạm quy định của pháp luật;
+đ) Dữ liệu cá nhân phải xóa theo quy định của pháp luật.
+2. Việc xóa dữ liệu sẽ không áp dụng khi có đề nghị của chủ thể dữ liệu trong các trường hợp:
+
+[nd13-heading-0018] nd13 tr. 7
+Chương II
+Mục 1
+Điều 9. Quyền của chủ thể dữ liệu
+1. Quyền được biết
+Chủ thể dữ liệu được biết về hoạt động xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+2. Quyền đồng ý
+Chủ thể dữ liệu được đồng ý hoặc không đồng ý cho phép xử lý dữ liệu cá nhân của mình, trừ trường hợp quy định tại Điều 17 Nghị định này.
+3. Quyền truy cập
+Chủ thể dữ liệu được truy cập để xem, chỉnh sửa hoặc yêu cầu chỉnh sửa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+4. Quyền rút lại sự đồng ý
+Chủ thể dữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.
+5. Quyền xóa dữ liệu
+Chủ thể dữ liệu được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+6. Quyền hạn chế xử lý dữ liệu
+a) Chủ thể dữ liệu được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;
+b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác.
+7. Quyền cung cấp dữ liệu
+Chủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+
+[nd13-heading-0022] nd13 tr. 9
+Mục 2
+Điều 11. Sự đồng ý của chủ thể dữ liệu
+1. Sự đồng ý của chủ thể dữ liệu được áp dụng đối với tất cả các hoạt động trong quy trình xử lý dữ liệu cá nhân, trừ trường hợp luật có quy định khác.
+2. Sự đồng ý của chủ thể dữ liệu chỉ có hiệu lực khi chủ thể dữ liệu tự nguyện và biết rõ các nội dung sau:
+a) Loại dữ liệu cá nhân được xử lý;  
+b) Mục đích xử lý dữ liệu cá nhân;  
+c) Tổ chức, cá nhân được xử lý dữ liệu cá nhân;  
+d) Các quyền, nghĩa vụ của chủ thể dữ liệu.",2,Đủ: nd13-heading-0025 (nd13 tr. 10) chứa nguyên văn hình thức rút lại sự đồng ý; có nguồn và trang.,,
+searches-2/test,q11,"Theo Chương I của nghị định, xử lý dữ liệu cá nhân để tạo ra thông tin nhằm chống lại Nhà nước có bị cấm không?","Có, đây là hành vi bị nghiêm cấm (Điều 8).","nd13 tr. 6: Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.",nd13-heading-0015; nd13-heading-0012; nd13-heading-0002; nd13-heading-0008; nd13-heading-0013,nd13-heading-0015,"[nd13-heading-0015] nd13 tr. 6
+Điều 8. Hành vi bị nghiêm cấm
+1. Xử lý dữ liệu cá nhân trái với quy định của pháp luật về bảo vệ dữ liệu cá nhân.
+2. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.
+3. Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu gây ảnh hưởng tới an ninh quốc gia, trật tự an toàn xã hội, quyền và lợi ích hợp pháp của tổ chức, cá nhân khác.
+4. Cản trở hoạt động bảo vệ dữ liệu cá nhân của cơ quan có thẩm quyền.
+5. Lợi dụng hoạt động bảo vệ dữ liệu cá nhân để vi phạm pháp luật.
+
+[nd13-heading-0012] nd13 tr. 6
+7. Thống kê, thông tin, báo cáo về tình hình bảo vệ dữ liệu cá nhân và việc thực hiện pháp luật về bảo vệ dữ liệu cá nhân cho cơ quan nhà nước có thẩm quyền.
+8. Hợp tác quốc tế về bảo vệ dữ liệu cá nhân.
+
+[nd13-heading-0002] nd13 tr. 1
+Chương I
+Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng
+1. Nghị định này quy định về bảo vệ dữ liệu cá nhân và trách nhiệm bảo  
+vệ dữ liệu cá nhân của cơ quan, tổ chức, cá nhân có liên quan.
+2. Nghị định này áp dụng đối với:
+a) Cơ quan, tổ chức, cá nhân Việt Nam;
+b) Cơ quan, tổ chức, cá nhân nước ngoài tại Việt Nam;
+c) Cơ quan, tổ chức, cá nhân Việt Nam hoạt động tại nước ngoài;
+d) Cơ quan, tổ chức, cá nhân nước ngoài trực tiếp tham gia hoặc có liên  
+quan đến hoạt động xử lý dữ liệu cá nhân tại Việt Nam.
+
+[nd13-heading-0008] nd13 tr. 4
+Điều 3. Nguyên tắc bảo vệ dữ liệu cá nhân
+1. Dữ liệu cá nhân được xử lý theo quy định của pháp luật.
+2. Chủ thể dữ liệu được biết về hoạt động liên quan tới xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+3. Dữ liệu cá nhân chỉ được xử lý đúng với mục đích đã được Bên Kiểm soát dữ liệu cá nhân, Bên Xử lý dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân, Bên thứ ba đăng ký, tuyên bố về xử lý dữ liệu cá nhân.
+4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục đích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ trường hợp luật có quy định khác.
+5. Dữ liệu cá nhân được cập nhật, bổ sung phù hợp với mục đích xử lý.
+
+[nd13-heading-0013] nd13 tr. 6
+Điều 6. Áp dụng Nghị định bảo vệ dữ liệu cá nhân, các luật liên quan và Điều ước quốc tế
+Việc bảo vệ dữ liệu cá nhân được thực hiện theo quy định các điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên, các quy định khác của Luật có liên quan và Nghị định này.",2,Đủ: nd13-heading-0015 (nd13 tr. 6) có tiêu đề Điều 8 Hành vi bị nghiêm cấm và khoản 2; có nguồn và trang.,,
+searches-2/test,q16,"In the Training section of the paper, what label smoothing value was used, and how did it affect the results?",ϵls = 0.1; it hurts perplexity but improves accuracy and BLEU.,"aiayn tr. 8: During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.",aiayn-heading-0030; aiayn-heading-0022; aiayn-heading-0029; aiayn-heading-0026; aiayn-heading-0025,aiayn-heading-0030,"[aiayn-heading-0030] aiayn tr. 8
+5.4 Regularization
+| - |
+ 19. Transformer (big), BLEU Training Cost (FLOPs). = 2.3 ·  10 19 |
+
+Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of P drop = 0.1.
+Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
+
+[aiayn-heading-0022] aiayn tr. 7
+5 Training
+This section describes the training regime for our models.
+
+[aiayn-heading-0029] aiayn tr. 8
+5.4 Regularization
+| - |
+ 26.30 41.16, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 1.8 ·  10 20. GNMT + RL Ensemble [38] 26.30 41.16, BLEU Training Cost (FLOPs). = 1.1  ·  10 21. ConvS2S Ensemble [9] 26.36,  = 41.29. ConvS2S Ensemble [9] 26.36, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 7.7 ·  10 19. ConvS2S Ensemble [9] 26.36, BLEU Training Cost (FLOPs). = 1.2 ·  10 21. Transformer (base model) 27.3 38.1,  = . Transformer (base model) 27.3 38.1, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 3.3 ·  10 18. Transformer (base model) 27.3 38.1, BLEU Training Cost (FLOPs). = 3.3 ·  10 18. Transformer (big),  = 28.4 41.8. Transformer (big), BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 2.3 ·  10
+
+[aiayn-heading-0026] aiayn tr. 7
+5.4 Regularization
+We employ three types of regularization during training:
+
+[aiayn-heading-0025] aiayn tr. 7
+5.3 Optimizer
+We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 . We varied the learning rate over the course of training, according to the formula:
+<!-- formula-not-decoded -->
+This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000.",2,Đủ: aiayn-heading-0030 (tr. 8) chứa giá trị ϵls = 0.1 và cả hai tác động; có nguồn và trang.,,
+searches-2/test,q19,"Mô hình Transformer được huấn luyện bằng optimizer nào và với các tham số β1, β2 bằng bao nhiêu?","Adam, với β1 = 0.9, β2 = 0.98 và ε = 10^-9.","aiayn tr. 7: We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 .",aiayn-heading-0025; aiayn-heading-0029; aiayn-heading-0004; aiayn-heading-0030; aiayn-heading-0035,aiayn-heading-0025,"[aiayn-heading-0025] aiayn tr. 7
+5.3 Optimizer
+We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 . We varied the learning rate over the course of training, according to the formula:
+<!-- formula-not-decoded -->
+This corresponds to increasing the learning rate linearly for the first warmup_steps training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used warmup_steps = 4000.
+
+[aiayn-heading-0029] aiayn tr. 8
+5.4 Regularization
+| - |
+ 26.30 41.16, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 1.8 ·  10 20. GNMT + RL Ensemble [38] 26.30 41.16, BLEU Training Cost (FLOPs). = 1.1  ·  10 21. ConvS2S Ensemble [9] 26.36,  = 41.29. ConvS2S Ensemble [9] 26.36, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 7.7 ·  10 19. ConvS2S Ensemble [9] 26.36, BLEU Training Cost (FLOPs). = 1.2 ·  10 21. Transformer (base model) 27.3 38.1,  = . Transformer (base model) 27.3 38.1, BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 3.3 ·  10 18. Transformer (base model) 27.3 38.1, BLEU Training Cost (FLOPs). = 3.3 ·  10 18. Transformer (big),  = 28.4 41.8. Transformer (big), BLEU Training Cost (FLOPs).EN-DE EN-FR EN-DE EN-FR = 2.3 ·  10
+
+[aiayn-heading-0004] aiayn tr. 2
+1 Introduction
+Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks in particular, have been firmly established as state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation [35, 2, 5]. Numerous efforts have since continued to push the boundaries of recurrent language models and encoder-decoder architectures [38, 24, 15].
+Recurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states h t , as a function of the previous hidden state ht−1 and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples. Recent work has achieved significant improvements in computational efficiency through factorization tricks [21] and conditional computation [32], while also improving model performance in case of the latter. The fundamental constraint of sequential computation, however, remains.
+Attention mechanisms have become an integral part of compelling sequence modeling and transduction models in various tasks, allowing modeling of dependencies without regard to their distance in the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms are used in conjunction with a recurrent network.
+In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. The Transformer allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for as little as twelve hours on eight P100 GPUs.
+
+[aiayn-heading-0030] aiayn tr. 8
+5.4 Regularization
+| - |
+ 19. Transformer (big), BLEU Training Cost (FLOPs). = 2.3 ·  10 19 |
+
+Residual Dropout We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of P drop = 0.1.
+Label Smoothing During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
+
+[aiayn-heading-0035] aiayn tr. 9
+6.2 Model Variations
+| - |
+ ×10 6 = . , N d = . , d ff = . , h d k = 16 32 32. , P drop = . , ϵls = . , model  d v  train  steps = . , (dev) (dev) = 4.91 25.8. , PPL BLEU params ×10 6 = . , N d = . , d ff = . , h d k = 32 16 16. , P drop = . , ϵls = . , model  d v  train  steps = . , (dev) (dev) = 5.01 25.4. , PPL BLEU params ×10 6 = . (B), N d = . (B), d ff = . (B), h d k = 16. (B), P drop = . (B), ϵls = . (B), model  d v  train  steps = . (B), (dev) (dev) = 5.16 25.1 58. (B), PPL BLEU params ×10 6 = . , N d = . , d ff = . , h d k = 32. , P drop = . , ϵls = . , model  d v  train  steps = . , (dev) (dev) = 5.01 25.4 60. , PPL BLEU params ×10 6 = . , N d = 2. , d ff = . , h d k = . , P drop = . ,",2,"Đủ: aiayn-heading-0025 (tr. 7) chứa Adam, β1 = 0.9, β2 = 0.98; có nguồn và trang.",,

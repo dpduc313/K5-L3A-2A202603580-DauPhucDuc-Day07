@@ -16,6 +16,8 @@ agent của mọi cấu hình ở split đó (`results/agent/<config>/<split>/tr
 - answers.csv, `kind = abstention` (câu thiếu evidence): 1 = từ chối đúng và không thêm khẳng định
   vô căn cứ, 0 = không.
 - citations.csv: 1 = citation có trong ngữ cảnh VÀ chunk hỗ trợ phần câu trả lời gắn với nó, 0 = không.
+- context.csv (chỉ split test, câu có đáp án; BENCHMARK.md mục 2): ngữ cảnh cuối gửi model.
+  0 = không có evidence; 1 = có nhưng thiếu điều kiện hoặc nguồn; 2 = đủ evidence và nguồn.
 
 Chạy lại `export` giữ nguyên nhãn đã điền nếu câu trả lời không đổi; câu trả lời đổi (chạy lại
 agent) thì dòng đó về trống để duyệt lại. File ghi bằng UTF-8 có BOM để Excel đọc đúng dấu.
@@ -34,6 +36,8 @@ ANSWER_COLUMNS = ["run", "query_id", "kind", "status", "question", "expected", "
                   "suggested_label", "suggested_reason", "label", "reason"]
 CITATION_COLUMNS = ["run", "query_id", "citation", "in_context", "source_id", "page", "answer", "chunk_text",
                     "suggested_label", "suggested_reason", "label", "reason"]
+CONTEXT_COLUMNS = ["run", "query_id", "question", "expected", "gold", "context_ids", "evidence_ids", "context",
+                   "suggested_label", "suggested_reason", "label", "reason"]
 ANSWER_KEY = ("run", "query_id")
 CITATION_KEY = ("run", "query_id", "citation")
 REVIEW_FIELDS = ("suggested_label", "suggested_reason", "label", "reason")
@@ -74,13 +78,35 @@ def citation_rows(traces: list[dict], run: str) -> list[dict]:
     return rows
 
 
+def context_rows(questions: dict, traces: list[dict], run: str) -> list[dict]:
+    """Nhãn context 0/1/2 cho câu có đáp án (BENCHMARK.md mục 2). `evidence_ids` là các chunk
+    chứa evidence gold theo định nghĩa hit chung, để người chấm đối chiếu nhanh."""
+    from src.benchmark import contains_evidence
+
+    rows = []
+    for t in traces:
+        q = questions[t["query_id"]]
+        if t["status"] == "error" or not q["answerable"]:
+            continue
+        chunks = t["final_context_chunks"]
+        evidence = [c["id"] for c in chunks if any(contains_evidence(c, g) for g in q["gold"])]
+        rows.append({"run": run, "query_id": t["query_id"], "question": q["question"],
+                     "expected": q.get("expected_answer", ""),
+                     "gold": " | ".join(f"{g['source_id']} tr. {g['page']}: {g['evidence']}" for g in q["gold"]),
+                     "context_ids": "; ".join(c["id"] for c in chunks), "evidence_ids": "; ".join(evidence),
+                     "context": "\n\n".join(f"[{c['id']}] {c['source_id']} tr. {c['page']}\n{c['text']}" for c in chunks),
+                     **blank()})
+    return rows
+
+
 def merge(old: list[dict], new: list[dict], key: tuple[str, ...]) -> list[dict]:
-    """Giữ cột gợi ý và nhãn của dòng cũ khi khóa trùng và câu trả lời không đổi."""
+    """Giữ cột gợi ý và nhãn của dòng cũ khi khóa trùng và mọi cột dữ liệu (câu trả lời, ngữ
+    cảnh…) không đổi; dữ liệu đổi thì dòng về trống để duyệt lại."""
     by_key = {tuple(r[k] for k in key): r for r in old}
     merged = []
     for row in new:
         prev = by_key.get(tuple(row[k] for k in key))
-        if prev and prev["answer"] == row["answer"]:
+        if prev and all(prev.get(k, "") == v for k, v in row.items() if k not in REVIEW_FIELDS):
             row = {**row, **{k: prev.get(k, "") for k in REVIEW_FIELDS}}
         merged.append(row)
     return merged
@@ -103,9 +129,10 @@ def _labels(rows: list[dict], allowed: set[str], what: str) -> list[int]:
     return [int(r["label"]) for r in rows]
 
 
-def summarize(answers: list[dict], citations: list[dict], run: str) -> dict:
+def summarize(answers: list[dict], citations: list[dict], run: str, context: list[dict] | None = None) -> dict:
     answers = [r for r in answers if r["run"] == run]
     citations = [r for r in citations if r["run"] == run]
+    context = [r for r in (context or []) if r["run"] == run]
     grounded = [r for r in answers if r["kind"] == "grounded"]
     abstention = [r for r in answers if r["kind"] == "abstention"]
     g = _labels(grounded, {"0", "1", "2"}, f"{run} grounded")
@@ -114,16 +141,20 @@ def summarize(answers: list[dict], citations: list[dict], run: str) -> dict:
     wrong = [r["query_id"] for r in grounded if r["status"] == "abstain" and r["label"].strip() != "0"]
     if wrong:
         raise ValueError(f"{run}: câu có đáp án bị từ chối phải chấm 0: {wrong}")
-    reviewed = answers + citations
+    x = _labels(context, {"0", "1", "2"}, f"{run} context")
+    reviewed = answers + citations + context
     kept = sum(r["label"].strip() == r["suggested_label"].strip() for r in reviewed)
-    return {
+    summary = {
         "run": run,
         "grounded": {"levels": {str(k): g.count(k) for k in (0, 1, 2)}, "N": len(g),
                      "mean": round(sum(g) / len(g), 4) if g else None},
         "abstention_correct": {"n": sum(a), "N": len(a)},
         "citations_valid": {"n": sum(c), "N": len(c)},
-        "review": {"rows": len(reviewed), "kept": kept, "changed": len(reviewed) - kept},
     }
+    if context:
+        summary["context"] = {"levels": {str(k): x.count(k) for k in (0, 1, 2)}, "N": len(x)}
+    summary["review"] = {"rows": len(reviewed), "kept": kept, "changed": len(reviewed) - kept}
+    return summary
 
 
 # --- Đọc/ghi -----------------------------------------------------------------------------
@@ -159,40 +190,49 @@ def main() -> None:
     parser.add_argument("--suggestions", help="JSON: {answers: [[run, qid, label, reason]], citations: [[run, qid, cid, label, reason]]}")
     args = parser.parse_args()
     answers_csv, citations_csv = C.LABELS / "answers.csv", C.LABELS / "citations.csv"
-    old_answers, old_citations = read_csv(answers_csv), read_csv(citations_csv)
+    context_csv = C.LABELS / "context.csv"
+    old_answers, old_citations, old_context = read_csv(answers_csv), read_csv(citations_csv), read_csv(context_csv)
     found = runs(C.RESULTS, args.split)
     if not found:
         sys.exit(f"Không có trace agent nào cho split {args.split}")
 
     if args.command == "export":
         questions = {q["id"]: q for q in json.loads(C.QUESTIONS.read_text("utf-8"))}
-        new_answers, new_citations = [], []
+        new_answers, new_citations, new_context = [], [], []
         for run, path in found:
             traces = json.loads(path.read_text("utf-8"))
             new_answers += answer_rows(questions, traces, run)
             new_citations += citation_rows(traces, run)
+            if args.split == "test":  # nhãn context chỉ bắt buộc trên test (BENCHMARK.md mục 2)
+                new_context += context_rows(questions, traces, run)
         other = lambda rows: [r for r in rows if not r["run"].endswith(f"/{args.split}")]  # noqa: E731
         new_answers = merge(old_answers, new_answers, ANSWER_KEY)
         new_citations = merge(old_citations, new_citations, CITATION_KEY)
+        new_context = merge(old_context, new_context, ANSWER_KEY)
         if args.suggestions:
             s = json.loads(Path(args.suggestions).read_text("utf-8"))
             apply_suggestions(new_answers, {(r, q): (lab, why) for r, q, lab, why in s.get("answers", [])}, ANSWER_KEY)
             apply_suggestions(new_citations, {(r, q, c): (lab, why) for r, q, c, lab, why in s.get("citations", [])},
                               CITATION_KEY)
+            apply_suggestions(new_context, {(r, q): (lab, why) for r, q, lab, why in s.get("context", [])}, ANSWER_KEY)
         write_csv(answers_csv, other(old_answers) + new_answers, ANSWER_COLUMNS)
         write_csv(citations_csv, other(old_citations) + new_citations, CITATION_COLUMNS)
-        todo = sum(not r["label"] for r in new_answers + new_citations)
-        print(f"{len(new_answers)} dòng câu trả lời, {len(new_citations)} dòng citation; {todo} dòng chờ duyệt.")
-        print(f"-> {answers_csv.relative_to(C.ROOT)}, {citations_csv.relative_to(C.ROOT)}")
+        if new_context or old_context:
+            write_csv(context_csv, other(old_context) + new_context, CONTEXT_COLUMNS)
+        todo = sum(not r["label"] for r in new_answers + new_citations + new_context)
+        print(f"{len(new_answers)} dòng câu trả lời, {len(new_citations)} dòng citation, {len(new_context)} dòng "
+              f"context; {todo} dòng chờ duyệt.")
+        print(f"-> {C.LABELS.relative_to(C.ROOT)}")
     else:
-        summaries = [summarize(old_answers, old_citations, run) for run, _ in found]
+        summaries = [summarize(old_answers, old_citations, run, old_context) for run, _ in found]
         out = C.LABELS / f"summary_{args.split}.json"
         out.write_text(json.dumps(summaries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         for s in summaries:
             g = s["grounded"]
+            ctx = f"  context {s['context']['levels']}" if "context" in s else ""
             print(f"{s['run']:<20} grounded {g['levels']} mean {g['mean']}/2  abstention "
                   f"{s['abstention_correct']['n']}/{s['abstention_correct']['N']}  citation "
-                  f"{s['citations_valid']['n']}/{s['citations_valid']['N']}  review {s['review']}")
+                  f"{s['citations_valid']['n']}/{s['citations_valid']['N']}{ctx}  review {s['review']}")
         print(f"-> {out.relative_to(C.ROOT)}")
 
 
