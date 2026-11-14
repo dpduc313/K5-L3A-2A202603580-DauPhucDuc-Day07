@@ -1,0 +1,1748 @@
+[
+  {
+    "query_id": "q01",
+    "variant": "filter",
+    "query": "Nghị định 13/2023/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "filter": null,
+    "seconds": 4.720659599999635,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "id": "nd13-heading-0000",
+        "source_id": "nd13",
+        "page": 1,
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "chapters": [
+          "Mở đầu"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0082",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.03252247488101534,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương IV"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0083",
+        "source_id": "nd13",
+        "page": 28,
+        "score": 0.03007688828584351,
+        "rank": 3,
+        "components": {
+          "dense": 7,
+          "bm25": 6
+        },
+        "chapters": [
+          "Chương IV"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0052",
+        "source_id": "nd13",
+        "page": 19,
+        "score": 0.029273504273504274,
+        "rank": 4,
+        "components": {
+          "dense": 12,
+          "bm25": 5
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0026",
+        "source_id": "nd13",
+        "page": 10,
+        "score": 0.02886002886002886,
+        "rank": 5,
+        "components": {
+          "dense": 3,
+          "bm25": 17
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q02",
+    "variant": "filter",
+    "query": "Trẻ em từ bao nhiêu tuổi thì việc xử lý dữ liệu cá nhân của trẻ phải có sự đồng ý của chính trẻ em?",
+    "filter": null,
+    "seconds": 0.15845709999848623,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0042",
+        "source_id": "nd13",
+        "page": 16,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0034",
+        "source_id": "nd13",
+        "page": 13,
+        "score": 0.03128054740957967,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 6
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0022",
+        "source_id": "nd13",
+        "page": 9,
+        "score": 0.030117753623188408,
+        "rank": 3,
+        "components": {
+          "dense": 4,
+          "bm25": 9
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0023",
+        "source_id": "nd13",
+        "page": 9,
+        "score": 0.030117753623188408,
+        "rank": 4,
+        "components": {
+          "dense": 9,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0028",
+        "source_id": "nd13",
+        "page": 11,
+        "score": 0.02976190476190476,
+        "rank": 5,
+        "components": {
+          "dense": 3,
+          "bm25": 12
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q03",
+    "variant": "filter",
+    "query": "Nếu người dùng không trả lời thì có được xem là họ đã đồng ý cho xử lý dữ liệu không?",
+    "filter": null,
+    "seconds": 0.14803199999732897,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0023",
+        "source_id": "nd13",
+        "page": 9,
+        "score": 0.03177805800756621,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 5
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0034",
+        "source_id": "nd13",
+        "page": 13,
+        "score": 0.03177805800756621,
+        "rank": 2,
+        "components": {
+          "dense": 5,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0040",
+        "source_id": "nd13",
+        "page": 15,
+        "score": 0.030621785881252923,
+        "rank": 3,
+        "components": {
+          "dense": 9,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0025",
+        "source_id": "nd13",
+        "page": 10,
+        "score": 0.03057889822595705,
+        "rank": 4,
+        "components": {
+          "dense": 3,
+          "bm25": 8
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0042",
+        "source_id": "nd13",
+        "page": 16,
+        "score": 0.029957522915269395,
+        "rank": 5,
+        "components": {
+          "dense": 11,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q05",
+    "variant": "filter",
+    "query": "Cơ quan chuyên trách bảo vệ dữ liệu cá nhân là cơ quan nào?",
+    "filter": null,
+    "seconds": 0.12885979999919073,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0064",
+        "source_id": "nd13",
+        "page": 23,
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0066",
+        "source_id": "nd13",
+        "page": 24,
+        "score": 0.03252247488101534,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0065",
+        "source_id": "nd13",
+        "page": 23,
+        "score": 0.031746031746031744,
+        "rank": 3,
+        "components": {
+          "dense": 3,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0063",
+        "source_id": "nd13",
+        "page": 22,
+        "score": 0.031009615384615385,
+        "rank": 4,
+        "components": {
+          "dense": 5,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0071",
+        "source_id": "nd13",
+        "page": 25,
+        "score": 0.0293236301369863,
+        "rank": 5,
+        "components": {
+          "dense": 4,
+          "bm25": 13
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q06",
+    "variant": "filter",
+    "query": "Theo Chương II của nghị định, hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài phải gửi Bộ Công an trong thời hạn bao lâu?",
+    "filter": {
+      "chapter": "Chương II"
+    },
+    "seconds": 0.2144769999977143,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0056",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0057",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.03225806451612903,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0052",
+        "source_id": "nd13",
+        "page": 19,
+        "score": 0.03149801587301587,
+        "rank": 3,
+        "components": {
+          "dense": 3,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0054",
+        "source_id": "nd13",
+        "page": 20,
+        "score": 0.03149801587301587,
+        "rank": 4,
+        "components": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0053",
+        "source_id": "nd13",
+        "page": 20,
+        "score": 0.03076923076923077,
+        "rank": 5,
+        "components": {
+          "dense": 5,
+          "bm25": 5
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q06",
+    "variant": "no_filter",
+    "query": "Theo Chương II của nghị định, hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài phải gửi Bộ Công an trong thời hạn bao lâu?",
+    "filter": null,
+    "seconds": 0.22037519999867072,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0056",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0057",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.03225806451612903,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0052",
+        "source_id": "nd13",
+        "page": 19,
+        "score": 0.03149801587301587,
+        "rank": 3,
+        "components": {
+          "dense": 3,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0054",
+        "source_id": "nd13",
+        "page": 20,
+        "score": 0.03149801587301587,
+        "rank": 4,
+        "components": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0053",
+        "source_id": "nd13",
+        "page": 20,
+        "score": 0.03076923076923077,
+        "rank": 5,
+        "components": {
+          "dense": 5,
+          "bm25": 5
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q07",
+    "variant": "filter",
+    "query": "Doanh nghiệp khởi nghiệp có được miễn việc chỉ định bộ phận bảo vệ dữ liệu cá nhân không, và trong bao lâu?",
+    "filter": null,
+    "seconds": 0.17988960000002407,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0082",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương IV"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0065",
+        "source_id": "nd13",
+        "page": 23,
+        "score": 0.03036576949620428,
+        "rank": 2,
+        "components": {
+          "dense": 9,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0036",
+        "source_id": "nd13",
+        "page": 14,
+        "score": 0.030303030303030304,
+        "rank": 3,
+        "components": {
+          "dense": 6,
+          "bm25": 6
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0060",
+        "source_id": "nd13",
+        "page": 21,
+        "score": 0.030090497737556562,
+        "rank": 4,
+        "components": {
+          "dense": 5,
+          "bm25": 8
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0063",
+        "source_id": "nd13",
+        "page": 22,
+        "score": 0.030017921146953404,
+        "rank": 5,
+        "components": {
+          "dense": 12,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q09",
+    "variant": "filter",
+    "query": "Theo Chương III của nghị định, Bên Xử lý dữ liệu cá nhân phải làm gì với dữ liệu sau khi kết thúc xử lý?",
+    "filter": {
+      "chapter": "Chương III"
+    },
+    "seconds": 0.1666940999966755,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0078",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0077",
+        "source_id": "nd13",
+        "page": 26,
+        "score": 0.03225806451612903,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0076",
+        "source_id": "nd13",
+        "page": 26,
+        "score": 0.03149801587301587,
+        "rank": 3,
+        "components": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0069",
+        "source_id": "nd13",
+        "page": 24,
+        "score": 0.031009615384615385,
+        "rank": 4,
+        "components": {
+          "dense": 5,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0080",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.030798389007344232,
+        "rank": 5,
+        "components": {
+          "dense": 3,
+          "bm25": 7
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q09",
+    "variant": "no_filter",
+    "query": "Theo Chương III của nghị định, Bên Xử lý dữ liệu cá nhân phải làm gì với dữ liệu sau khi kết thúc xử lý?",
+    "filter": null,
+    "seconds": 0.20046390000061365,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0078",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0077",
+        "source_id": "nd13",
+        "page": 26,
+        "score": 0.03200204813108039,
+        "rank": 2,
+        "components": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0033",
+        "source_id": "nd13",
+        "page": 13,
+        "score": 0.03036576949620428,
+        "rank": 3,
+        "components": {
+          "dense": 9,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0027",
+        "source_id": "nd13",
+        "page": 11,
+        "score": 0.02946236559139785,
+        "rank": 4,
+        "components": {
+          "dense": 2,
+          "bm25": 15
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0076",
+        "source_id": "nd13",
+        "page": 26,
+        "score": 0.02900988017658188,
+        "rank": 5,
+        "components": {
+          "dense": 11,
+          "bm25": 7
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q10",
+    "variant": "filter",
+    "query": "Việc xóa dữ liệu cá nhân theo yêu cầu của chủ thể dữ liệu phải thực hiện trong bao lâu?",
+    "filter": null,
+    "seconds": 0.16192949999822304,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "id": "nd13-heading-0034",
+        "source_id": "nd13",
+        "page": 13,
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0036",
+        "source_id": "nd13",
+        "page": 14,
+        "score": 0.03200204813108039,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0018",
+        "source_id": "nd13",
+        "page": 7,
+        "score": 0.031099324975891997,
+        "rank": 3,
+        "components": {
+          "dense": 8,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0028",
+        "source_id": "nd13",
+        "page": 11,
+        "score": 0.03055037313432836,
+        "rank": 4,
+        "components": {
+          "dense": 7,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0031",
+        "source_id": "nd13",
+        "page": 12,
+        "score": 0.02877846790890269,
+        "rank": 5,
+        "components": {
+          "dense": 9,
+          "bm25": 10
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q12",
+    "variant": "filter",
+    "query": "Doanh nghiệp làm quảng cáo có được dùng dữ liệu khách hàng để giới thiệu sản phẩm mà không hỏi ý kiến khách không?",
+    "filter": null,
+    "seconds": 0.1698365999982343,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "nd13-heading-0043",
+        "source_id": "nd13",
+        "page": 16,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": true
+      },
+      {
+        "id": "nd13-heading-0044",
+        "source_id": "nd13",
+        "page": 17,
+        "score": 0.03225806451612903,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0082",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.031009615384615385,
+        "rank": 3,
+        "components": {
+          "dense": 5,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương IV"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0019",
+        "source_id": "nd13",
+        "page": 8,
+        "score": 0.028370221327967807,
+        "rank": 4,
+        "components": {
+          "dense": 11,
+          "bm25": 10
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      },
+      {
+        "id": "nd13-heading-0039",
+        "source_id": "nd13",
+        "page": 15,
+        "score": 0.028309409888357256,
+        "rank": 5,
+        "components": {
+          "dense": 16,
+          "bm25": 6
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q13",
+    "variant": "filter",
+    "query": "How many identical layers are in the Transformer encoder stack?",
+    "filter": null,
+    "seconds": 0.12983359999998356,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0008",
+        "source_id": "aiayn",
+        "page": 3,
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "components": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0007",
+        "source_id": "aiayn",
+        "page": 3,
+        "score": 0.032266458495966696,
+        "rank": 2,
+        "components": {
+          "dense": 1,
+          "bm25": 3
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0014",
+        "source_id": "aiayn",
+        "page": 5,
+        "score": 0.030776515151515152,
+        "rank": 3,
+        "components": {
+          "dense": 6,
+          "bm25": 4
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0005",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.030330882352941176,
+        "rank": 4,
+        "components": {
+          "dense": 4,
+          "bm25": 8
+        },
+        "chapters": [
+          "2 Background"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0004",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.030158730158730156,
+        "rank": 5,
+        "components": {
+          "dense": 3,
+          "bm25": 10
+        },
+        "chapters": [
+          "1 Introduction"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q14",
+    "variant": "filter",
+    "query": "How many attention heads does the Transformer use, and what is the dimension of each head?",
+    "filter": null,
+    "seconds": 0.18010169999979553,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0013",
+        "source_id": "aiayn",
+        "page": 5,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0039",
+        "source_id": "aiayn",
+        "page": 9,
+        "score": 0.03125,
+        "rank": 2,
+        "components": {
+          "dense": 4,
+          "bm25": 4
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0005",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.030536130536130537,
+        "rank": 3,
+        "components": {
+          "dense": 5,
+          "bm25": 6
+        },
+        "chapters": [
+          "2 Background"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0014",
+        "source_id": "aiayn",
+        "page": 5,
+        "score": 0.030158730158730156,
+        "rank": 4,
+        "components": {
+          "dense": 3,
+          "bm25": 10
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0008",
+        "source_id": "aiayn",
+        "page": 3,
+        "score": 0.029957522915269395,
+        "rank": 5,
+        "components": {
+          "dense": 11,
+          "bm25": 3
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q15",
+    "variant": "filter",
+    "query": "In the Training section of the paper, what value of warmup_steps was used for the learning rate schedule?",
+    "filter": {
+      "chapter": "5 Training"
+    },
+    "seconds": 0.180921600000147,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0025",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0024",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.03200204813108039,
+        "rank": 2,
+        "components": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0022",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.031754032258064516,
+        "rank": 3,
+        "components": {
+          "dense": 2,
+          "bm25": 4
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0030",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.03149801587301587,
+        "rank": 4,
+        "components": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0029",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.030090497737556562,
+        "rank": 5,
+        "components": {
+          "dense": 5,
+          "bm25": 8
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q15",
+    "variant": "no_filter",
+    "query": "In the Training section of the paper, what value of warmup_steps was used for the learning rate schedule?",
+    "filter": null,
+    "seconds": 0.2917856000021857,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0025",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0024",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.03200204813108039,
+        "rank": 2,
+        "components": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0030",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.030776515151515152,
+        "rank": 3,
+        "components": {
+          "dense": 4,
+          "bm25": 6
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0022",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.030621785881252923,
+        "rank": 4,
+        "components": {
+          "dense": 2,
+          "bm25": 9
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0031",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.029386529386529386,
+        "rank": 5,
+        "components": {
+          "dense": 14,
+          "bm25": 3
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q17",
+    "variant": "filter",
+    "query": "How long did it take to train the big Transformer model, and on what hardware?",
+    "filter": null,
+    "seconds": 0.2036088999993808,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "id": "aiayn-heading-0024",
+        "source_id": "aiayn",
+        "page": 7,
+        "score": 0.032266458495966696,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 3
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0031",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.032266458495966696,
+        "rank": 2,
+        "components": {
+          "dense": 3,
+          "bm25": 1
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0002",
+        "source_id": "aiayn",
+        "page": 1,
+        "score": 0.030834914611005692,
+        "rank": 3,
+        "components": {
+          "dense": 8,
+          "bm25": 2
+        },
+        "chapters": [
+          "Abstract"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0040",
+        "source_id": "aiayn",
+        "page": 9,
+        "score": 0.030117753623188408,
+        "rank": 4,
+        "components": {
+          "dense": 4,
+          "bm25": 9
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0004",
+        "source_id": "aiayn",
+        "page": 2,
+        "score": 0.030017921146953404,
+        "rank": 5,
+        "components": {
+          "dense": 2,
+          "bm25": 12
+        },
+        "chapters": [
+          "1 Introduction"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q18",
+    "variant": "filter",
+    "query": "What BLEU score did the Transformer achieve on the WMT 2014 English-to-German task?",
+    "filter": null,
+    "seconds": 0.18682840000110446,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "results": [
+      {
+        "id": "aiayn-heading-0031",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0002",
+        "source_id": "aiayn",
+        "page": 1,
+        "score": 0.03225806451612903,
+        "rank": 2,
+        "components": {
+          "dense": 2,
+          "bm25": 2
+        },
+        "chapters": [
+          "Abstract"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0043",
+        "source_id": "aiayn",
+        "page": 10,
+        "score": 0.03149801587301587,
+        "rank": 3,
+        "components": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "chapters": [
+          "7 Conclusion"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0027",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.03125763125763126,
+        "rank": 4,
+        "components": {
+          "dense": 3,
+          "bm25": 5
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0033",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.030536130536130537,
+        "rank": 5,
+        "components": {
+          "dense": 5,
+          "bm25": 6
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "q20",
+    "variant": "filter",
+    "query": "Khi dịch, Transformer dùng beam search với beam size bằng bao nhiêu?",
+    "filter": null,
+    "seconds": 0.1867530000017723,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "results": [
+      {
+        "id": "aiayn-heading-0033",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 2
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0031",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.032266458495966696,
+        "rank": 2,
+        "components": {
+          "dense": 3,
+          "bm25": 1
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": true
+      },
+      {
+        "id": "aiayn-heading-0040",
+        "source_id": "aiayn",
+        "page": 9,
+        "score": 0.03149801587301587,
+        "rank": 3,
+        "components": {
+          "dense": 4,
+          "bm25": 3
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0007",
+        "source_id": "aiayn",
+        "page": 3,
+        "score": 0.026992753623188405,
+        "rank": 4,
+        "components": {
+          "dense": 9,
+          "bm25": 20
+        },
+        "chapters": [
+          "3 Model Architecture"
+        ],
+        "hit": false
+      },
+      {
+        "id": "aiayn-heading-0029",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.026356857985087564,
+        "rank": 5,
+        "components": {
+          "dense": 13,
+          "bm25": 19
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": false
+      }
+    ]
+  },
+  {
+    "query_id": "u01",
+    "variant": "filter",
+    "query": "Theo Nghị định 13/2023/NĐ-CP, tổ chức vi phạm quy định bảo vệ dữ liệu cá nhân bị phạt tiền tối đa bao nhiêu?",
+    "filter": null,
+    "seconds": 0.24039389999961713,
+    "hit1": null,
+    "hit3": null,
+    "first_hit_rank": null,
+    "results": [
+      {
+        "id": "nd13-heading-0000",
+        "source_id": "nd13",
+        "page": 1,
+        "score": 0.03278688524590164,
+        "rank": 1,
+        "components": {
+          "dense": 1,
+          "bm25": 1
+        },
+        "chapters": [
+          "Mở đầu"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0010",
+        "source_id": "nd13",
+        "page": 5,
+        "score": 0.03200204813108039,
+        "rank": 2,
+        "components": {
+          "dense": 3,
+          "bm25": 2
+        },
+        "chapters": [
+          "Chương I"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0046",
+        "source_id": "nd13",
+        "page": 17,
+        "score": 0.03200204813108039,
+        "rank": 3,
+        "components": {
+          "dense": 2,
+          "bm25": 3
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0081",
+        "source_id": "nd13",
+        "page": 27,
+        "score": 0.029857397504456328,
+        "rank": 4,
+        "components": {
+          "dense": 6,
+          "bm25": 8
+        },
+        "chapters": [
+          "Chương III"
+        ],
+        "hit": null
+      },
+      {
+        "id": "nd13-heading-0048",
+        "source_id": "nd13",
+        "page": 18,
+        "score": 0.029513888888888888,
+        "rank": 5,
+        "components": {
+          "dense": 12,
+          "bm25": 4
+        },
+        "chapters": [
+          "Chương II"
+        ],
+        "hit": null
+      }
+    ]
+  },
+  {
+    "query_id": "u02",
+    "variant": "filter",
+    "query": "How much did it cost, in US dollars, to train the big Transformer model?",
+    "filter": null,
+    "seconds": 0.1858116000003065,
+    "hit1": null,
+    "hit3": null,
+    "first_hit_rank": null,
+    "results": [
+      {
+        "id": "aiayn-heading-0031",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.03252247488101534,
+        "rank": 1,
+        "components": {
+          "dense": 2,
+          "bm25": 1
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0029",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.031544957774465976,
+        "rank": 2,
+        "components": {
+          "dense": 1,
+          "bm25": 6
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0032",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.03055037313432836,
+        "rank": 3,
+        "components": {
+          "dense": 4,
+          "bm25": 7
+        },
+        "chapters": [
+          "6 Results"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0002",
+        "source_id": "aiayn",
+        "page": 1,
+        "score": 0.030158730158730156,
+        "rank": 4,
+        "components": {
+          "dense": 10,
+          "bm25": 3
+        },
+        "chapters": [
+          "Abstract"
+        ],
+        "hit": null
+      },
+      {
+        "id": "aiayn-heading-0030",
+        "source_id": "aiayn",
+        "page": 8,
+        "score": 0.030017921146953404,
+        "rank": 5,
+        "components": {
+          "dense": 12,
+          "bm25": 2
+        },
+        "chapters": [
+          "5 Training"
+        ],
+        "hit": null
+      }
+    ]
+  }
+]

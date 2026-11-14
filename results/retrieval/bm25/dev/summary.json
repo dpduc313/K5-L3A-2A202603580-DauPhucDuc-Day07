@@ -1,0 +1,53 @@
+{
+  "method": "bm25",
+  "split": "dev",
+  "query": "câu hỏi gốc",
+  "top_k_exported": 5,
+  "cutoff": 3,
+  "run_at": "2026-11-14T16:56:32",
+  "commit": "298a1e6",
+  "dirty": false,
+  "hit1": {
+    "n": 12,
+    "N": 15,
+    "rate": 0.8
+  },
+  "hit3": {
+    "n": 14,
+    "N": 15,
+    "rate": 0.9333
+  },
+  "filter_questions": {
+    "ids": [
+      "q06",
+      "q09",
+      "q15"
+    ],
+    "with_filter": {
+      "hit1": {
+        "n": 3,
+        "N": 3,
+        "rate": 1.0
+      },
+      "hit3": {
+        "n": 3,
+        "N": 3,
+        "rate": 1.0
+      }
+    },
+    "without_filter": {
+      "hit1": {
+        "n": 3,
+        "N": 3,
+        "rate": 1.0
+      },
+      "hit3": {
+        "n": 3,
+        "N": 3,
+        "rate": 1.0
+      }
+    }
+  },
+  "seconds_median": 0.0008358000013686251,
+  "cost_usd": 0.0
+}

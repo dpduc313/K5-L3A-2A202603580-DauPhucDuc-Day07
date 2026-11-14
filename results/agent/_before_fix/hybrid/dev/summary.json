@@ -1,0 +1,65 @@
+{
+  "config": "hybrid",
+  "split": "dev",
+  "model": "gpt-5.4-nano",
+  "settings": {
+    "max_searches": 4,
+    "top_k": 5,
+    "budget": 2000,
+    "reasoning_effort": "none",
+    "method": "hybrid",
+    "role": "phương pháp 3"
+  },
+  "run_at": "2026-11-14T16:58:52",
+  "commit": "298a1e6",
+  "dirty": false,
+  "questions": 17,
+  "status": {
+    "answered": 14,
+    "abstain": 3
+  },
+  "errors": 0,
+  "context_evidence": {
+    "n": 14,
+    "N": 15,
+    "rate": 0.9333
+  },
+  "tool_use": {
+    "n": 16,
+    "N": 17,
+    "rate": 0.9412
+  },
+  "searches_distribution": {
+    "0": 1,
+    "1": 13,
+    "2": 1,
+    "4": 2
+  },
+  "abstained_unanswerable": {
+    "n": 2,
+    "N": 2,
+    "rate": 1.0
+  },
+  "false_abstention": {
+    "n": 1,
+    "N": 15,
+    "rate": 0.0667
+  },
+  "answered_with_citations": {
+    "n": 14,
+    "N": 14,
+    "rate": 1.0
+  },
+  "seconds": {
+    "median": 2.4342495999990206,
+    "p90": 4.119596000001184
+  },
+  "cost_usd": {
+    "total": 0.013592,
+    "per_question": 0.0008
+  },
+  "tokens": {
+    "input": 54642,
+    "output": 2131
+  }
+}
