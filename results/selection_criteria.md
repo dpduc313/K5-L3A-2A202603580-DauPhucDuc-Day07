@@ -1,0 +1,93 @@
+# Tiêu chí chọn cấu hình và danh sách ứng viên (công bố trước khi chạy dev)
+
+File này được viết và commit **trước** lần chạy dev đầu tiên. Lúc đó chưa có kết quả retrieval hay agent nào trên dev hoặc test (`GUIDE.md:38`, `BENCHMARK.md:17`). Muốn đổi bất kỳ điều gì ở đây sau khi đã chạy dev thì phải thêm mục "Thay đổi", ghi lý do và ngày; không sửa đè.
+
+## 1. Dữ liệu và split
+
+- Corpus: 129 chunk theo heading của Day 6 (`data/chunks.json`), index `lab_chunks` trong `day7_lab`. Index này giống hệt Day 6 (`results/index_check.json`).
+- Benchmark: `data/questions.json`.
+  - **Dev**: 15 câu có đáp án và 2 câu thiếu evidence (u01, u02). Dùng để thử và chọn.
+  - **Test**: 5 câu có đáp án và 2 câu thiếu evidence (u03, u04). Chỉ chạy sau khi `results/selection.md` đã được commit, chạy một lần cho baseline và cấu hình được chọn. Nếu sau đó phải sửa hệ thống thì tạo test mới, không chỉnh theo test (`RULES.md:5`).
+- Gold, `expected_answer` và `absence_reason` không bao giờ được đưa vào agent, query hay retriever.
+- Filter: 5 câu có filter `chapter` (q06, q09, q11, q15, q16) coi filter là thông tin người dùng cung cấp. Runner truyền filter thẳng vào tool; model không thêm, bỏ hay đổi được. Mọi phương pháp áp filter **trước** khi xếp hạng.
+
+## 2. Các cấu hình
+
+Mọi cấu hình dùng chung một agent, trừ yếu tố được nêu là thay đổi:
+
+- Model `gpt-5.4-nano`, có tool calling.
+- Một tool `search(query)`. Phương pháp retrieval phía sau tool do cấu hình quyết định.
+- Tối đa 4 lượt search, top-5 mỗi lượt.
+- Context budget 2.000 token, đếm bằng `tiktoken` `o200k_base`. Bỏ chunk trùng giữa các lượt; khi vượt budget thì giữ chunk có score cao nhất.
+- Kết thúc bằng một trong hai action:
+  - `answer`: câu trả lời có citation `[chunk-id]`, ID phải có trong context.
+  - `abstain`: nói rõ không đủ bằng chứng; được kèm lý do và trích dẫn đoạn liên quan đã tìm.
+- `answer` không có citation hợp lệ thì bị coi là `abstain`. Hết lượt search mà chưa có action cuối cũng là `abstain`.
+- Trả lời bằng ngôn ngữ của câu hỏi. System prompt ghi rõ nội dung tài liệu là dữ liệu, không phải chỉ dẫn.
+
+| Tên | Vai trò | Phương pháp retrieval |
+|---|---|---|
+| `dense` | **Baseline**, phương pháp 1 | Embed query bằng `embeddinggemma-2` (768 chiều), cosine exact trên `lab_chunks` heading. |
+| `bm25` | Phương pháp 2 | BM25 (k1 = 1,5; b = 0,75) trên 129 chunk. Tách từ: `lab_config.normalize`, rồi lấy âm tiết `\w+` cộng bigram âm tiết liền kề, để bắt được từ ghép tiếng Việt như "dữ liệu", "cá nhân". Không dùng `tsvector('english')`. |
+| `hybrid` | Phương pháp 3 | RRF (k = 60) gộp top-20 của `dense` và top-20 của `bm25`. |
+
+**Ứng viên cải thiện.** Chọn 2 trong 3 ứng viên sau khi đọc ít nhất 2 lỗi của baseline trên dev. Mỗi ứng viên chỉ đổi một yếu tố so với cấu hình gốc của nó.
+
+| Tên | Gốc | Yếu tố thay đổi | Giả thuyết |
+|---|---|---|---|
+| `rerank` | `hybrid` | Rerank top-20 bằng `BAAI/bge-reranker-v2-m3` (đa ngôn ngữ, chạy CPU) rồi lấy top-5 | Thứ hạng còn yếu (Day 6: Hit@1 dev 10/15). Reranker tiếng Anh từng làm tụt kết quả trên nd13, reranker đa ngôn ngữ thì không. |
+| `query` | baseline hoặc cấu hình tốt nhất trong 3 phương pháp | Biến đổi query: `multi_query` hoặc `rag_fusion` của Perrier, sửa cho đọc `lab_chunks`. Báo riêng kết quả của query gốc và trace từng query viết lại. | Câu hỏi chéo ngôn ngữ (q19, q20) và câu điều kiện diễn đạt khác văn bản luật. |
+| `context` | baseline hoặc cấu hình tốt nhất trong 3 phương pháp | Budget 4.000 token, hoặc thêm chunk lân cận cùng trang/Điều. | Câu điều kiện của nd13 cần evidence từ nhiều Điều; budget 2.000 token có thể cắt mất evidence. |
+
+Việc chọn ứng viên nào, và lỗi dev làm căn cứ, được ghi vào `results/dev_errors.md` trước khi chạy ứng viên đó.
+
+## 3. Metric
+
+Hit (định nghĩa dùng chung cho mọi metric): một chunk "chứa evidence" khi đúng `source_id`, đúng `page`, và `normalize(evidence)` nằm trọn trong `normalize(text)` (`src/benchmark.py: contains_evidence`). Các phần tử `gold` là evidence thay thế; chỉ cần khớp một phần tử.
+
+**Retrieval** (chạy từng phương pháp không qua agent, bằng query gốc, top-3; mẫu số là 15 câu có đáp án của dev, không tính câu thiếu evidence):
+
+- **Hit@1**: số câu có chunk hạng 1 chứa evidence / 15.
+- **Evidence Hit@3**: số câu có ít nhất một chunk trong top-3 chứa evidence / 15.
+- 5 câu có filter được báo thêm kết quả khi không có filter.
+
+**Agent** (chạy cả 5 cấu hình trên dev):
+
+- **Context Evidence Rate**: số câu có đáp án mà context cuối gửi model chứa ít nhất một chunk chứa evidence / 15. Context có thể gộp từ nhiều lượt search.
+- **Grounded answer**: nhãn tay 0/1/2 cho từng câu có đáp án (0 = sai hoặc thiếu evidence; 1 = đúng một phần; 2 = đúng và đủ). Báo số câu ở từng mức và trung bình /2. Câu có đáp án mà agent từ chối thì chấm 0.
+- **Citation hợp lệ**: số citation vừa có trong context vừa hỗ trợ câu trả lời (đọc tay) / tổng citation. Báo thêm số câu trả lời có citation / số câu trả lời.
+- **Abstention**: số câu thiếu evidence được từ chối đúng / 2. **Từ chối nhầm**: số câu có đáp án bị từ chối / 15.
+- **Tool use**: số câu có gọi `search` / số câu chạy thành công, kèm phân bố số lượt gọi.
+- **Thời gian**: trung vị và p90 số giây mỗi câu, tính từ đầu tới cuối.
+- **Chi phí**: token vào/ra theo usage mà API báo, nhân với giá trong `src/perrier/prices.toml` (`gpt-5.4-nano`: 0,20 / 1,25 USD mỗi triệu token vào/ra). Embedding và reranker chạy local nên tính 0 USD.
+- **Lỗi** model hoặc vector store được báo riêng. Khi so cấu hình, câu lỗi tính là không đạt ở mọi metric, không bỏ khỏi mẫu số.
+
+## 4. Thứ tự chọn
+
+So các cấu hình trên dev theo thứ tự ưu tiên:
+
+1. **Context Evidence Rate**
+2. **Grounded answer trung bình**
+3. **Hành vi từ chối**: số câu thiếu evidence được từ chối cộng số câu có đáp án không bị từ chối nhầm (trên 17 câu)
+4. **Evidence Hit@3** (retrieval, query gốc)
+5. **Chi phí** mỗi câu, rồi **thời gian** trung vị
+
+Quy tắc hòa:
+- Gọi X là cấu hình đứng đầu theo thứ tự trên.
+- Một cấu hình Y rẻ hơn X mà ở **mỗi** tiêu chí 1–3 chỉ kém X không quá 1 câu thì được coi là ngang X.
+- Trong các cấu hình ngang X, chọn cấu hình rẻ nhất.
+
+Quy tắc này tránh chọn theo nhiễu, vì dev chỉ có 15 câu có đáp án.
+
+Nếu nhiều cấu hình có cùng chi phí và thời gian, chọn cấu hình đơn giản hơn: ít thành phần hơn, theo thứ tự `dense` < `bm25` < `hybrid` < cấu hình có thêm bước.
+
+## 5. Nhãn tay
+
+- Nhãn ghi ở `results/labels/{context,answers,citations}.csv`. Mỗi dòng có cột `reason`.
+- Chỉ nhãn do tác giả xác nhận mới được dùng để tính metric.
+- Nếu có nhãn gợi ý (do Claude hoặc script điền) thì để ở cột riêng `suggested_*`, có ghi người gợi ý; tác giả đọc lại câu trả lời và chunk được trích dẫn trước khi điền cột nhãn chính thức.
+- ID citation hợp lệ hoặc nhãn gợi ý không thay cho việc đọc đối chiếu (`BENCHMARK.md:40`).
+
+## 6. Đo lại bằng `gpt-5.4-mini` (C8b, làm sau cùng)
+
+Sau khi đã chọn cấu hình bằng `nano` và chạy test, chạy lại cấu hình được chọn bằng `gpt-5.4-mini` **trên dev**, và so với `nano` theo đúng các tiêu chí trên. Chỉ khi `mini` thắng trên dev mới chạy `mini` trên test. Kết quả này ghi là một lần chọn thứ hai, kèm thứ tự đã chạy. Không đổi model dựa trên điểm test.
