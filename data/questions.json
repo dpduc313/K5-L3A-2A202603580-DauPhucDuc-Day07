@@ -1,0 +1,621 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Nghị định 13/2023/NĐ-CP có hiệu lực thi hành từ ngày nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Từ ngày 01 tháng 7 năm 2023.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 27,
+        "evidence": "Nghị định này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2023."
+      }
+    ],
+    "metadata": {
+      "day6_type": "truc_tiep",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Trẻ em từ bao nhiêu tuổi thì việc xử lý dữ liệu cá nhân của trẻ phải có sự đồng ý của chính trẻ em?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Từ đủ 7 tuổi trở lên; đồng thời phải có sự đồng ý của cha, mẹ hoặc người giám hộ (trừ trường hợp tại Điều 17).",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 16,
+        "evidence": "phải có sự đồng ý của trẻ em trong trường hợp trẻ em từ đủ 7 tuổi trở lên và có sự đồng ý của cha, mẹ hoặc người giám hộ theo quy định"
+      }
+    ],
+    "metadata": {
+      "day6_type": "dieu_kien",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Nếu người dùng không trả lời thì có được xem là họ đã đồng ý cho xử lý dữ liệu không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không. Im lặng hoặc không phản hồi không được coi là sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 9,
+        "evidence": "Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là sự đồng ý."
+      }
+    ],
+    "metadata": {
+      "day6_type": "dien_dat_lai",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q04",
+    "split": "test",
+    "question": "Khi phát hiện vi phạm quy định bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu phải thông báo cho Bộ Công an trong thời hạn nào, và nếu thông báo muộn thì phải làm gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Chậm nhất 72 giờ sau khi xảy ra vi phạm (theo Mẫu số 03); nếu thông báo sau 72 giờ phải kèm lý do thông báo chậm, muộn.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 17,
+        "evidence": "chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số 03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải kèm theo lý do thông báo chậm, muộn."
+      }
+    ],
+    "metadata": {
+      "day6_type": "dieu_kien",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Cơ quan chuyên trách bảo vệ dữ liệu cá nhân là cơ quan nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao - Bộ Công an.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 23,
+        "evidence": "Cơ quan chuyên trách bảo vệ dữ liệu cá nhân là Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao - Bộ Công an"
+      }
+    ],
+    "metadata": {
+      "day6_type": "truc_tiep",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Theo Chương II của nghị định, hồ sơ đánh giá tác động chuyển dữ liệu cá nhân ra nước ngoài phải gửi Bộ Công an trong thời hạn bao lâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Trong 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân (01 bản chính, theo Mẫu số 06).",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 21,
+        "evidence": "Bên chuyển dữ liệu ra nước ngoài gửi 01 bản chính hồ sơ tới Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu số 06 tại Phụ lục của Nghị định này trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân."
+      }
+    ],
+    "metadata": {
+      "day6_type": "filter",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    },
+    "filter": {
+      "chapter": "Chương II"
+    }
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Doanh nghiệp khởi nghiệp có được miễn việc chỉ định bộ phận bảo vệ dữ liệu cá nhân không, và trong bao lâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Được quyền lựa chọn miễn trừ trong 02 năm đầu kể từ khi thành lập; không áp dụng cho doanh nghiệp trực tiếp kinh doanh hoạt động xử lý dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 27,
+        "evidence": "được quyền lựa chọn miễn trừ quy định về chỉ định cá nhân và bộ phận bảo vệ dữ liệu cá nhân trong thời gian 02 năm đầu kể từ khi thành lập doanh nghiệp"
+      }
+    ],
+    "metadata": {
+      "day6_type": "dieu_kien",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q08",
+    "split": "test",
+    "question": "Người dùng muốn rút lại sự đồng ý xử lý dữ liệu thì phải thể hiện bằng hình thức nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ở một định dạng có thể in, sao chép bằng văn bản, kể cả dạng điện tử hoặc định dạng kiểm chứng được.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 10,
+        "evidence": "Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được in, sao chép bằng văn bản, bao gồm cả dưới dạng điện tử hoặc định dạng kiểm chứng được."
+      }
+    ],
+    "metadata": {
+      "day6_type": "dien_dat_lai",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Theo Chương III của nghị định, Bên Xử lý dữ liệu cá nhân phải làm gì với dữ liệu sau khi kết thúc xử lý?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Xóa, trả lại toàn bộ dữ liệu cá nhân cho Bên Kiểm soát dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 27,
+        "evidence": "Xóa, trả lại toàn bộ dữ liệu cá nhân cho Bên Kiểm soát dữ liệu cá nhân sau khi kết thúc xử lý dữ liệu."
+      }
+    ],
+    "metadata": {
+      "day6_type": "filter",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    },
+    "filter": {
+      "chapter": "Chương III"
+    }
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Việc xóa dữ liệu cá nhân theo yêu cầu của chủ thể dữ liệu phải thực hiện trong bao lâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 14,
+        "evidence": "Việc xóa dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của chủ thể dữ liệu"
+      }
+    ],
+    "metadata": {
+      "day6_type": "truc_tiep",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q11",
+    "split": "test",
+    "question": "Theo Chương I của nghị định, xử lý dữ liệu cá nhân để tạo ra thông tin nhằm chống lại Nhà nước có bị cấm không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Có, đây là hành vi bị nghiêm cấm (Điều 8).",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 6,
+        "evidence": "Xử lý dữ liệu cá nhân để tạo ra thông tin, dữ liệu nhằm chống lại Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam."
+      }
+    ],
+    "metadata": {
+      "day6_type": "filter",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    },
+    "filter": {
+      "chapter": "Chương I"
+    }
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Doanh nghiệp làm quảng cáo có được dùng dữ liệu khách hàng để giới thiệu sản phẩm mà không hỏi ý kiến khách không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không; chỉ được dùng khi có sự đồng ý của chủ thể dữ liệu.",
+    "gold": [
+      {
+        "source_id": "nd13",
+        "page": 16,
+        "evidence": "chỉ được sử dụng dữ liệu cá nhân của khách hàng được thu thập qua hoạt động kinh doanh của mình để kinh doanh dịch vụ tiếp thị, giới thiệu sản phẩm quảng cáo khi có sự đồng ý của chủ thể dữ liệu"
+      }
+    ],
+    "metadata": {
+      "day6_type": "dien_dat_lai",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "How many identical layers are in the Transformer encoder stack?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "N = 6 identical layers.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 3,
+        "evidence": "The encoder is composed of a stack of N = 6 identical layers."
+      }
+    ],
+    "metadata": {
+      "day6_type": "truc_tiep",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "How many attention heads does the Transformer use, and what is the dimension of each head?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "h = 8 heads, with d_k = d_v = d_model/h = 64.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 5,
+        "evidence": "In this work we employ h = 8 parallel attention layers, or heads. For each of these we use d k = d v = d model /h = 64."
+      }
+    ],
+    "metadata": {
+      "day6_type": "truc_tiep",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "In the Training section of the paper, what value of warmup_steps was used for the learning rate schedule?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "warmup_steps = 4000.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 7,
+        "evidence": "We used warmup\\_steps = 4000."
+      }
+    ],
+    "metadata": {
+      "day6_type": "filter",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    },
+    "filter": {
+      "chapter": "5 Training"
+    }
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "In the Training section of the paper, what label smoothing value was used, and how did it affect the results?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "ϵls = 0.1; it hurts perplexity but improves accuracy and BLEU.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 8,
+        "evidence": "During training, we employed label smoothing of value ϵls = 0.1 [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score."
+      }
+    ],
+    "metadata": {
+      "day6_type": "filter",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    },
+    "filter": {
+      "chapter": "5 Training"
+    }
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "How long did it take to train the big Transformer model, and on what hardware?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "3.5 days on 8 P100 GPUs.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 8,
+        "evidence": "Training took 3.5 days on 8 P100 GPUs."
+      }
+    ],
+    "metadata": {
+      "day6_type": "dien_dat_lai",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "question": "What BLEU score did the Transformer achieve on the WMT 2014 English-to-German task?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "28.4 BLEU.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 8,
+        "evidence": "establishing a new state-of-the-art BLEU score of 28.4"
+      }
+    ],
+    "metadata": {
+      "day6_type": "truc_tiep",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "Mô hình Transformer được huấn luyện bằng optimizer nào và với các tham số β1, β2 bằng bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Adam, với β1 = 0.9, β2 = 0.98 và ε = 10^-9.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 7,
+        "evidence": "We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10− 9 ."
+      }
+    ],
+    "metadata": {
+      "day6_type": "cheo_ngon_ngu",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "q20",
+    "split": "dev",
+    "question": "Khi dịch, Transformer dùng beam search với beam size bằng bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Beam size 4, length penalty α = 0.6.",
+    "gold": [
+      {
+        "source_id": "aiayn",
+        "page": 8,
+        "evidence": "We used beam search with a beam size of 4 and length penalty α = 0.6 [38]."
+      }
+    ],
+    "metadata": {
+      "day6_type": "cheo_ngon_ngu",
+      "origin": "Lab06 benchmark/questions.jsonl"
+    }
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "Theo Nghị định 13/2023/NĐ-CP, tổ chức vi phạm quy định bảo vệ dữ liệu cá nhân bị phạt tiền tối đa bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Nghị định chỉ có quy định chung ở Điều 4 (tr. 5): vi phạm \"có thể bị xử lý kỷ luật, xử phạt vi phạm hành chính, xử lý hình sự theo quy định\"; không nêu mức tiền phạt nào.",
+    "acceptance": "Đúng khi agent từ chối hoặc nói rõ tài liệu không cung cấp thông tin này, không đưa ra con số hay khẳng định thiếu căn cứ. Được trích dẫn điều khoản hoặc đoạn liên quan để cho thấy đã tìm ở đâu.",
+    "absence_check": {
+      "scope": "Kiểm tra trên toàn bộ 38 trang đã index (aiayn tr. 1–10, nd13 tr. 1–28; Lab06 data/parsed/pages.jsonl), bằng regex sau khi chuẩn hóa NFC và casefold, không qua retrieval. Các trang nd13 không được index (phụ lục biểu mẫu) không thuộc phạm vi.",
+      "source_id": "nd13",
+      "results": [
+        {
+          "pattern": "phạt tiền",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "xử phạt",
+          "hits": 1,
+          "pages": [
+            5
+          ]
+        },
+        {
+          "pattern": "nghị định số",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "luật xử lý vi phạm",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "tiền",
+          "hits": 1,
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "note": "\"xử phạt\" chỉ có câu chung ở tr. 5; \"tiền\" ở tr. 3 là định nghĩa \"tiền gửi\", không liên quan.",
+      "checked_at": "2026-11-14",
+      "approved_by": "author"
+    },
+    "metadata": {
+      "language": "vi",
+      "near_topic": "q04 cũng về vi phạm; chunk Điều 4 sẽ được xếp hạng cao.",
+      "origin": "Lab07"
+    }
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "How much did it cost, in US dollars, to train the big Transformer model?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bài báo chỉ ghi chi phí huấn luyện bằng FLOPs (Table 2, tr. 8) và thời gian \"3.5 days on eight P100 GPUs\"; không có số tiền. Không được tự quy đổi ra đô la từ số GPU và số ngày.",
+    "acceptance": "Đúng khi agent từ chối hoặc nói rõ tài liệu không cung cấp thông tin này, không đưa ra con số hay khẳng định thiếu căn cứ. Được trích dẫn điều khoản hoặc đoạn liên quan để cho thấy đã tìm ở đâu.",
+    "absence_check": {
+      "scope": "Kiểm tra trên toàn bộ 38 trang đã index (aiayn tr. 1–10, nd13 tr. 1–28; Lab06 data/parsed/pages.jsonl), bằng regex sau khi chuẩn hóa NFC và casefold, không qua retrieval. Các trang nd13 không được index (phụ lục biểu mẫu) không thuộc phạm vi.",
+      "source_id": "aiayn",
+      "results": [
+        {
+          "pattern": "\\$",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "price",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "dollar",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "\\busd\\b",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "cost",
+          "hits": 9,
+          "pages": [
+            1,
+            2,
+            5,
+            8
+          ]
+        }
+      ],
+      "note": "\"cost\" đều là \"training cost (FLOPs)\" hoặc \"computational cost\".",
+      "checked_at": "2026-11-14",
+      "approved_by": "author"
+    },
+    "metadata": {
+      "language": "en",
+      "near_topic": "q17 hỏi thời gian và phần cứng huấn luyện; bẫy để model tự suy diễn ra con số.",
+      "origin": "Lab07"
+    }
+  },
+  {
+    "id": "u03",
+    "split": "test",
+    "question": "Lệ phí thẩm định hồ sơ đánh giá tác động xử lý dữ liệu cá nhân nộp cho Bộ Công an là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Nghị định quy định nội dung và việc gửi hồ sơ đánh giá tác động (tr. 18–21) nhưng không nói đến thẩm định hay lệ phí. \"Kinh phí\" ở Điều 31 (tr. 24) là nguồn tài chính cho bảo vệ dữ liệu; \"chi phí\" ở tr. 12 là chi phí in, sao khi cung cấp dữ liệu.",
+    "acceptance": "Đúng khi agent từ chối hoặc nói rõ tài liệu không cung cấp thông tin này, không đưa ra con số hay khẳng định thiếu căn cứ. Được trích dẫn điều khoản hoặc đoạn liên quan để cho thấy đã tìm ở đâu.",
+    "absence_check": {
+      "scope": "Kiểm tra trên toàn bộ 38 trang đã index (aiayn tr. 1–10, nd13 tr. 1–28; Lab06 data/parsed/pages.jsonl), bằng regex sau khi chuẩn hóa NFC và casefold, không qua retrieval. Các trang nd13 không được index (phụ lục biểu mẫu) không thuộc phạm vi.",
+      "source_id": "nd13",
+      "results": [
+        {
+          "pattern": "thẩm định",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "lệ phí",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "nộp phí",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "hồ sơ đánh giá tác động",
+          "hits": 13,
+          "pages": [
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "pattern": "\\bphí\\b",
+          "hits": 7,
+          "pages": [
+            12,
+            24,
+            25,
+            26
+          ]
+        }
+      ],
+      "note": "Không có kết quả \"hồ sơ đánh giá tác động\" nào nhắc tới phí.",
+      "checked_at": "2026-11-14",
+      "approved_by": "author"
+    },
+    "metadata": {
+      "language": "vi",
+      "near_topic": "q06 hỏi về hồ sơ đánh giá tác động; BM25 sẽ bắt từ \"phí\" ở tr. 12 và tr. 24.",
+      "origin": "Lab07"
+    }
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "Khi suy luận, Transformer (big) dịch được bao nhiêu câu mỗi giây?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bài báo chỉ so độ phức tạp lý thuyết (Table 1) và nói chung \"faster\"; không có số đo tốc độ suy luận (câu/giây, token/giây hay độ trễ).",
+    "acceptance": "Đúng khi agent từ chối hoặc nói rõ tài liệu không cung cấp thông tin này, không đưa ra con số hay khẳng định thiếu căn cứ. Được trích dẫn điều khoản hoặc đoạn liên quan để cho thấy đã tìm ở đâu.",
+    "absence_check": {
+      "scope": "Kiểm tra trên toàn bộ 38 trang đã index (aiayn tr. 1–10, nd13 tr. 1–28; Lab06 data/parsed/pages.jsonl), bằng regex sau khi chuẩn hóa NFC và casefold, không qua retrieval. Các trang nd13 không được index (phụ lục biểu mẫu) không thuộc phạm vi.",
+      "source_id": "aiayn",
+      "results": [
+        {
+          "pattern": "per second",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "speed",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "throughput",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "sentences? per",
+          "hits": 0,
+          "pages": []
+        },
+        {
+          "pattern": "faster",
+          "hits": 3,
+          "pages": [
+            4,
+            6,
+            10
+          ]
+        },
+        {
+          "pattern": "inference",
+          "hits": 3,
+          "pages": [
+            1,
+            8,
+            9
+          ]
+        }
+      ],
+      "note": "\"faster\" và \"inference\" không đi kèm số đo tốc độ nào.",
+      "checked_at": "2026-11-14",
+      "approved_by": "author"
+    },
+    "metadata": {
+      "language": "vi",
+      "near_topic": "q20 hỏi về beam search lúc suy luận; câu hỏi tiếng Việt về bài báo tiếng Anh.",
+      "origin": "Lab07"
+    }
+  }
+]
