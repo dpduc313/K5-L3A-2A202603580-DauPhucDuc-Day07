@@ -23,5 +23,22 @@ class AgentInputsTest(unittest.TestCase):
                     self.assertNotIn(secret, inputs, q["id"])
 
 
+class ConfigTest(unittest.TestCase):
+    def test_each_candidate_changes_exactly_one_factor_from_its_base(self):
+        ignore = {"role", "base"}
+        for name, cfg in E.CONFIGS.items():
+            if "base" not in cfg:
+                continue
+            mine, base = E.settings(name), E.settings(cfg["base"])
+            changed = {k for k in (mine.keys() | base.keys()) - ignore if mine.get(k) != base.get(k)}
+            self.assertEqual(len(changed), 1, f"{name}: {changed}")
+
+    def test_candidates_from_dev_errors(self):
+        self.assertEqual(E.settings("searches-2")["max_searches"], 2)
+        self.assertEqual(E.settings("searches-2")["method"], "dense")
+        self.assertTrue(E.settings("answer-rules")["extra_rules"])
+        self.assertEqual(E.settings("dense")["extra_rules"], ())
+
+
 if __name__ == "__main__":
     unittest.main()

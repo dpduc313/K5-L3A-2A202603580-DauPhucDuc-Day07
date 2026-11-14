@@ -90,6 +90,26 @@ Nếu nhiều cấu hình có cùng chi phí và thời gian, chọn cấu hình
 - Báo cáo ghi rõ số nhãn tác giả giữ nguyên và số nhãn đã sửa so với gợi ý.
 - ID citation hợp lệ hoặc nhãn gợi ý không thay cho việc đọc đối chiếu (`BENCHMARK.md:40`).
 
+## Thay đổi
+
+Các mục trên giữ nguyên như lúc công bố. Mọi thay đổi sau lần chạy dev đầu tiên ghi ở đây.
+
+### 2026-11-14 (sau lần chạy dev đầu tiên của 3 phương pháp, trước khi chạy ứng viên nào)
+
+Căn cứ: các lỗi trong `results/dev_errors.md`. Bản chạy trước khi sửa được giữ ở `results/agent/_before_fix/`.
+
+1. **Sửa agent dùng chung (mọi cấu hình).** Đây là sửa lỗi để agent đúng với mục 2, không phải ứng viên cải thiện. Sau khi sửa, chạy lại cả `dense`, `bm25`, `hybrid` trên dev; bản mới thay bản cũ khi so sánh.
+   - Lượt đầu chỉ có tool `search`; `answer` và `abstain` có từ lượt thứ hai. Lý do: `hybrid` q10 từ chối ngay khi ngữ cảnh còn trống, trái với quy tắc "tìm trước khi kết luận" (lỗi 1).
+   - Quy tắc ngôn ngữ trong system prompt viết lại rõ hơn: viết toàn bộ câu trả lời và lời từ chối bằng ngôn ngữ của câu hỏi. Lý do: 9/18 lượt trả lời câu hỏi tiếng Anh ra tiếng Việt, trái với mục 2 (lỗi 2).
+2. **Thay danh sách ứng viên cải thiện.** Không chọn ứng viên nào trong ba ứng viên ở mục 2 (`rerank`, `query`, `context`). Cả ba nhắm vào retrieval hoặc độ dài ngữ cảnh. Trên dev, Evidence Hit@3 của `dense` là 15/15 và Context Evidence Rate là 15/15; evidence của các câu trả lời thiếu ý đã nằm ở hạng 1 trong ngữ cảnh. Hai ứng viên mới, cùng gốc `dense`, mỗi ứng viên chỉ đổi một yếu tố:
+
+   | Tên | Gốc | Yếu tố thay đổi | Giả thuyết |
+   |---|---|---|---|
+   | `answer-rules` | `dense` | Thêm quy tắc 6 vào system prompt: giữ đủ điều kiện, ngoại lệ, vế đi kèm của đoạn được trích; không trả lời "có/không" trái với phần giải thích | Câu trả lời bỏ vế điều kiện có sẵn trong chunk được trích (q02, q07) và mở đầu mâu thuẫn (q12). Grounded answer tăng, chi phí gần như không đổi (lỗi 3). |
+   | `searches-2` | `dense` | Tối đa 2 lượt search thay vì 4 | Với câu thiếu evidence, lượt 3–4 lặp lại truy vấn gần giống và không thêm bằng chứng. Chi phí giảm mà từ chối đúng không giảm (lỗi 4). Rủi ro: câu cần lượt tìm thứ 3 trở lên. |
+
+   Thứ tự chọn và quy tắc hòa ở mục 4 giữ nguyên.
+
 ## 6. Đo lại bằng `gpt-5.4-mini` (C8b, làm sau cùng)
 
 Sau khi đã chọn cấu hình bằng `nano` và chạy test, chạy lại cấu hình được chọn bằng `gpt-5.4-mini` **trên dev**, và so với `nano` theo đúng các tiêu chí trên. Chỉ khi `mini` thắng trên dev mới chạy `mini` trên test. Kết quả này ghi là một lần chọn thứ hai, kèm thứ tự đã chạy. Không đổi model dựa trên điểm test.

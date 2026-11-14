@@ -99,6 +99,30 @@ class AgentLoopTest(unittest.TestCase):
         self.assertEqual(out["status"], "abstain")
         self.assertEqual(out["searches"], 2)
 
+    def test_first_turn_offers_only_search(self):
+        # Lỗi dev hybrid q10: lượt đầu model được chọn abstain khi ngữ cảnh còn trống.
+        r = FakeRetriever([chunk("c1", "xóa trong 72 giờ")])
+        c = ScriptedController(("search", {"query": "q"}),
+                               ("answer", {"answer": "72 giờ [c1].", "citations": ["c1"]}))
+        out = run(c, r)
+        self.assertEqual(c.seen_tools[0], ["search"])
+        self.assertEqual(c.seen_tools[1], ["search", "answer", "abstain"])
+        self.assertEqual(out["status"], "answered")
+
+    def test_extra_rules_are_appended_as_numbered_rules(self):
+        r = FakeRetriever([chunk("c1")])
+        c = ScriptedController(("search", {"query": "q"}), ("abstain", {"reason": "x", "citations": []}))
+        run(c, r, extra_rules=("Giữ đủ mọi điều kiện.",))
+        system = c.seen_messages[0][0]["content"]
+        self.assertIn("6. Giữ đủ mọi điều kiện.", system)
+        self.assertTrue(system.startswith(A.SYSTEM_PROMPT.format(max_searches=4)))
+
+    def test_no_extra_rules_keeps_base_prompt(self):
+        r = FakeRetriever([chunk("c1")])
+        c = ScriptedController(("search", {"query": "q"}), ("abstain", {"reason": "x", "citations": []}))
+        run(c, r)
+        self.assertEqual(c.seen_messages[0][0]["content"], A.SYSTEM_PROMPT.format(max_searches=4))
+
     def test_retriever_error_is_reported_not_faked(self):
         r = FakeRetriever(RetrievalError("vector_store", "kết nối bị từ chối"))
         c = ScriptedController(("search", {"query": "q"}))

@@ -28,12 +28,26 @@ from src import metrics as M
 from src import retrievers as R
 
 # Giá trị mặc định của agent (results/selection_criteria.md, mục 2).
-AGENT_DEFAULTS = {"max_searches": 4, "top_k": 5, "budget": 2000, "reasoning_effort": "none"}
+AGENT_DEFAULTS = {"max_searches": 4, "top_k": 5, "budget": 2000, "reasoning_effort": "none", "extra_rules": ()}
+# Quy tắc thêm của ứng viên `answer-rules` (results/dev_errors.md, lỗi 3).
+ANSWER_RULES = ("Giữ đủ mọi điều kiện, ngoại lệ và vế đi kèm có trong đoạn được trích (ví dụ các vế "
+                "\"đồng thời\", \"và có\", \"trừ trường hợp\", \"không áp dụng\"). Không trả lời \"có\" hay "
+                "\"không\" trái với nội dung giải thích ngay sau đó.",)
+# Cấu hình có `base` là ứng viên cải thiện: chỉ đổi đúng một yếu tố so với `base`.
 CONFIGS = {
     "dense": {"method": "dense", "role": "baseline"},
     "bm25": {"method": "bm25", "role": "phương pháp 2"},
     "hybrid": {"method": "hybrid", "role": "phương pháp 3"},
+    "answer-rules": {"base": "dense", "role": "cải thiện 1", "extra_rules": ANSWER_RULES},
+    "searches-2": {"base": "dense", "role": "cải thiện 2", "max_searches": 2},
 }
+
+
+def settings(config: str) -> dict:
+    """Thiết lập đầy đủ của một cấu hình: mặc định, rồi cấu hình gốc, rồi phần thay đổi."""
+    cfg = CONFIGS[config]
+    base = settings(cfg["base"]) if "base" in cfg else AGENT_DEFAULTS
+    return {**base, **cfg}
 RETRIEVAL_TOP_K = 5
 
 
@@ -110,21 +124,21 @@ def run_agent_config(config: str, split: str, ids: list[str] | None, model: str)
     from src.agent import OpenAIController, run_agent, token_counter
 
     questions = load_questions(split, ids)
-    settings = {**AGENT_DEFAULTS, **CONFIGS[config]}
-    retriever = R.build(settings["method"])
-    controller = OpenAIController(model, reasoning_effort=settings["reasoning_effort"])
+    cfg = settings(config)
+    retriever = R.build(cfg["method"])
+    controller = OpenAIController(model, reasoning_effort=cfg["reasoning_effort"])
     count_tokens = token_counter()
     traces = []
     for q in questions:
         inputs = agent_inputs(q)
         out = run_agent(inputs["question"], controller, retriever, filters=inputs["filters"],
-                        max_searches=settings["max_searches"], top_k=settings["top_k"],
-                        budget=settings["budget"], count_tokens=count_tokens)
+                        max_searches=cfg["max_searches"], top_k=cfg["top_k"], budget=cfg["budget"],
+                        count_tokens=count_tokens, extra_rules=cfg["extra_rules"])
         traces.append({"query_id": q["id"], "question": q["question"], "answerable": q["answerable"], **out})
         mark = {"answered": "✓", "abstain": "–", "error": "✗"}[out["status"]]
         print(f"{mark} {q['id']} {out['status']:<8} searches={out['searches']} "
               f"ctx={out['final_context_tokens']}tok {out['seconds']:.1f}s ${out['cost_usd']:.5f}", flush=True)
-    summary = {"config": config, "split": split, "model": model, "settings": settings,
+    summary = {"config": config, "split": split, "model": model, "settings": cfg,
                "run_at": dt.datetime.now().isoformat(timespec="seconds"), **git_state(),
                **M.summarize_agent(questions, traces)}
     out = C.RESULTS / "agent" / config / (split if not ids else f"{split}-smoke")
