@@ -1,0 +1,224 @@
+{
+ "questions_sha256": "14465e44d48610048c2b69043731074135dd5fff479235ef007d3db21c4b4a5f",
+ "saved_at": "2026-11-15T14:17:19.014Z",
+ "reviewed": 54,
+ "total": 54,
+ "decisions": {
+  "adv-d01": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d02": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d03": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d04": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d05": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d06": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d07": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d08": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d09": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d10": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d11": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d12": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d13": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d14": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d15": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d16": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d17": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d18": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d19": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d20": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d21": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d22": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d23": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-d24": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t01": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t02": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t03": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t04": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t05": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t06": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t07": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t08": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t09": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t10": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t11": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t12": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t13": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t14": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t15": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t16": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t17": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t18": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t19": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t20": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t21": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t22": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t23": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t24": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t25": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t26": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t27": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t28": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t29": {
+   "review": "ok",
+   "note": ""
+  },
+  "adv-t30": {
+   "review": "ok",
+   "note": ""
+  }
+ }
+}

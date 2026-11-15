@@ -1,0 +1,1112 @@
+[
+ {
+  "id": "adv-d01",
+  "split": "dev",
+  "group": "table",
+  "tags": [],
+  "question": "Trong dữ liệu cho vay ở chương Logistic regression, hồ sơ có lương 9 và thời gian làm việc 0.5 có được cho vay không?",
+  "expected_answer": "Có. Hàng lương 9, thời gian làm việc 0.5 có cột Cho vay = 1 (được cho vay).",
+  "evidence": [
+   {
+    "page": 65,
+    "kind": "table",
+    "locator": "Bảng trang 65, hàng Lương = 9, Thời gian làm việc = 0.5, cột Cho vay",
+    "quote": "| 9 | 0.5 | 1 |",
+    "chunk_id": "dlcb-tab-p065-1"
+   }
+  ],
+  "reason": "Tra đúng một hàng và đọc cột kết quả của bảng dữ liệu cho vay."
+ },
+ {
+  "id": "adv-d02",
+  "split": "dev",
+  "group": "table",
+  "tags": [],
+  "question": "Trong ví dụ biểu diễn dataset dạng ma trận X ở mục 5.3.1, dataset có bao nhiêu dữ liệu (n), bao nhiêu trường (d), và dữ liệu cuối cùng có lương và thời gian làm việc bao nhiêu?",
+  "expected_answer": "n = 4, d = 2; dữ liệu cuối cùng có lương 6 và thời gian làm việc 1.8.",
+  "evidence": [
+   {
+    "page": 88,
+    "kind": "table",
+    "locator": "Bảng trang 88, hàng cuối (Lương 6, Thời gian làm việc 1.8)",
+    "quote": "| 6 | 1.8 |",
+    "chunk_id": "dlcb-tab-p088-1"
+   },
+   {
+    "page": 88,
+    "kind": "text",
+    "locator": "Trang 88, câu ngay dưới bảng",
+    "quote": "thì n = 4,d = 2",
+    "chunk_id": "dlcb-t-p087-1"
+   }
+  ],
+  "reason": "Đếm hàng/cột của bảng và đọc hàng cuối; text dưới bảng xác nhận n, d."
+ },
+ {
+  "id": "adv-d03",
+  "split": "dev",
+  "group": "table",
+  "tags": [],
+  "question": "Theo bảng chân lý OR trong sách, A OR B bằng 0 trong trường hợp nào, và logistic regression tìm được các hệ số w0, w1, w2 nào cho phép OR?",
+  "expected_answer": "A OR B chỉ bằng 0 khi A = 0 và B = 0; hệ số tìm được là w0 = -0.5, w1 = 1, w2 = 1.",
+  "evidence": [
+   {
+    "page": 92,
+    "kind": "table",
+    "locator": "Bảng chân lý OR trang 92, hàng A = 0, B = 0",
+    "quote": "| 0 | 0 | 0 |",
+    "chunk_id": "dlcb-tab-p092-1"
+   },
+   {
+    "page": 92,
+    "kind": "text",
+    "locator": "Trang 92, câu ngay dưới bảng OR",
+    "quote": "Tương tự ta cũng tìm được w0 = −0.5,w1 = 1,w2 = 1",
+    "chunk_id": "dlcb-t-p091-1"
+   }
+  ],
+  "reason": "Đọc điều kiện từ bảng chân lý và hệ số từ câu đi kèm bảng."
+ },
+ {
+  "id": "adv-d04",
+  "split": "dev",
+  "group": "table",
+  "tags": [],
+  "question": "Trong bảng của bài toán XOR ở cuối chương Logistic regression, A XOR B bằng 1 với những cặp (A, B) nào?",
+  "expected_answer": "Với (A, B) = (0, 1) và (1, 0).",
+  "evidence": [
+   {
+    "page": 80,
+    "kind": "table",
+    "locator": "Bảng XOR trang 80, hai hàng có A XOR B = 1",
+    "quote": "| 0 | 1 | 1 |",
+    "chunk_id": "dlcb-tab-p080-1"
+   }
+  ],
+  "reason": "Lọc các hàng của bảng theo giá trị cột kết quả."
+ },
+ {
+  "id": "adv-d05",
+  "split": "dev",
+  "group": "figure",
+  "tags": [],
+  "question": "Theo hình liệt kê các hàm alignment score trong chương attention, Scaled Dot-Product tính score thế nào, và n trong công thức là gì?",
+  "expected_answer": "score(s_t, h_i) = s_t^T h_i / √n, với n là số chiều (dimension) của source hidden state.",
+  "evidence": [
+   {
+    "page": 262,
+    "kind": "figure",
+    "locator": "Hình 19.10 trang 262, hàng Scaled Dot-Product và ghi chú bên dưới",
+    "quote": "score(s_t, h_i) = s_t^T h_i / sqrt(n); n is the dimension of the source hidden state",
+    "chunk_id": "dlcb-fig-19.10"
+   }
+  ],
+  "reason": "Công thức và ghi chú chỉ có trong ảnh (bảng dạng ảnh), không có trong lớp text."
+ },
+ {
+  "id": "adv-d06",
+  "split": "dev",
+  "group": "figure",
+  "tags": [],
+  "question": "Trong hình minh họa transposed convolution với s=1, p=0 (input 2x2 gồm 1, 2, 3, 4 và kernel 2x2 toàn số 1), ma trận kết quả 3x3 là gì?",
+  "expected_answer": "[[1, 3, 2], [4, 10, 6], [3, 7, 4]] (ô giữa = 1+2+3+4 = 10).",
+  "evidence": [
+   {
+    "page": 283,
+    "kind": "figure",
+    "locator": "Hình 21.4 trang 283, ma trận kết quả bên phải",
+    "quote": "1 3 2 / 4 10 6 / 3 7 4",
+    "chunk_id": "dlcb-fig-21.4"
+   }
+  ],
+  "reason": "Đọc ma trận viết tay trong ảnh."
+ },
+ {
+  "id": "adv-d07",
+  "split": "dev",
+  "group": "figure",
+  "tags": [],
+  "question": "Trong hình cập nhật loss function đến minimum point (chương Các kỹ thuật cơ bản), mỗi màu đường tương ứng thuật toán nào, và đường nào đi thẳng tới điểm đỏ?",
+  "expected_answer": "Xanh dương: Batch gradient descent (đi gần như thẳng tới điểm đỏ); xanh lá: Mini-batch gradient descent; tím: Stochastic gradient descent (đi lòng vòng).",
+  "evidence": [
+   {
+    "page": 180,
+    "kind": "figure",
+    "locator": "Hình 12.2 trang 180, chú giải màu và ba đường đi",
+    "quote": "blue = Batch, green = Mini-batch, purple = Stochastic",
+    "chunk_id": "dlcb-fig-12.2"
+   }
+  ],
+  "reason": "Ghép màu với chú giải và đọc hình dạng đường đi trong ảnh."
+ },
+ {
+  "id": "adv-d08",
+  "split": "dev",
+  "group": "figure",
+  "tags": [
+   "text"
+  ],
+  "question": "Theo hình nội dung một file annotation trong bài nhận diện biển số, đối tượng có class nào, tâm ở tọa độ chuẩn hóa nào và kích thước bao nhiêu?",
+  "expected_answer": "Class 0; tâm x = 0.384534, y = 0.346535; width = 0.201271, height = 0.250825 (đã chuẩn hóa về [0, 1]).",
+  "evidence": [
+   {
+    "page": 209,
+    "kind": "figure",
+    "locator": "Hình 14.7 trang 209, dòng annotation",
+    "quote": "0 0.384534 0.346535 0.201271 0.250825",
+    "chunk_id": "dlcb-fig-14.7"
+   },
+   {
+    "page": 209,
+    "kind": "text",
+    "locator": "Trang 209, đoạn giải thích định dạng dòng annotation",
+    "quote": "Mỗi dòng trong một file annotation bao gồm: <object-class> <x> <y> <width> <height>.",
+    "chunk_id": "dlcb-t-p207-1"
+   }
+  ],
+  "reason": "Giá trị chỉ có trong ảnh; ý nghĩa từng cột lấy từ đoạn text ngay dưới."
+ },
+ {
+  "id": "adv-d09",
+  "split": "dev",
+  "group": "chart",
+  "tags": [],
+  "question": "Trong biểu đồ MS COCO Object Detection (AP theo FPS trên V100) ở chương YOLO, model nào có điểm AP cao nhất, khoảng bao nhiêu, và điểm đó có nằm trong vùng real-time không?",
+  "expected_answer": "EfficientDet (D0–D4), AP khoảng 49.5 ở khoảng 13 FPS; điểm này nằm ngoài vùng real-time (vùng tô màu bắt đầu từ khoảng 30 FPS).",
+  "evidence": [
+   {
+    "page": 210,
+    "kind": "figure",
+    "locator": "Hình 14.8 trang 210, điểm cao nhất của đường EfficientDet và vùng real-time",
+    "quote": "EfficientDet ~49.5 AP at ~13 FPS; real-time band from ~30 FPS",
+    "chunk_id": "dlcb-fig-14.8"
+   }
+  ],
+  "reason": "Đọc trục, chú giải và vị trí điểm so với vùng real-time."
+ },
+ {
+  "id": "adv-d10",
+  "split": "dev",
+  "group": "chart",
+  "tags": [],
+  "question": "Biểu đồ hiệu quả transfer learning chỉ ra ba lợi ích nào của đường with transfer so với without transfer, và hai trục của biểu đồ là gì?",
+  "expected_answer": "Higher start, higher slope, higher asymptote; trục hoành là training, trục tung là performance.",
+  "evidence": [
+   {
+    "page": 162,
+    "kind": "figure",
+    "locator": "Hình 11.1 trang 162, ba nhãn mũi tên và tên trục",
+    "quote": "higher start / higher slope / higher asymptote; axes training, performance",
+    "chunk_id": "dlcb-fig-11.1"
+   }
+  ],
+  "reason": "Nhãn và trục chỉ có trong ảnh."
+ },
+ {
+  "id": "adv-d11",
+  "split": "dev",
+  "group": "chart",
+  "tags": [
+   "text"
+  ],
+  "question": "Trong hình so sánh loss function khi dùng batch và mini-batch gradient descent, trục hoành của mỗi biểu đồ là gì và đường cost của hai cách khác nhau thế nào?",
+  "expected_answer": "Batch: trục hoành # iterations, cost giảm đều, mượt. Mini-batch: trục hoành Mini-batch #, cost vẫn giảm nhưng dao động lên xuống.",
+  "evidence": [
+   {
+    "page": 179,
+    "kind": "figure",
+    "locator": "Hình 12.1 trang 179, hai biểu đồ cost",
+    "quote": "batch: # iterations, smooth; mini-batch: Mini-batch #, zigzag",
+    "chunk_id": "dlcb-fig-12.1"
+   }
+  ],
+  "reason": "Đọc trục và hình dạng đường trong hai biểu đồ."
+ },
+ {
+  "id": "adv-d12",
+  "split": "dev",
+  "group": "chart",
+  "tags": [],
+  "question": "Trong đồ thị loss function của logistic regression trường hợp yi = 1, loss L thay đổi thế nào khi ŷ tiến về 1 và khi ŷ tiến về 0, và giá trị L lớn nhất thể hiện trên đồ thị khoảng bao nhiêu?",
+  "expected_answer": "Khi ŷ tiến về 1 thì L giảm về gần 0; khi ŷ tiến về 0 thì L tăng rất nhanh, lớn nhất khoảng 4.6 ở mép trái đồ thị (ŷ ≈ 0.01).",
+  "evidence": [
+   {
+    "page": 69,
+    "kind": "figure",
+    "locator": "Hình 4.4 trang 69, đường L theo ŷ",
+    "quote": "L ~4.6 at ŷ≈0.01, L→0 at ŷ→1",
+    "chunk_id": "dlcb-fig-4.4"
+   }
+  ],
+  "reason": "Đọc xu hướng và giá trị trên trục tung."
+ },
+ {
+  "id": "adv-d13",
+  "split": "dev",
+  "group": "multihop",
+  "tags": [],
+  "question": "Ví dụ ma trận X ở mục 5.3.1 có hồ sơ lương 7, thời gian làm việc 0.15. Theo dữ liệu cho vay gốc ở chương Logistic regression, hồ sơ này có được cho vay không?",
+  "expected_answer": "Không. Trong bảng dữ liệu cho vay, hàng lương 7, thời gian làm việc 0.15 có Cho vay = 0.",
+  "evidence": [
+   {
+    "page": 88,
+    "kind": "table",
+    "locator": "Bảng trang 88, hàng Lương 7, Thời gian 0.15",
+    "quote": "| 7 | 0.15 |",
+    "chunk_id": "dlcb-tab-p088-1"
+   },
+   {
+    "page": 65,
+    "kind": "table",
+    "locator": "Bảng trang 65, hàng Lương 7, Thời gian 0.15, cột Cho vay",
+    "quote": "| 7 | 0.15 | 0 |",
+    "chunk_id": "dlcb-tab-p065-1"
+   }
+  ],
+  "reason": "Nối một hàng ở bảng trang 88 với hàng tương ứng ở bảng trang 65."
+ },
+ {
+  "id": "adv-d14",
+  "split": "dev",
+  "group": "multihop",
+  "tags": [],
+  "question": "U-Net được phát triển bởi ai, cho lĩnh vực nào, và theo sơ đồ kiến trúc trong sách, input image tile và output segmentation map có kích thước bao nhiêu?",
+  "expected_answer": "Olaf Ronneberger et al., cho image segmentation trong y học; input 572×572, output segmentation map 388×388 (2 channel).",
+  "evidence": [
+   {
+    "page": 220,
+    "kind": "text",
+    "locator": "Trang 220, đoạn giới thiệu U-Net",
+    "quote": "U-Net được phát triển bởi Olaf Ronneberger et al. để dùng cho image segmentation trong y học.",
+    "chunk_id": "dlcb-t-p220-1"
+   },
+   {
+    "page": 220,
+    "kind": "figure",
+    "locator": "Hình 15.5 trang 220, kích thước ở cột đầu và cột cuối",
+    "quote": "input 572 x 572; output 388 x 388, 2 channels",
+    "chunk_id": "dlcb-fig-15.5"
+   }
+  ],
+  "reason": "Tác giả và lĩnh vực ở text, kích thước chỉ có trong sơ đồ."
+ },
+ {
+  "id": "adv-d15",
+  "split": "dev",
+  "group": "multihop",
+  "tags": [],
+  "question": "Trong LSTM, forget gate ft được tính bằng hàm activation nào, đạo hàm ∂ct/∂ct−1 bằng gì, và vì sao điều đó giúp LSTM tránh được vanishing gradient?",
+  "expected_answer": "ft = σ(Uf*xt + Wf*ht−1 + bf), dùng hàm sigmoid nên 0 < ft < 1; ∂ct/∂ct−1 = ft. Khi mang thông tin trên cell state ít khi cần quên giá trị cũ nên ft ≈ 1, nhờ đó tránh được vanishing gradient (LSTM vẫn bị nhưng ít hơn RNN).",
+  "evidence": [
+   {
+    "page": 235,
+    "kind": "text",
+    "locator": "Trang 235, công thức các gate",
+    "quote": "Nhận xét: 0 < ft,it,ot < 1",
+    "chunk_id": "dlcb-t-p234-2"
+   },
+   {
+    "page": 236,
+    "kind": "text",
+    "locator": "Trang 236, mục 17.3",
+    "quote": "nên ft ≈ 1 => Tránh được vanishing gradient",
+    "chunk_id": "dlcb-t-p235-2"
+   }
+  ],
+  "reason": "Công thức gate ở trang 235, lập luận về đạo hàm ở trang 236."
+ },
+ {
+  "id": "adv-d16",
+  "split": "dev",
+  "group": "multihop",
+  "tags": [],
+  "question": "Trong DCGAN, generator biến noise kích thước bao nhiêu thành ảnh kích thước nào, và discriminator giảm kích thước ảnh đó qua những bước nào trước khi reshape về vector bao nhiêu chiều?",
+  "expected_answer": "Generator: noise 128 → dense 2048 → reshape 2*2*512 → transposed convolution tới 32*32*3. Discriminator: 32*32 → 16*16 → 8*8 → 4*4 → 2*2 (convolution stride 2), tensor 2*2*512 reshape về vector 2048 rồi fully connected về 1.",
+  "evidence": [
+   {
+    "page": 282,
+    "kind": "text",
+    "locator": "Trang 282, danh sách các layer của generator",
+    "quote": "Transposed convolution stride=2, kernel=3, 16*16*64 -> 32*32*3",
+    "chunk_id": "dlcb-t-p282-1"
+   },
+   {
+    "page": 285,
+    "kind": "text",
+    "locator": "Trang 285, mục 21.1.2 Discriminator",
+    "quote": "tensor shape 2*2*512 được reshape về vector 2048",
+    "chunk_id": "dlcb-t-p285-1"
+   }
+  ],
+  "reason": "Kiến trúc generator ở trang 282, discriminator ở trang 285."
+ },
+ {
+  "id": "adv-d17",
+  "split": "dev",
+  "group": "text",
+  "tags": [],
+  "question": "Khi bài toán có nhiều nhãn và nhiều người cùng gán nhãn bằng LabelImg, sách lưu ý điều gì và vì sao?",
+  "expected_answer": "Cần thống nhất trước thứ tự nhãn, vì file annotation chỉ lưu chỉ số của nhãn chứ không lưu tên nhãn.",
+  "evidence": [
+   {
+    "page": 209,
+    "kind": "text",
+    "locator": "Trang 209, đoạn Lưu ý",
+    "quote": "cần thống nhất với nhau trước về thứ tự nhãn",
+    "chunk_id": "dlcb-t-p209-1"
+   }
+  ],
+  "reason": "Thông tin có điều kiện (nhiều nhãn, nhiều người) trong text."
+ },
+ {
+  "id": "adv-d18",
+  "split": "dev",
+  "group": "text",
+  "tags": [],
+  "question": "Trong chương phân loại chữ số viết tay, MNIST được chia thế nào giữa training set, validation set và test set?",
+  "expected_answer": "60.000 dữ liệu training gốc được chia thành 50.000 cho training set và 10.000 cho validation set; test set giữ nguyên 10.000.",
+  "evidence": [
+   {
+    "page": 141,
+    "kind": "text",
+    "locator": "Trang 141, đoạn cuối",
+    "quote": "ta sẽ chia ra 50.000 dữ liệu cho training set và 10.000 dữ liệu cho validation set",
+    "chunk_id": "dlcb-t-p141-1"
+   }
+  ],
+  "reason": "Tổng hợp con số từ text."
+ },
+ {
+  "id": "adv-d19",
+  "split": "dev",
+  "group": "text",
+  "tags": [],
+  "question": "Trong ví dụ điểm thi đại học trung bình 24 điểm, sách minh họa batch, mini-batch và stochastic gradient descent cho ra điểm trung bình ví dụ bao nhiêu?",
+  "expected_answer": "Batch (cả trường): khoảng 24,5; mini-batch (32 học sinh ngẫu nhiên): ví dụ 22; stochastic (1 học sinh): ví dụ 18 hoặc 29.",
+  "evidence": [
+   {
+    "page": 179,
+    "kind": "text",
+    "locator": "Trang 179, đoạn ví dụ điểm thi",
+    "quote": "Mini-batch sẽ chọn ngẫu nhiên một số học sinh, ví dụ 32 học sinh",
+    "chunk_id": "dlcb-t-p179-1"
+   }
+  ],
+  "reason": "Tổng hợp ba ví dụ trong một đoạn text."
+ },
+ {
+  "id": "adv-d20",
+  "split": "dev",
+  "group": "text",
+  "tags": [],
+  "question": "Vì sao ảnh CIFAR-10 được scale về khoảng (-1, 1) trong bài DCGAN?",
+  "expected_answer": "Để cùng scale với ảnh sinh ra bởi generator, vì generator dùng tanh activation.",
+  "evidence": [
+   {
+    "page": 286,
+    "kind": "text",
+    "locator": "Trang 286, mục 21.3",
+    "quote": "Ảnh CIFAR-10 được scale về (-1, 1) để cùng scale với ảnh sinh ra bởi generator khi dùng tanh activation.",
+    "chunk_id": "dlcb-t-p286-1"
+   }
+  ],
+  "reason": "Lý do nằm trong text mục Code."
+ },
+ {
+  "id": "adv-d21",
+  "split": "dev",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Sách khuyên chọn hệ số momentum bao nhiêu khi dùng SGD with momentum?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách không nói về momentum.",
+  "reason": "Gần chủ đề optimizer (sách có nhắc SGD, RMSprop, Adam) nhưng không có momentum.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "momentum",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-d22",
+  "split": "dev",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Theo sách, khi dùng early stopping nên đặt patience bao nhiêu epoch?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách không nói về early stopping hay patience.",
+  "reason": "Gần chủ đề chống overfitting (dropout, regularization) nhưng không có early stopping.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "early stopping",
+     "hits": 0,
+     "pages": []
+    },
+    {
+     "pattern": "patience",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-d23",
+  "split": "dev",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Mô hình image captioning trong sách đạt BLEU score bao nhiêu trên Flickr8k?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách không báo BLEU hay điểm đánh giá caption.",
+  "reason": "Gần chương image captioning nhưng không có metric BLEU.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "bleu",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-d24",
+  "split": "dev",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Theo sách, FastText khác Word2Vec ở điểm nào?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách nói về Word2Vec (CBOW, Skip-gram) nhưng không nhắc FastText.",
+  "reason": "Gần chương word embedding nhưng không có FastText.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "fasttext",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-t01",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "question": "Trong dữ liệu giá nhà ở chương Linear regression, căn nhà diện tích 37.2414 m2 có giá bán bao nhiêu (ghi rõ đơn vị)?",
+  "expected_answer": "551.432 triệu VNĐ.",
+  "evidence": [
+   {
+    "page": 47,
+    "kind": "table",
+    "locator": "Bảng trang 47, hàng Diện tích 37.2414, cột Giá bán (triệu VNĐ)",
+    "quote": "| 37.2414 | 551.432 |",
+    "chunk_id": "dlcb-tab-p047-1"
+   }
+  ],
+  "reason": "Tra hàng và đơn vị ở tiêu đề cột."
+ },
+ {
+  "id": "adv-t02",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "question": "Với x khởi tạo bằng 10 và learning_rate = 0.1 khi tìm giá trị nhỏ nhất của f(x) = x², ở lần thực hiện bước 2 thứ mấy thì f(x) lần đầu tiên nhỏ hơn 5, và khi đó x bằng bao nhiêu?",
+  "expected_answer": "Lần thứ 7: x = 2.10, f(x) = 4.40 (lần 6 vẫn là 6.87).",
+  "calculation": "f(x) lần 6 = 6.87 ≥ 5; lần 7 = 4.40 < 5",
+  "evidence": [
+   {
+    "page": 52,
+    "kind": "table",
+    "locator": "Bảng trang 52, hàng Lần 6 và Lần 7",
+    "quote": "| 7 | 2.10 | 4.40 |",
+    "chunk_id": "dlcb-tab-p052-1"
+   }
+  ],
+  "reason": "So sánh các ô theo điều kiện để tìm hàng đầu tiên thỏa mãn."
+ },
+ {
+  "id": "adv-t03",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "question": "Theo bảng đánh giá bias và variance, model có train set error 15% và val set error 30% được xếp loại gì? Model có train 15% và val 16% thì được xếp loại gì?",
+  "expected_answer": "Train 15% / val 30%: high bias và high variance. Train 15% / val 16%: high bias.",
+  "evidence": [
+   {
+    "page": 182,
+    "kind": "table",
+    "locator": "Bảng trang 182, cột thứ 3 và thứ 4",
+    "quote": "| Val set error | 11% | 16% | 30% | 1% |",
+    "chunk_id": "dlcb-tab-p182-1"
+   }
+  ],
+  "reason": "Đọc đúng cột theo cặp giá trị và hàng nhãn bên dưới."
+ },
+ {
+  "id": "adv-t04",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "question": "Trong Fashion-MNIST, nhãn số 7 và nhãn số 9 tương ứng với loại nào?",
+  "expected_answer": "Nhãn 7 là Sneaker, nhãn 9 là Ankle boot.",
+  "evidence": [
+   {
+    "page": 291,
+    "kind": "table",
+    "locator": "Bảng nhãn trang 291, hàng 7 và hàng 9",
+    "quote": "| 7 | Sneaker |",
+    "chunk_id": "dlcb-tab-p291-1"
+   }
+  ],
+  "reason": "Tra hai hàng của bảng."
+ },
+ {
+  "id": "adv-t05",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "question": "Theo bảng kết hợp các phép toán bit ở mục XOR (chương Neural network), với A = 1 và B = 1 thì NOT(A AND B), A OR B và (NOT(A AND B) AND (A OR B)) lần lượt bằng bao nhiêu?",
+  "expected_answer": "NOT(A AND B) = 0, A OR B = 1, (NOT(A AND B) AND (A OR B)) = 0, bằng đúng A XOR B = 0.",
+  "evidence": [
+   {
+    "page": 94,
+    "kind": "table",
+    "locator": "Bảng trang 94, hàng A = 1, B = 1",
+    "quote": "| 1 | 1 | 0 | 1 | 0 | 1 | 0 |",
+    "chunk_id": "dlcb-tab-p094-1"
+   }
+  ],
+  "reason": "Đọc nhiều cột trên cùng một hàng của bảng 7 cột."
+ },
+ {
+  "id": "adv-t06",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "question": "Theo bảng chân lý AND trong sách, A AND B bằng 1 khi nào, và logistic regression tìm được các hệ số w0, w1, w2 nào cho phép AND?",
+  "expected_answer": "Chỉ khi A = 1 và B = 1; hệ số w0 = -1.5, w1 = 1, w2 = 1.",
+  "evidence": [
+   {
+    "page": 90,
+    "kind": "table",
+    "locator": "Bảng chân lý AND trang 90, hàng A = 1, B = 1",
+    "quote": "| A | B | A AND B |",
+    "chunk_id": "dlcb-tab-p090-2"
+   },
+   {
+    "page": 91,
+    "kind": "text",
+    "locator": "Trang 91, câu đầu trang",
+    "quote": "ta tìm được w0 = −1.5,w1 = 1,w2 = 1",
+    "chunk_id": "dlcb-t-p089-1"
+   }
+  ],
+  "reason": "Điều kiện từ bảng chân lý; hệ số ở câu đầu trang sau."
+ },
+ {
+  "id": "adv-t07",
+  "split": "test",
+  "group": "figure",
+  "tags": [],
+  "question": "Trong hình chỉ số IoU ở chương Object detection, ba ví dụ Poor, Good, Excellent có IoU bao nhiêu?",
+  "expected_answer": "Poor: 0.4034; Good: 0.7330; Excellent: 0.9264.",
+  "evidence": [
+   {
+    "page": 202,
+    "kind": "figure",
+    "locator": "Hình 13.11 trang 202, nhãn IoU phía trên mỗi ví dụ",
+    "quote": "IoU: 0.4034 / 0.7330 / 0.9264",
+    "chunk_id": "dlcb-fig-13.11"
+   }
+  ],
+  "reason": "Giá trị chỉ có trong ảnh."
+ },
+ {
+  "id": "adv-t08",
+  "split": "test",
+  "group": "figure",
+  "tags": [],
+  "question": "Trong sơ đồ mô hình XOR (chương Neural network), node ở output layer nhận hệ số nào từ bias và từ hai node ẩn? Node x1 OR x2 nhận hệ số bias bao nhiêu?",
+  "expected_answer": "Node output: bias -1.5, hệ số 1 từ node NOT(x1 AND x2) và hệ số 1 từ node x1 OR x2. Node x1 OR x2 nhận bias -0.5 (và 1 từ x1, 1 từ x2).",
+  "evidence": [
+   {
+    "page": 94,
+    "kind": "figure",
+    "locator": "Hình 5.12 trang 94, các cạnh vào node output và node OR",
+    "quote": "output: -1.5, 1, 1; OR node: -0.5, 1, 1",
+    "chunk_id": "dlcb-fig-5.12"
+   }
+  ],
+  "reason": "Đọc trọng số trên các cạnh của sơ đồ."
+ },
+ {
+  "id": "adv-t09",
+  "split": "test",
+  "group": "figure",
+  "tags": [],
+  "question": "Theo hình các kernel phổ biến trong chương xử lý ảnh, kernel Sharpen có giá trị thế nào, và kernel Box blur được chuẩn hóa bằng hệ số nào?",
+  "expected_answer": "Sharpen = [[0, -1, 0], [-1, 5, -1], [0, -1, 0]]; Box blur = 1/9 nhân ma trận 3x3 toàn số 1.",
+  "evidence": [
+   {
+    "page": 120,
+    "kind": "figure",
+    "locator": "Hình 7.16, hàng Sharpen và Box blur",
+    "quote": "Sharpen [[0,-1,0],[-1,5,-1],[0,-1,0]]; Box blur 1/9 * ones(3,3)",
+    "chunk_id": "dlcb-fig-7.16"
+   }
+  ],
+  "reason": "Bảng kernel dạng ảnh, giá trị chỉ có trong ảnh."
+ },
+ {
+  "id": "adv-t10",
+  "split": "test",
+  "group": "figure",
+  "tags": [],
+  "question": "Theo hình loss function cGAN, khi train discriminator và khi train generator thì mỗi cặp ảnh + label được gán nhãn gì?",
+  "expected_answer": "Train discriminator: real image + y → 1, fake + y' → 0. Train generator: fake + y' → 1.",
+  "evidence": [
+   {
+    "page": 294,
+    "kind": "figure",
+    "locator": "Hình 22.4 trang 294, hai dòng chữ ở dưới hình",
+    "quote": "Train discriminator: Real image + y 1, Fake + y' 0; Train generator: Fake + y' 1",
+    "chunk_id": "dlcb-fig-22.4"
+   }
+  ],
+  "reason": "Chữ viết tay trong ảnh."
+ },
+ {
+  "id": "adv-t11",
+  "split": "test",
+  "group": "figure",
+  "tags": [],
+  "question": "Trong hình max pooling layer với size=(3,3), stride=1, padding=0, output có kích thước bao nhiêu và ô ở hàng dưới cùng, cột giữa có giá trị bao nhiêu?",
+  "expected_answer": "Output 3x3; ô hàng dưới cùng, cột giữa bằng 2.0 (tám ô còn lại đều là 3.0).",
+  "evidence": [
+   {
+    "page": 129,
+    "kind": "figure",
+    "locator": "Hình 8.8 trang 129, ma trận output màu xanh",
+    "quote": "3.0 3.0 3.0 / 3.0 3.0 3.0 / 3.0 2.0 3.0",
+    "chunk_id": "dlcb-fig-8.8"
+   }
+  ],
+  "reason": "Giá trị chỉ có trong ảnh; kiểm chứng được bằng cách tự tính max pooling trên ma trận input trong ảnh."
+ },
+ {
+  "id": "adv-t12",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "question": "Theo biểu đồ so sánh R-CNN và Fast R-CNN, thời gian training của R-CNN và của Fast R-CNN là bao nhiêu giờ, và R-CNN chậm hơn khoảng bao nhiêu lần?",
+  "expected_answer": "R-CNN 84 giờ, Fast R-CNN 8.75 giờ; R-CNN chậm hơn khoảng 9.6 lần.",
+  "calculation": "84 / 8.75 = 9.6",
+  "evidence": [
+   {
+    "page": 198,
+    "kind": "figure",
+    "locator": "Hình 13.7 trang 198, biểu đồ Training time (Hours)",
+    "quote": "R-CNN 84, SPP-Net 25.5, Fast R-CNN 8.75",
+    "chunk_id": "dlcb-fig-13.7"
+   }
+  ],
+  "reason": "Đọc giá trị cột và tính tỉ lệ."
+ },
+ {
+  "id": "adv-t13",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "question": "Theo biểu đồ YOLOv4 với YOLO-Tinyv4, AP50 trên MS COCO của YOLOv4 và của YOLOv4-tiny là bao nhiêu, và FPS được đo trên GPU nào?",
+  "expected_answer": "YOLOv4: 64.9% AP50; YOLOv4-tiny: 40.2% AP50; FPS đo trên 1080Ti.",
+  "evidence": [
+   {
+    "page": 210,
+    "kind": "figure",
+    "locator": "Hình 14.9 trang 210, hai nhãn đỏ và trục hoành",
+    "quote": "YOLOv4 - 64.9% AP50; YOLOv4-tiny - 40.2% AP50; FPS (1080Ti)",
+    "chunk_id": "dlcb-fig-14.9"
+   }
+  ],
+  "reason": "Nhãn và đơn vị trục chỉ có trong ảnh."
+ },
+ {
+  "id": "adv-t14",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "question": "Trong hình so sánh các loss function L1, L2, L4 với dữ liệu có một điểm outlier, đường của loss nào bị outlier kéo lệch xa các điểm còn lại nhất, và outlier nằm khoảng ở tọa độ nào?",
+  "expected_answer": "Đường L4 (^4), màu xanh lá, bị kéo lệch nhiều nhất; outlier nằm khoảng (2.5, 7).",
+  "evidence": [
+   {
+    "page": 60,
+    "kind": "figure",
+    "locator": "Hình 3.17 trang 60, ba đường và điểm outlier",
+    "quote": "L4 (^4) green line highest; outlier near x=2.5, y=7",
+    "chunk_id": "dlcb-fig-3.17"
+   }
+  ],
+  "reason": "So sánh vị trí các đường với điểm dữ liệu trên biểu đồ."
+ },
+ {
+  "id": "adv-t15",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "question": "Trong hình loss theo epoch với các learning rate khác nhau (chương Linear regression), đường nào làm loss tăng lên, và đường nào có loss thấp nhất ở cuối?",
+  "expected_answer": "Very high learning rate làm loss tăng lên; good learning rate có loss thấp nhất ở cuối.",
+  "evidence": [
+   {
+    "page": 54,
+    "kind": "figure",
+    "locator": "Hình 3.9 trang 54, bốn đường loss",
+    "quote": "Very high learning rate goes up; Good learning rate lowest",
+    "chunk_id": "dlcb-fig-3.9"
+   }
+  ],
+  "reason": "So sánh xu hướng các đường theo chú giải trong ảnh."
+ },
+ {
+  "id": "adv-t16",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "question": "Trong đồ thị các hàm activation (Hình 12.12), tại x = 0 thì TANH (norm.), Log. Sigmoid và ReLU có giá trị khoảng bao nhiêu?",
+  "expected_answer": "TANH (norm.) ≈ 0.5, Log. Sigmoid ≈ 0.5, ReLU = 0.",
+  "evidence": [
+   {
+    "page": 189,
+    "kind": "figure",
+    "locator": "Hình 12.12 trang 189, giao điểm các đường với x = 0",
+    "quote": "tanh(norm) 0.5, sigmoid 0.5, ReLU 0 at x=0",
+    "chunk_id": "dlcb-fig-12.12"
+   }
+  ],
+  "reason": "Đọc giá trị trên trục tung tại một điểm của trục hoành."
+ },
+ {
+  "id": "adv-t17",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "question": "Ở thời điểm chụp chart.png khi train YOLO-Tinyv4 nhận diện biển số, mô hình đang ở iteration bao nhiêu, và theo cấu hình steps trong file cfg thì learning rate đã bị giảm lần nào chưa?",
+  "expected_answer": "Iteration 2500 (avg loss 0.0391). Chưa: steps = 4800,5400 (80%, 90% của max_batches = 6000), nên lần giảm đầu tiên ở iteration 4800 > 2500.",
+  "calculation": "2500 < 4800",
+  "evidence": [
+   {
+    "page": 215,
+    "kind": "figure",
+    "locator": "Hình 14.16 trang 215, dòng trạng thái dưới biểu đồ",
+    "quote": "current avg loss = 0.0391 iteration = 2500; max_batches=6000",
+    "chunk_id": "dlcb-fig-14.16"
+   },
+   {
+    "page": 212,
+    "kind": "text",
+    "locator": "Trang 212, dòng 22 của cấu hình cfg",
+    "quote": "Dòng 22: Thay đổi steps= 80%, 90% max_batches. VD: steps=4800,5400.",
+    "chunk_id": "dlcb-t-p212-2"
+   }
+  ],
+  "reason": "Kết hợp số iteration trong ảnh (trang 215) với quy tắc steps ở text (trang 212)."
+ },
+ {
+  "id": "adv-t18",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "question": "Theo biểu đồ so sánh thời gian test, phần region proposal chiếm khoảng bao nhiêu giây trong test time của Fast R-CNN, và Faster R-CNN thay thuật toán selective search bằng gì?",
+  "expected_answer": "Khoảng 2.3 − 0.32 = 1.98 giây; Faster R-CNN dùng Region Proposal Network (RPN) thay cho selective search.",
+  "calculation": "2.3 - 0.32 = 1.98",
+  "evidence": [
+   {
+    "page": 198,
+    "kind": "figure",
+    "locator": "Hình 13.7 trang 198, biểu đồ Test time, hai cột của Fast R-CNN",
+    "quote": "Fast R-CNN 2.3 (including region proposals), 0.32 (excluding)",
+    "chunk_id": "dlcb-fig-13.7"
+   },
+   {
+    "page": 199,
+    "kind": "text",
+    "locator": "Trang 199, mục 13.2.3",
+    "quote": "nó thêm một mạng CNN mới gọi là Region Proposal Network (RPN) để tìm các region proposal",
+    "chunk_id": "dlcb-t-p198-1"
+   }
+  ],
+  "reason": "Hiệu hai giá trị trong biểu đồ (trang 198) cộng thông tin text ở trang 199."
+ },
+ {
+  "id": "adv-t19",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "question": "Trong bài transfer learning nhận diện 17 loài hoa dùng VGG16 làm feature extractor, phần nào của VGG16 bị bỏ đi, và theo sơ đồ kiến trúc VGG16 thì phần ConvNet giữ lại cho ra feature map kích thước bao nhiêu với bao nhiêu channel?",
+  "expected_answer": "Bỏ các fully connected layer (FCs), chỉ giữ ConvNet; sau pooling cuối feature map có size 7 (7×7) với 512 channel.",
+  "evidence": [
+   {
+    "page": 162,
+    "kind": "text",
+    "locator": "Trang 162, mục 11.1.1 Feature extractor",
+    "quote": "Ta chỉ giữ lại phần ConvNet trong CNN và bỏ đi FCs.",
+    "chunk_id": "dlcb-t-p162-1"
+   },
+   {
+    "page": 131,
+    "kind": "figure",
+    "locator": "Hình 8.11 trang 131, block conv cuối (512) và Size:7 sau pool/2 cuối",
+    "quote": "last conv block 512 channels; Size:7 after last pool/2",
+    "chunk_id": "dlcb-fig-8.11"
+   }
+  ],
+  "reason": "Kết hợp cách dùng VGG16 (trang 162) với kích thước trong sơ đồ (trang 131)."
+ },
+ {
+  "id": "adv-t20",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "question": "Theo đường thẳng ước lượng ở Hình 3.2, căn nhà 50 m2 có giá khoảng bao nhiêu, tính theo đơn vị của bảng dữ liệu giá nhà?",
+  "expected_answer": "Khoảng 760 triệu VNĐ.",
+  "evidence": [
+   {
+    "page": 49,
+    "kind": "figure",
+    "locator": "Hình 3.2 trang 49, giá trị đánh dấu trên trục tung tại 50 m2",
+    "quote": "760 marked at x = 50",
+    "chunk_id": "dlcb-fig-3.2"
+   },
+   {
+    "page": 47,
+    "kind": "table",
+    "locator": "Bảng trang 47, tiêu đề cột",
+    "quote": "| Diện tích(m2) | Giá bán (triệu VNĐ) |",
+    "chunk_id": "dlcb-tab-p047-1"
+   }
+  ],
+  "reason": "Giá trị trong hình (trang 49) không có đơn vị; đơn vị lấy từ bảng (trang 47)."
+ },
+ {
+  "id": "adv-t21",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "question": "Theo lời khuyên khi dùng dropout, hệ số p nên nằm trong khoảng nào, điều gì xảy ra nếu p quá nhỏ hoặc quá lớn, và dropout nên dùng cho loại layer nào?",
+  "expected_answer": "p nên trong [0.2, 0.5]; p quá nhỏ thì không chống được overfitting, p quá lớn thì gần như loại bỏ layer và có thể dẫn đến underfitting; nên dùng cho Fully Connected layer, ít khi dùng cho ConvNet layer.",
+  "evidence": [
+   {
+    "page": 183,
+    "kind": "text",
+    "locator": "Trang 183, mục 12.4.3",
+    "quote": "Hệ số p nên ở khoảng [0.2, 0.5]",
+    "chunk_id": "dlcb-t-p183-2"
+   }
+  ],
+  "reason": "Tổng hợp các điều kiện trong một danh sách lời khuyên."
+ },
+ {
+  "id": "adv-t22",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "question": "Trong bài nhận diện biển số, filters của layer convolutional trước mỗi layer [yolo] được tính theo công thức nào và bằng bao nhiêu?",
+  "expected_answer": "filters = (số class + 5) * 3; bài toán có 1 class nên filters = 18.",
+  "calculation": "(1 + 5) * 3 = 18",
+  "evidence": [
+   {
+    "page": 212,
+    "kind": "text",
+    "locator": "Trang 212, danh sách chỉnh sửa file cfg",
+    "quote": "filters=(số class+5)*3. Trong bài toán này filters=18",
+    "chunk_id": "dlcb-t-p212-2"
+   }
+  ],
+  "reason": "Công thức và kết quả trong text."
+ },
+ {
+  "id": "adv-t23",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "question": "Trên Google Colab, khi nào sách khuyên sửa CUDNN_HALF=1 khi huấn luyện YOLO-Tinyv4, và để làm gì?",
+  "expected_answer": "Khi huấn luyện trên GPU có TensorCores; trên Colab chỉ khi chắc chắn được cấp GPU Tesla T4. Mục đích là tăng tốc độ huấn luyện.",
+  "evidence": [
+   {
+    "page": 212,
+    "kind": "text",
+    "locator": "Trang 212, đoạn đầu trang",
+    "quote": "trong trường hợp chắc chắn sẽ có được GPU Tesla T4 thì bạn đọc có thể sửa",
+    "chunk_id": "dlcb-t-p212-1"
+   }
+  ],
+  "reason": "Điều kiện kép (TensorCores, chắc chắn có T4) trong text."
+ },
+ {
+  "id": "adv-t24",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "question": "Theo sách, dữ liệu được chuẩn hóa thế nào trong batch normalization, và hai tham số nào được học trong quá trình training?",
+  "expected_answer": "Chuẩn hóa và zero centering: giá trị trung bình đưa về 0 và phương sai đưa về 1, tính trên từng batch; γ (scaling) và β (shifting) là hai tham số được học.",
+  "evidence": [
+   {
+    "page": 189,
+    "kind": "text",
+    "locator": "Trang 189, mục 12.6.2",
+    "quote": "giá trị trung bình (mean) sẽ được đưa về 0 và phương sai (variance) sẽ được đưa về 1",
+    "chunk_id": "dlcb-t-p189-1"
+   }
+  ],
+  "reason": "Tổng hợp từ text của mục batch normalization."
+ },
+ {
+  "id": "adv-t25",
+  "split": "test",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Mô hình Transformer dùng bao nhiêu attention head trong multi-head attention?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách có chương attention cho seq2seq nhưng không nói về Transformer hay multi-head attention.",
+  "reason": "Gần chương attention nhưng không có Transformer.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "transformer",
+     "hits": 0,
+     "pages": []
+    },
+    {
+     "pattern": "multi-head|attention head",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-t26",
+  "split": "test",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "ResNet-152 có bao nhiêu layer và đạt top-5 error bao nhiêu trên ImageNet theo sách?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách chỉ nhắc tên ResNet (trang 238, 262), không nêu ResNet-152 hay kết quả của nó.",
+  "reason": "Gần chủ đề kiến trúc CNN và ImageNet.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "resnet-?152|152 layer",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-t27",
+  "split": "test",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Nên đặt ngưỡng gradient clipping bao nhiêu để tránh exploding gradient khi train RNN?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách nhắc exploding/vanishing gradient nhưng không nói về gradient clipping.",
+  "reason": "Gần chủ đề vanishing/exploding gradient.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "gradient clipping|clipnorm|clipvalue",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-t28",
+  "split": "test",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Chỉ số FID của ảnh do DCGAN sinh ra sau 150 epochs là bao nhiêu?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách chỉ cho xem ảnh sinh ra sau 10 và 150 epochs, không có FID hay Inception Score.",
+  "reason": "Gần chương DCGAN.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "\\bfid\\b",
+     "hits": 0,
+     "pages": []
+    },
+    {
+     "pattern": "fréchet|frechet",
+     "hits": 0,
+     "pages": []
+    },
+    {
+     "pattern": "inception score",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-t29",
+  "split": "test",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Sách khuyên dùng learning rate warmup trong bao nhiêu bước đầu?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách không nói về warmup.",
+  "reason": "Gần chủ đề chọn learning rate.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "warm ?up",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ },
+ {
+  "id": "adv-t30",
+  "split": "test",
+  "group": "unanswerable",
+  "tags": [],
+  "question": "Faster R-CNN đạt mAP bao nhiêu trên PASCAL VOC 2007 theo sách?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Sách mô tả kiến trúc Faster R-CNN nhưng không báo mAP; 'map' trong sách là feature map.",
+  "reason": "Gần mục Faster R-CNN.",
+  "absence_check": {
+   "scope": "text, bảng và caption của cả 301 trang (data/advanced/parsed/pages.jsonl)",
+   "results": [
+    {
+     "pattern": "mean average precision",
+     "hits": 0,
+     "pages": []
+    },
+    {
+     "pattern": "map ?[@=:]? ?\\d",
+     "hits": 0,
+     "pages": []
+    }
+   ]
+  }
+ }
+]
