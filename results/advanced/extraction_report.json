@@ -1,0 +1,1252 @@
+{
+ "pages": 301,
+ "space_ratio": 0.15,
+ "glued_tokens": [],
+ "orphan_images": [
+  {
+   "page": 1,
+   "bbox": [
+    0.0,
+    -2.6,
+    595.3,
+    844.5
+   ],
+   "skipped": "bìa"
+  },
+  {
+   "page": 3,
+   "bbox": [
+    127.6,
+    268.4,
+    467.8,
+    597.6
+   ],
+   "figure": "img-p003-1"
+  },
+  {
+   "page": 8,
+   "bbox": [
+    85.0,
+    85.0,
+    510.2,
+    403.9
+   ],
+   "figure": "img-p008-1"
+  },
+  {
+   "page": 9,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 19,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 20,
+   "bbox": [
+    127.6,
+    85.0,
+    467.7,
+    169.2
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 20,
+   "bbox": [
+    127.6,
+    226.4,
+    467.7,
+    549.9
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 20,
+   "bbox": [
+    127.6,
+    647.7,
+    467.7,
+    701.2
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 21,
+   "bbox": [
+    127.6,
+    85.0,
+    467.7,
+    405.2
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 21,
+   "bbox": [
+    155.9,
+    447.2,
+    439.4,
+    657.3
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 22,
+   "bbox": [
+    85.0,
+    156.4,
+    510.2,
+    184.9
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 22,
+   "bbox": [
+    85.0,
+    313.7,
+    510.2,
+    361.9
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 22,
+   "bbox": [
+    85.0,
+    425.9,
+    510.3,
+    524.3
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 22,
+   "bbox": [
+    85.0,
+    574.8,
+    510.2,
+    621.1
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 22,
+   "bbox": [
+    85.0,
+    671.6,
+    510.2,
+    725.6
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 23,
+   "bbox": [
+    184.3,
+    85.0,
+    411.0,
+    196.1
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 23,
+   "bbox": [
+    155.9,
+    363.0,
+    439.4,
+    662.5
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 24,
+   "bbox": [
+    155.9,
+    85.0,
+    439.4,
+    294.6
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 24,
+   "bbox": [
+    85.0,
+    379.0,
+    510.2,
+    483.1
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 24,
+   "bbox": [
+    85.0,
+    572.7,
+    510.2,
+    608.0
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 30,
+   "bbox": [
+    184.3,
+    85.0,
+    411.0,
+    459.3
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 31,
+   "bbox": [
+    85.0,
+    419.0,
+    510.2,
+    553.5
+   ],
+   "skipped": "ảnh chụp màn hình cài đặt"
+  },
+  {
+   "page": 33,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 41,
+   "bbox": [
+    145.2,
+    283.4,
+    450.0,
+    488.2
+   ],
+   "figure": "img-p041-1"
+  },
+  {
+   "page": 42,
+   "bbox": [
+    139.2,
+    85.0,
+    456.0,
+    309.8
+   ],
+   "figure": "img-p042-1"
+  },
+  {
+   "page": 43,
+   "bbox": [
+    145.2,
+    85.0,
+    450.0,
+    297.8
+   ],
+   "figure": "img-p043-1"
+  },
+  {
+   "page": 47,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 64,
+   "bbox": [
+    127.6,
+    165.9,
+    467.7,
+    423.8
+   ],
+   "figure": "img-p064-1"
+  },
+  {
+   "page": 65,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 72,
+   "bbox": [
+    85.0,
+    85.5,
+    510.2,
+    310.1
+   ],
+   "figure": "img-p072-1"
+  },
+  {
+   "page": 72,
+   "bbox": [
+    85.0,
+    523.2,
+    510.2,
+    688.1
+   ],
+   "figure": "img-p072-2"
+  },
+  {
+   "page": 73,
+   "bbox": [
+    85.0,
+    216.2,
+    510.2,
+    423.7
+   ],
+   "figure": "img-p073-1"
+  },
+  {
+   "page": 74,
+   "bbox": [
+    127.6,
+    85.5,
+    467.7,
+    341.0
+   ],
+   "figure": "img-p074-1"
+  },
+  {
+   "page": 75,
+   "bbox": [
+    155.9,
+    114.5,
+    439.4,
+    304.1
+   ],
+   "figure": "img-p075-1"
+  },
+  {
+   "page": 83,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 84,
+   "bbox": [
+    85.0,
+    576.5,
+    510.3,
+    757.3
+   ],
+   "figure": "img-p084-1"
+  },
+  {
+   "page": 87,
+   "bbox": [
+    85.0,
+    85.5,
+    510.2,
+    364.8
+   ],
+   "figure": "img-p087-1"
+  },
+  {
+   "page": 87,
+   "bbox": [
+    85.0,
+    624.7,
+    510.2,
+    757.3
+   ],
+   "figure": "img-p087-2"
+  },
+  {
+   "page": 89,
+   "bbox": [
+    198.4,
+    448.7,
+    396.9,
+    571.4
+   ],
+   "figure": "img-p089-1"
+  },
+  {
+   "page": 93,
+   "bbox": [
+    155.9,
+    85.5,
+    439.4,
+    287.4
+   ],
+   "figure": "img-p093-1"
+  },
+  {
+   "page": 93,
+   "bbox": [
+    155.9,
+    475.6,
+    439.4,
+    689.7
+   ],
+   "figure": "img-p093-2"
+  },
+  {
+   "page": 97,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 98,
+   "bbox": [
+    85.0,
+    85.5,
+    510.2,
+    350.6
+   ],
+   "figure": "img-p098-1"
+  },
+  {
+   "page": 98,
+   "bbox": [
+    212.6,
+    523.4,
+    382.7,
+    614.7
+   ],
+   "figure": "img-p098-2"
+  },
+  {
+   "page": 99,
+   "bbox": [
+    85.0,
+    471.3,
+    510.2,
+    729.9
+   ],
+   "figure": "img-p099-1"
+  },
+  {
+   "page": 100,
+   "bbox": [
+    226.8,
+    564.5,
+    368.5,
+    627.7
+   ],
+   "figure": "img-p100-1"
+  },
+  {
+   "page": 100,
+   "bbox": [
+    127.6,
+    690.4,
+    467.7,
+    757.3
+   ],
+   "figure": "img-p100-2"
+  },
+  {
+   "page": 102,
+   "bbox": [
+    85.0,
+    539.5,
+    510.3,
+    729.5
+   ],
+   "figure": "img-p102-1"
+  },
+  {
+   "page": 109,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 110,
+   "bbox": [
+    155.9,
+    513.2,
+    439.4,
+    621.2
+   ],
+   "figure": "img-p110-1"
+  },
+  {
+   "page": 111,
+   "bbox": [
+    212.6,
+    455.8,
+    382.7,
+    534.7
+   ],
+   "figure": "img-p111-1"
+  },
+  {
+   "page": 114,
+   "bbox": [
+    212.6,
+    595.6,
+    382.7,
+    674.4
+   ],
+   "figure": "img-p114-1"
+  },
+  {
+   "page": 115,
+   "bbox": [
+    255.1,
+    596.7,
+    340.2,
+    651.3
+   ],
+   "figure": "img-p115-1"
+  },
+  {
+   "page": 116,
+   "bbox": [
+    127.6,
+    86.2,
+    467.7,
+    243.8
+   ],
+   "figure": "img-p116-1"
+  },
+  {
+   "page": 116,
+   "bbox": [
+    184.3,
+    459.5,
+    411.0,
+    662.9
+   ],
+   "figure": "img-p116-2"
+  },
+  {
+   "page": 123,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 126,
+   "bbox": [
+    184.3,
+    86.2,
+    411.0,
+    251.8
+   ],
+   "figure": "img-p126-1"
+  },
+  {
+   "page": 129,
+   "bbox": [
+    85.0,
+    86.2,
+    510.2,
+    204.2
+   ],
+   "figure": "img-p129-1"
+  },
+  {
+   "page": 131,
+   "bbox": [
+    85.0,
+    114.4,
+    510.3,
+    317.7
+   ],
+   "figure": "img-p131-1"
+  },
+  {
+   "page": 137,
+   "bbox": [
+    85.0,
+    198.7,
+    510.2,
+    353.3
+   ],
+   "figure": "img-p137-1"
+  },
+  {
+   "page": 137,
+   "bbox": [
+    85.0,
+    393.8,
+    510.2,
+    565.5
+   ],
+   "figure": "img-p137-2"
+  },
+  {
+   "page": 139,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 144,
+   "bbox": [
+    155.9,
+    86.2,
+    439.4,
+    322.4
+   ],
+   "figure": "img-p144-1"
+  },
+  {
+   "page": 144,
+   "bbox": [
+    184.3,
+    413.8,
+    411.0,
+    681.3
+   ],
+   "figure": "img-p144-2"
+  },
+  {
+   "page": 145,
+   "bbox": [
+    127.6,
+    126.2,
+    467.7,
+    396.5
+   ],
+   "figure": "img-p145-1"
+  },
+  {
+   "page": 149,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 150,
+   "bbox": [
+    85.0,
+    86.2,
+    510.2,
+    405.1
+   ],
+   "figure": "img-p150-1"
+  },
+  {
+   "page": 150,
+   "bbox": [
+    85.0,
+    502.1,
+    510.2,
+    698.9
+   ],
+   "figure": "img-p150-2"
+  },
+  {
+   "page": 151,
+   "bbox": [
+    127.6,
+    488.6,
+    467.7,
+    703.6
+   ],
+   "figure": "img-p151-1"
+  },
+  {
+   "page": 152,
+   "bbox": [
+    184.3,
+    568.4,
+    411.0,
+    681.8
+   ],
+   "figure": "img-p152-1"
+  },
+  {
+   "page": 153,
+   "bbox": [
+    184.3,
+    86.2,
+    411.0,
+    199.6
+   ],
+   "figure": "img-p153-1"
+  },
+  {
+   "page": 154,
+   "bbox": [
+    184.3,
+    139.5,
+    411.0,
+    192.7
+   ],
+   "figure": "img-p154-1"
+  },
+  {
+   "page": 161,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 163,
+   "bbox": [
+    155.9,
+    536.9,
+    439.4,
+    830.1
+   ],
+   "figure": "img-p163-1"
+  },
+  {
+   "page": 177,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 178,
+   "bbox": [
+    127.6,
+    503.9,
+    467.7,
+    622.6
+   ],
+   "figure": "img-p178-1"
+  },
+  {
+   "page": 181,
+   "bbox": [
+    127.6,
+    195.4,
+    467.7,
+    508.7
+   ],
+   "figure": "img-p181-1"
+  },
+  {
+   "page": 181,
+   "bbox": [
+    85.0,
+    582.5,
+    510.2,
+    729.0
+   ],
+   "figure": "img-p181-2"
+  },
+  {
+   "page": 193,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 197,
+   "bbox": [
+    155.9,
+    397.5,
+    439.4,
+    679.8
+   ],
+   "figure": "img-p197-1"
+  },
+  {
+   "page": 200,
+   "bbox": [
+    155.9,
+    86.2,
+    439.4,
+    254.2
+   ],
+   "figure": "img-p200-1"
+  },
+  {
+   "page": 202,
+   "bbox": [
+    85.0,
+    487.7,
+    510.3,
+    730.8
+   ],
+   "figure": "img-p202-1"
+  },
+  {
+   "page": 205,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 215,
+   "bbox": [
+    155.9,
+    726.7,
+    439.4,
+    758.1
+   ],
+   "figure": "img-p215-1"
+  },
+  {
+   "page": 217,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 219,
+   "bbox": [
+    85.0,
+    216.3,
+    510.2,
+    456.9
+   ],
+   "figure": "img-p219-1"
+  },
+  {
+   "page": 221,
+   "bbox": [
+    85.0,
+    252.4,
+    510.2,
+    526.2
+   ],
+   "figure": "img-p221-1"
+  },
+  {
+   "page": 224,
+   "bbox": [
+    85.0,
+    86.2,
+    510.3,
+    328.4
+   ],
+   "figure": "img-p224-1"
+  },
+  {
+   "page": 227,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 233,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 237,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 257,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 265,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 281,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 291,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  },
+  {
+   "page": 299,
+   "bbox": [
+    0.2,
+    0.2,
+    595.5,
+    120.3
+   ],
+   "skipped": "banner chương"
+  }
+ ],
+ "figures_without_region": [],
+ "duplicate_figure_ids": [],
+ "tables": [
+  {
+   "page": 47,
+   "id": "tab-p047-1",
+   "size": [
+    7,
+    2
+   ],
+   "caption": null,
+   "header": [
+    "Diện tích(m2)",
+    "Giá bán (triệu VNĐ)"
+   ]
+  },
+  {
+   "page": 52,
+   "id": "tab-p052-1",
+   "size": [
+    11,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "Lần",
+    "x",
+    "f(x)"
+   ]
+  },
+  {
+   "page": 65,
+   "id": "tab-p065-1",
+   "size": [
+    9,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "Lương",
+    "Thời gian làm việc",
+    "Cho vay"
+   ]
+  },
+  {
+   "page": 80,
+   "id": "tab-p080-1",
+   "size": [
+    5,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "B",
+    "A XOR B"
+   ]
+  },
+  {
+   "page": 88,
+   "id": "tab-p088-1",
+   "size": [
+    5,
+    2
+   ],
+   "caption": null,
+   "header": [
+    "Lương",
+    "Thời gian làm việc"
+   ]
+  },
+  {
+   "page": 90,
+   "id": "tab-p090-1",
+   "size": [
+    3,
+    2
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "NOT(A)"
+   ]
+  },
+  {
+   "page": 90,
+   "id": "tab-p090-2",
+   "size": [
+    5,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "B",
+    "A AND B"
+   ]
+  },
+  {
+   "page": 90,
+   "id": "tab-p090-3",
+   "size": [
+    5,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "x1",
+    "x2",
+    "y"
+   ]
+  },
+  {
+   "page": 92,
+   "id": "tab-p092-1",
+   "size": [
+    5,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "B",
+    "A OR B"
+   ]
+  },
+  {
+   "page": 93,
+   "id": "tab-p093-1",
+   "size": [
+    5,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "B",
+    "A XOR B"
+   ]
+  },
+  {
+   "page": 94,
+   "id": "tab-p094-1",
+   "size": [
+    5,
+    7
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "B",
+    "A XOR B",
+    "A AND B",
+    "NOT (A AND B)",
+    "A OR B",
+    "(NOT(A AND B) AND (A OR B))"
+   ]
+  },
+  {
+   "page": 97,
+   "id": "tab-p097-1",
+   "size": [
+    5,
+    3
+   ],
+   "caption": null,
+   "header": [
+    "A",
+    "B",
+    "A XOR B"
+   ]
+  },
+  {
+   "page": 182,
+   "id": "tab-p182-1",
+   "size": [
+    3,
+    5
+   ],
+   "caption": null,
+   "header": [
+    "Train set error",
+    "1%",
+    "15%",
+    "15%",
+    "0.5%"
+   ]
+  },
+  {
+   "page": 291,
+   "id": "tab-p291-1",
+   "size": [
+    10,
+    2
+   ],
+   "caption": null,
+   "header": [
+    "0",
+    "T-shirt/top"
+   ]
+  }
+ ],
+ "empty_pages": [
+  1,
+  18,
+  32,
+  44,
+  46,
+  82,
+  96,
+  108,
+  122,
+  138,
+  148,
+  158,
+  160,
+  176,
+  192,
+  204,
+  226,
+  264
+ ],
+ "blocks_inside_regions": [
+  {
+   "page": 47,
+   "text": "Diện tích(m2)\nGiá bán (triệu VNĐ)\n30\n448.524\n32.4138\n509.248\n34.8276\n535.104\n37."
+  },
+  {
+   "page": 52,
+   "text": "Lần\nx\nf(x)\n1\n8.00\n64.00\n2\n6.40\n40.96\n3\n5.12\n26.21\n4\n4.10\n16.78\n5\n3.28\n10.74\n6\n2."
+  },
+  {
+   "page": 65,
+   "text": "Lương\nThời gian làm việc\nCho vay\n10\n1\n1\n9\n0.5\n1\n5\n2\n1\n...\n...\n...\n8\n0.1\n0\n6\n0.3\n"
+  },
+  {
+   "page": 80,
+   "text": "A\nB\nA XOR B\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n1\n0"
+  },
+  {
+   "page": 88,
+   "text": "Lương\nThời gian làm việc\n10\n1\n5\n2\n7\n0.15\n6\n1.8"
+  },
+  {
+   "page": 90,
+   "text": "A\nNOT(A)\n0\n1\n1\n0"
+  },
+  {
+   "page": 90,
+   "text": "A\nB\nA AND B\n0\n0\n0\n0\n1\n0\n1\n0\n0\n1\n1\n1"
+  },
+  {
+   "page": 90,
+   "text": "x1\nx2\ny\n0\n0\n0\n0\n1\n0\n1\n0\n0\n1\n1\n1"
+  },
+  {
+   "page": 92,
+   "text": "A\nB\nA OR B\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n1\n1"
+  },
+  {
+   "page": 93,
+   "text": "A\nB\nA XOR B\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n1\n0"
+  },
+  {
+   "page": 94,
+   "text": "A\nB\nA XOR B\nA AND B\nNOT (A AND B)\nA OR B\n(NOT(A AND B) AND (A OR B))\n0\n0\n0\n0\n1\n0"
+  },
+  {
+   "page": 97,
+   "text": "A\nB\nA XOR B\n0\n0\n0\n0\n1\n1\n1\n0\n1\n1\n1\n0"
+  },
+  {
+   "page": 182,
+   "text": "Train set error\n1%\n15%\n15%\n0.5%\nVal set error\n11%\n16%\n30%\n1%\nHigh variance\nHigh "
+  },
+  {
+   "page": 291,
+   "text": "0\nT-shirt/top\n1\nTrouser\n2\nPullover\n3\nDress\n4\nCoat\n5\nSandal\n6\nShirt\n7\nSneaker\n8\nB"
+  }
+ ],
+ "counts": {
+  "blocks": 2815,
+  "figures": 275,
+  "tables": 14
+ }
+}

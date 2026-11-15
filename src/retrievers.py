@@ -75,7 +75,7 @@ class BM25:
 
 SEARCH_SQL = """
 SELECT chunk_id, 1 - (embedding <=> %(q)s::vector) AS score
-FROM lab_chunks
+FROM {table}
 WHERE chunking = %(chunking)s {where}
 ORDER BY embedding <=> %(q)s::vector, chunk_id
 LIMIT %(k)s
@@ -100,9 +100,13 @@ def filter_sql(filters: dict | None) -> tuple[str, dict]:
 
 class Dense:
     name = "dense"
+    TABLES = ("lab_chunks", "adv_chunks")  # tên bảng ghép vào SQL: chỉ nhận tên cố định
 
-    def __init__(self, chunks: list[dict]):
+    def __init__(self, chunks: list[dict], table: str = "lab_chunks", chunking: str = C.CHUNKING):
+        if table not in self.TABLES:
+            raise ValueError(f"bảng không hỗ trợ: {table}")
         self.by_id = {c["id"]: c for c in chunks}
+        self.table, self.chunking = table, chunking
 
     def search(self, query: str, *, filters: dict | None, top_k: int) -> list[dict]:
         from perry import db, models  # sau lab_config: Perrier đọc biến môi trường lúc import
@@ -112,15 +116,15 @@ class Dense:
             vector = models.embed_query(query)
         except Exception as error:  # Ollama tắt, model chưa pull, timeout…
             raise RetrievalError("embedding", repr(error)) from error
-        params |= {"q": str(vector), "chunking": C.CHUNKING, "k": top_k}
+        params |= {"q": str(vector), "chunking": self.chunking, "k": top_k}
         try:
             with db.pool().connection() as conn:
-                rows = list(conn.execute(SEARCH_SQL.format(where=where), params))
+                rows = list(conn.execute(SEARCH_SQL.format(table=self.table, where=where), params))
         except Exception as error:
             raise RetrievalError("vector_store", repr(error)) from error
         missing = [r["chunk_id"] for r in rows if r["chunk_id"] not in self.by_id]
         if missing:
-            raise RetrievalError("vector_store", f"chunk trong index không có trong data/chunks.json: {missing}")
+            raise RetrievalError("vector_store", f"chunk trong {self.table} không có trong file chunk: {missing}")
         return [result(self.by_id[r["chunk_id"]], r["score"], rank, self.name) for rank, r in enumerate(rows, 1)]
 
 
@@ -153,12 +157,14 @@ class Hybrid:
                 for rank, (cid, score, parts) in enumerate(fused, 1)]
 
 
-def build(method: str, chunks: list[dict] | None = None):
+def build(method: str, chunks: list[dict] | None = None, *, table: str = "lab_chunks",
+          chunking: str = C.CHUNKING):
+    """`table`/`chunking`: bảng pgvector của corpus (`adv_chunks`/`adv` cho phần nâng cao)."""
     chunks = chunks if chunks is not None else load_chunks()
     if method == "dense":
-        return Dense(chunks)
+        return Dense(chunks, table, chunking)
     if method == "bm25":
         return BM25(chunks)
     if method == "hybrid":
-        return Hybrid(Dense(chunks), BM25(chunks))
+        return Hybrid(Dense(chunks, table, chunking), BM25(chunks))
     raise ValueError(f"phương pháp không có: {method}")

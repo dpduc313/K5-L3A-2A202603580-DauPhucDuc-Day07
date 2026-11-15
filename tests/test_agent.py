@@ -159,5 +159,63 @@ class PackTest(unittest.TestCase):
         self.assertLessEqual(tokens, 8)
 
 
+def figure(id, score=0.5):
+    c = chunk(id, "Hình 3.1: đồ thị", score)
+    c["metadata"] = {"crop": f"{id}.jpg"}
+    c["locator"] = "trang 48, Hình 3.1, vùng (85, 85, 510, 427)"
+    return c
+
+
+def fake_viewer(c):
+    crop = c["metadata"].get("crop")
+    return {"type": "image", "base64": f"IMG:{crop}", "mime_type": "image/jpeg"} if crop else None
+
+
+class ViewFigureTest(unittest.TestCase):
+    def test_without_viewer_view_tool_is_never_offered(self):
+        r = FakeRetriever([figure("f1")])
+        c = ScriptedController(("search", {"query": "q"}), ("answer", {"answer": "x [f1].", "citations": ["f1"]}))
+        run(c, r)
+        self.assertNotIn("view_figure", sum(c.seen_tools, []))
+
+    def test_view_tool_offered_only_when_context_has_unviewed_figure(self):
+        r = FakeRetriever([chunk("t1")], [figure("f1")])
+        c = ScriptedController(("search", {"query": "a"}), ("search", {"query": "b"}),
+                               ("view_figure", {"chunk_id": "f1"}),
+                               ("answer", {"answer": "Đồ thị tăng [f1].", "citations": ["f1"]}))
+        out = run(c, r, viewer=fake_viewer)
+        self.assertEqual(c.seen_tools[0], ["search"])
+        self.assertNotIn("view_figure", c.seen_tools[1])  # chỉ có chunk text
+        self.assertIn("view_figure", c.seen_tools[2])
+        self.assertNotIn("view_figure", c.seen_tools[3])  # f1 đã xem
+        self.assertEqual(out["status"], "answered")
+        self.assertEqual(out["viewed_figures"], ["f1"])
+
+    def test_viewed_image_is_sent_on_later_turns(self):
+        r = FakeRetriever([figure("f1")])
+        c = ScriptedController(("search", {"query": "a"}), ("view_figure", {"chunk_id": "f1"}),
+                               ("answer", {"answer": "x [f1].", "citations": ["f1"]}))
+        run(c, r, viewer=fake_viewer)
+        last_user = c.seen_messages[-1][1]["content"]
+        self.assertIsInstance(last_user, list)
+        self.assertIn({"type": "image", "base64": "IMG:f1.jpg", "mime_type": "image/jpeg"}, last_user)
+        self.assertIsInstance(c.seen_messages[1][1]["content"], str)  # trước khi xem: chỉ text
+
+    def test_invalid_view_is_recorded_and_counts_against_limit(self):
+        r = FakeRetriever([figure("f1")])
+        c = ScriptedController(("search", {"query": "a"}), ("view_figure", {"chunk_id": "zzz"}),
+                               ("abstain", {"reason": "không đủ", "citations": []}))
+        out = run(c, r, viewer=fake_viewer, max_views=1)
+        self.assertTrue(any(e["event"] == "invalid_view" for e in out["events"]))
+        self.assertNotIn("view_figure", c.seen_tools[2])
+        self.assertEqual(out["viewed_figures"], [])
+
+    def test_locator_is_shown_in_context(self):
+        r = FakeRetriever([figure("f1")])
+        c = ScriptedController(("search", {"query": "a"}), ("abstain", {"reason": "x", "citations": []}))
+        out = run(c, r)
+        self.assertIn("[f1] nd13.pdf, trang 48, Hình 3.1, vùng (85, 85, 510, 427)", out["final_context"])
+
+
 if __name__ == "__main__":
     unittest.main()
