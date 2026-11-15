@@ -13,6 +13,9 @@ PHAN-TICH.md
 starter/data/
 starter/results/
 
+# Trang duyệt sinh ra từ dữ liệu (python -m src.advanced.review); quyết định duyệt nằm ở results/advanced/benchmark_review.json
+results/advanced/review/
+
 # Kết quả chạy thử (--ids), không phải kết quả thí nghiệm
 results/**/*-smoke/
 

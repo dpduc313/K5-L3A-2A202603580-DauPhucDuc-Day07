@@ -139,6 +139,14 @@ class MetricsTest(unittest.TestCase):
         self.assertFalse(M.score_agent(u, self.trace("error", [], []))["auto_pass"])
 
 
+class ReviewPageTest(unittest.TestCase):
+    def test_highlight_ignores_whitespace_and_escapes_html(self):
+        from src.advanced.review import highlight
+        out = highlight("Hệ số <p> nên ở\nkhoảng [0.2, 0.5]", "nên ở khoảng")
+        self.assertEqual(out, "Hệ số &lt;p&gt; <mark>nên ở\nkhoảng</mark> [0.2, 0.5]")
+        self.assertEqual(highlight("a < b", "không có"), "a &lt; b")
+
+
 class ConfigTest(unittest.TestCase):
     def test_each_variant_changes_one_factor(self):
         for name, cfg in E.CONFIGS.items():
